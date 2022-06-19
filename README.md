@@ -1,2 +1,2 @@
-# ahs0432.github.io
-ahs0432.github.io
+# Chance Blog Creating...
+- **ahs0432.github.io**
