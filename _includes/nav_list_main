@@ -7,8 +7,8 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
-      <li class="nav__sub-title">👍 전체 글 수 : {{sum}} 개</li>
-      <br>
+      <li class="nav__sub-title" style="font-size:0.75em">👍 전체 글 수 : {{sum}} 개</li>
+      
       <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
         <span class="nav__sub-title">Language</span>
@@ -34,7 +34,6 @@
                 {% endif %}
             {% endfor %}
         </ul>
-        <br>
         
         <span class="nav__sub-title">Server</span>
         <ul>
@@ -50,7 +49,6 @@
                 {% endif %}
             {% endfor %}
         </ul>
-        <br>
         
         <span class="nav__sub-title">Trends</span>
         <ul>
@@ -60,7 +58,6 @@
                 {% endif %}
             {% endfor %}
         </ul>
-        <br>
         
         <span class="nav__sub-title">Personal</span>
         <ul>
