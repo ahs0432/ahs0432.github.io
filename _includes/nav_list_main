@@ -10,14 +10,62 @@
       <li class="nav__sub-title">👍 전체 글 수 : {{sum}} 개</li>
       <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title">C++</span>
+        <span class="nav__sub-title">Language</span>
         <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
         <ul>
             <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
             <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
             {% for category in site.categories %}
-                {% if category[0] == "Cpp" %}
+                {% if category[0] == "C" %}
+                    <li><a href="/categories/C" class="">C ({{category[1].size}})</a></li>
+                {% endif %}
+                {% if category[0] == "C++" %}
                     <li><a href="/categories/Cpp" class="">C++ ({{category[1].size}})</a></li>
+                {% endif %}
+                {% if category[0] == "JAVA" %}
+                    <li><a href="/categories/JAVA" class="">JAVA ({{category[1].size}})</a></li>
+                {% endif %}
+                {% if category[0] == "Python" %}
+                    <li><a href="/categories/Python" class="">Python ({{category[1].size}})</a></li>
+                {% endif %}
+                {% if category[0] == "GoLang" %}
+                    <li><a href="/categories/GoLang" class="">GoLang ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        
+        <span class="nav__sub-title">Server</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "CentOS" %}
+                    <li><a href="/categories/CentOS" class="">CentOS ({{category[1].size}})</a></li>
+                {% endif %}
+                {% if category[0] == "Ubuntu" %}
+                    <li><a href="/categories/Ubuntu" class="">Ubuntu ({{category[1].size}})</a></li>
+                {% endif %}
+                {% if category[0] == "Windows" %}
+                    <li><a href="/categories/Windows" class="">Windows ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        
+        <span class="nav__sub-title">Trends</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Security" %}
+                    <li><a href="/categories/Security" class="">Security ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        
+        <span class="nav__sub-title">Personal</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Plan" %}
+                    <li><a href="/categories/Plan" class="">Plan ({{category[1].size}})</a></li>
+                {% endif %}
+                {% if category[0] == "Record" %}
+                    <li><a href="/categories/Record" class="">Record ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
