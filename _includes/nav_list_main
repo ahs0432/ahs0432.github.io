@@ -20,7 +20,7 @@
                 {% if category[0] == "C" %}
                     <li><a href="/categories/C" class="">C ({{category[1].size}})</a></li>
                 {% endif %}
-                {% if category[0] == "C++" %}
+                {% if category[0] == "Cpp" %}
                     <li><a href="/categories/Cpp" class="">C++ ({{category[1].size}})</a></li>
                 {% endif %}
                 {% if category[0] == "JAVA" %}
