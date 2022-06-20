@@ -32,7 +32,6 @@ $ yum update –y
 ```
 * 위 과정을 통해 OpenVPN을 설치할 환경을 구성 합니다.
 
-
 ### 패키지 설치 진행
 ```bash
 $ yum -y install ntp openvpn easy-rsa zip
@@ -70,12 +69,14 @@ $ ./easyrsa init-pki
 ```
 * 대상 경로로 이동하고 easyrsa의 pki를 초기화하여 CA 및 다른 요청을 사용할 수 있는 상태로 만들어줍니다.
 
+<br>
 
 ```bash
 $ ./easyrsa build-ca
 ```
 * CA 패스워드와 CA 명을 기입하여 CA를 생성하여줍니다.
 
+<br>
 
 ```bash
 $ ./easyrsa gen-req [서버명] nopass
@@ -83,12 +84,14 @@ $ ./easyrsa gen-req [서버명] nopass
 * `[서버명]`에 자신이 원하는 `[서버명]`으로 변경 후 Enter를 눌러 진행합니다.
 * 해당 명령을 통해 파일을 유효하게 만드는 파일을 몇 가지가 생성됩니다.
 
+<br>
 
 ```bash
 $ ./easyrsa sign-req server [서버명]
 ```
 * 인증서에 서명을 하기 위해 명령어 입력 후 yes로 동의하고 ca의 패스워드를 입력하여 완료해줍니다.
 
+<br>
 
 ```bash
 $ ./easyrsa gen-dh
@@ -96,12 +99,14 @@ $ ./easyrsa gen-dh
 * Diffle-Hellman 방식의 보안 키를 만들어줍니다.
 * (해당 작업은 다른 작업에 비해 많은 시간이 소요됩니다.)
 
+<br>
 
 ```bash
 $ openvpn --genkey --secret /etc/openvpn/easy-rsa/pki/ta.key
 ```
 * 서버에 관련된 마지막 키인 ta.key를 생성해줍니다.
 
+<br>
 
 ### OpenVPN Server 설정 변경
 ```bash
@@ -110,6 +115,7 @@ $ vi /etc/openvpn/server.conf
 ```
 * 서버 설정이 담긴 설정(.conf) 파일을 복사하여 수정하기 위해 열어줍니다.
 
+<br>
 
 ```bash
 ca ca.crt
@@ -156,6 +162,7 @@ $ firewall-cmd --zone=public --change-interface=eth0
 * 만약 첫번째 명령어를 사용하였을 때 출력이 없다면 아래 명령어를 사용하여 eth0를 공용 네트워크 카드로 변경합니다.
 * 그리고 출력을 확인하여 정상적으로 eth0가 출력되는지 확인합니다.
 
+<br>
 
 ```bash
 $ firewall-cmd --zone=public --add-service openvpn
@@ -168,6 +175,7 @@ $ firewall-cmd --reload
 ```
 * OpenVPN이 사용하는 포트를 개방하고 NAT를 활성화합니다.
 
+<br>
 
 ```bash
 $ vi /etc/sysctl.conf
@@ -175,6 +183,7 @@ net.ipv4.ip_forward = 1 #Added
 ```
 * sysctl.conf 파일을 열고 `net.ipv4.ip_forward = 1` 행을 추가하고 커널에서 IPv4 트래픽을 전달할 수 있도록 합니다.
 
+<br>
 
 ```bash
 $ systemctl restart network.service
@@ -191,12 +200,14 @@ $ ./easyrsa gen-req 클라이언트명
 ```
 * 클라이언트에 대한 인증키를 생성해줍니다.
 
+<br>
 
 ```bash
 $ ./easyrsa sign-req client 클라이언트명
 ```
 * 해당 인증서에 서명을 하기 위해 명령을 입력 후 yes로 동의하고 이전에 입력한 ca의 패스워드를 입력하여 완료합니다.
 
+<br>
 
 ```bash
 $ cp /usr/share/doc/openvpn-2.4.6/sample/sample-config-files/client.conf /etc/openvpn/client.conf
@@ -249,5 +260,6 @@ $ zip [클라이언트명].zip *
 * 파일 설정 교체를 위해 .ovpn 파일을 더블 클릭하여 자신의 mac의 계정, 패스워드를 입력합니다.
 * 정상적으로 .ovpn 파일이 변환되었다면 Tunnelblick을 킨 후 자신의 Client 패스워드를 입력하고 접속하면 됩니다.
 
+<br>
 
 포스팅을 읽어주셔서 감사합니다! :D
