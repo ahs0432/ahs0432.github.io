@@ -62,6 +62,7 @@ $ cp -r /usr/share/easy-rsa/3/* /etc/openvpn/easy-rsa
 * openvpn 디렉터리 내 easy-rsa 디렉터리를 만들어 패키지 설치 간 생성된 easy-rsa의 share 파일을 복사합니다.
 * 여기서 easy-rsa가 생성하는 파일은 pki/ 디렉터리에 기록됩니다. 현재와 동일 설정인 경우 /etc/openvpn/easy-rsa/pki 에 기록됩니다.
 
+<br>
 
 ```bash
 $ cd /etc/openvpn/easy-rsa
