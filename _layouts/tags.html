@@ -34,9 +34,9 @@ layout: archive
           {% for post in tag.last %}
           <article class="archive-item">
             <div>
-                <span>
+                <b>
                   <a href="{{ post.url }}">{{post.title}}</a>&nbsp
-                </span>
+                </b>
                 <small> 
                   <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
                   <br>
