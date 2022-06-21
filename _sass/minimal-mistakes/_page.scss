@@ -35,6 +35,10 @@ body {
   flex: 1 0 auto;
 }
 
+.page__category-tag {
+  color: #eee;
+}
+
 .page {
   @include breakpoint($large) {
     float: right;
