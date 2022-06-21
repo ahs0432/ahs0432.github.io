@@ -231,13 +231,13 @@ $ zip [클라이언트명].zip *
 ## OS별 OpenVPN 접속 방법
 ### Windows
 * OpenVPN 프로그램 중 GUI가 지원되는 버전으로 설치합니다.
-	* OpenVPN Page : **https://openvpn.net/community-downloads/**
+	* OpenVPN Page : <https://openvpn.net/community-downloads/>
 * `C:\Program Files\OpenVPN\config` 폴더 또는 `[OpenVPN 설치 위치]\config` 폴더로 VPN 설정 파일을 옮깁니다.
 * OpenVPN GUI를 실행시켜 자신의 패스워드를 입력하고 확인을 눌러 접속하면 됩니다.
 
 ### macOS
 * macOS 용에서 사용하는 Tunnelblick을 설치합니다.
-	* Tunnelblick : **https://tunnelblick.net/downloads.html**
+	* Tunnelblick : <https://tunnelblick.net/downloads.html>
 * `~/Library/Application Support/Tunnelblick/Configurations` 경로로 옮깁니다.
 * 파일 설정 교체를 위해 .ovpn 파일을 열고 자신의 mac의 계정, 패스워드를 입력합니다.
 * .ovpn 파일이 변환된 경우 Tunnelblick을 실행 후 Client 패스워드를 입력하고 접속합니다.
