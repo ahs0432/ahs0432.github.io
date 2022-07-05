@@ -166,7 +166,7 @@ $ systemctl restart network.service
 $ systemctl enable openvpn@server.service
 $ systemctl start openvpn@server.service
 ```
-* 변경한 설정 반영을 위해 네트워크 재시작 및 __openvpn@server.service__ 를 자동 재기동되도록 등록합니다.
+* 변경한 설정 반영을 위해 네트워크 재시작 및 `openvpn@server.service`를 자동 재기동되도록 등록합니다.
 
 ### OpenVPN Client 설정
 ```bash
