@@ -1,5 +1,5 @@
 ---
-title:  "[CentOS] Linux 환경에서 OpenVPN 연결 방법" 
+title:  "[CentOS] OpenVPN 연결 방법 - Linux 환경" 
 
 categories:
   - CentOS
