@@ -38,13 +38,11 @@ $ yum -y install ntp openvpn easy-rsa zip
 ```
 * OpenVPN 설치 진행 간 필요한 패키지 파일을 설치합니다.
 
-
 ### ntpd 설정
 ```bash
 $ timedatectl list-timezones
 ```
-* 자신이 필요로 하는 시간대역이 존재하는지 확인합니다.
-
+* 자신이 필요로 하는 시간대역이 존재하는지 확인합니다.  
 
 ```bash
 $ timedatectl set-timezone Asia/Seoul
@@ -60,54 +58,47 @@ $ mkdir /etc/openvpn/easy-rsa
 $ cp -r /usr/share/easy-rsa/3/* /etc/openvpn/easy-rsa
 ```
 * openvpn 디렉터리 내 easy-rsa 디렉터리를 만들어 패키지 설치 간 생성된 easy-rsa의 share 파일을 복사합니다.
-* 여기서 easy-rsa가 생성하는 파일은 pki/ 디렉터리에 기록됩니다. 현재와 동일 설정인 경우 /etc/openvpn/easy-rsa/pki 에 기록됩니다.
-<br>
+* 여기서 easy-rsa가 생성하는 파일은 pki/ 디렉터리에 기록됩니다. 현재와 동일 설정인 경우 /etc/openvpn/easy-rsa/pki 에 기록됩니다.  
 
 ```bash
 $ cd /etc/openvpn/easy-rsa
 $ ./easyrsa init-pki
 ```
-* 대상 경로로 이동하고 easyrsa의 pki를 초기화하여 CA 및 다른 요청을 사용할 수 있는 상태로 만들어줍니다.
-<br>
+* 대상 경로로 이동하고 easyrsa의 pki를 초기화하여 CA 및 다른 요청을 사용할 수 있는 상태로 만들어줍니다.  
 
 ```bash
 $ ./easyrsa build-ca
 ```
-* CA 패스워드와 CA 명을 기입하여 CA를 생성하여줍니다.
-<br>
+* CA 패스워드와 CA 명을 기입하여 CA를 생성하여줍니다.  
 
 ```bash
 $ ./easyrsa gen-req [서버명] nopass
 ```
 * `[서버명]`에 자신이 원하는 `[서버명]`으로 변경 후 Enter를 눌러 진행합니다.
-* 해당 명령을 통해 파일을 유효하게 만드는 파일을 몇 가지가 생성됩니다.
-<br>
+* 해당 명령을 통해 파일을 유효하게 만드는 파일을 몇 가지가 생성됩니다.  
 
 ```bash
 $ ./easyrsa sign-req server [서버명]
 ```
-* 인증서에 서명을 하기 위해 명령어 입력 후 yes로 동의하고 ca의 패스워드를 입력하여 완료해줍니다.
-<br>
+* 인증서에 서명을 하기 위해 명령어 입력 후 yes로 동의하고 ca의 패스워드를 입력하여 완료해줍니다.  
 
 ```bash
 $ ./easyrsa gen-dh
 ```
 * Diffle-Hellman 방식의 보안 키를 만들어줍니다.
-* (해당 작업은 다른 작업에 비해 많은 시간이 소요됩니다.)
-<br>
+* (해당 작업은 다른 작업에 비해 많은 시간이 소요됩니다.)  
 
 ```bash
 $ openvpn --genkey --secret /etc/openvpn/easy-rsa/pki/ta.key
 ```
-* 서버에 관련된 마지막 키인 ta.key를 생성해줍니다.
+* 서버에 관련된 마지막 키인 ta.key를 생성해줍니다.  
 
 ### OpenVPN Server 설정 변경
 ```bash
 $ cp /usr/share/doc/openvpn-2.4.6/sample/sample-config-files/server.conf /etc/openvpn
 $ vi /etc/openvpn/server.conf
 ```
-* 서버 설정이 담긴 설정(.conf) 파일을 복사하여 수정하기 위해 열어줍니다.
-<br>
+* 서버 설정이 담긴 설정(.conf) 파일을 복사하여 수정하기 위해 열어줍니다.  
 
 ```bash
 ca ca.crt
@@ -151,8 +142,7 @@ $ firewall-cmd --get-active-zones
 $ firewall-cmd --zone=public --change-interface=eth0
 ```
 * 만약 첫번째 명령어를 사용하였을 때 출력이 없다면 아래 명령어를 사용하여 eth0를 공용 네트워크 카드로 변경합니다.
-* 그리고 출력을 확인하여 정상적으로 eth0가 출력되는지 확인합니다.
-<br>
+* 그리고 출력을 확인하여 정상적으로 eth0가 출력되는지 확인합니다.  
 
 ```bash
 $ firewall-cmd --zone=public --add-service openvpn
@@ -163,15 +153,13 @@ $ firewall-cmd --direct --passthrough ipv4 -t nat -A POSTROUTING -s 10.8.0.0/24 
 $ firewall-cmd --permanent --direct --passthrough ipv4 -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
 $ firewall-cmd --reload
 ```
-* OpenVPN이 사용하는 포트를 개방하고 NAT를 활성화합니다.
-<br>
+* OpenVPN이 사용하는 포트를 개방하고 NAT를 활성화합니다.  
 
 ```bash
 $ vi /etc/sysctl.conf
 net.ipv4.ip_forward = 1 #Added
 ```
-* sysctl.conf 파일을 열고 `net.ipv4.ip_forward = 1` 행을 추가하고 커널에서 IPv4 트래픽을 전달할 수 있도록 합니다.
-<br>
+* sysctl.conf 파일을 열고 `net.ipv4.ip_forward = 1` 행을 추가하고 커널에서 IPv4 트래픽을 전달할 수 있도록 합니다.  
 
 ```bash
 $ systemctl restart network.service
@@ -179,21 +167,18 @@ $ systemctl enable openvpn@server.service
 $ systemctl start openvpn@server.service
 ```
 * 앞에서 적용한 설정을 반영하기 위해 네트워크를 재시작 시켜주고 openvpn@server.service를 자동 재기동되도록 등록합니다.
-<br>
 
 ### OpenVPN Client 설정
 ```bash
 $ cd /etc/openvpn/easy-rsa
 $ ./easyrsa gen-req 클라이언트명
 ```
-* 클라이언트에 대한 인증키를 생성해줍니다.
-<br>
+* 클라이언트에 대한 인증키를 생성해줍니다.  
 
 ```bash
 $ ./easyrsa sign-req client 클라이언트명
 ```
-* 해당 인증서에 서명을 하기 위해 명령을 입력 후 yes로 동의하고 이전에 입력한 ca의 패스워드를 입력하여 완료합니다.
-<br>
+* 해당 인증서에 서명을 하기 위해 명령을 입력 후 yes로 동의하고 이전에 입력한 ca의 패스워드를 입력하여 완료합니다.  
 
 ```bash
 $ cp /usr/share/doc/openvpn-2.4.6/sample/sample-config-files/client.conf /etc/openvpn/client.conf
