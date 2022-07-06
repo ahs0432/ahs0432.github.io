@@ -7,6 +7,7 @@ tags:
   - Server
   - CentOS
   - OpenVPN
+  - OpenVPN Client
 
 toc: true
 toc_sticky: true
