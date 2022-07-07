@@ -54,10 +54,8 @@ last_modified_at: 2019-01-29
 * 정책 설정 창에 규칙에 대해 `사용함(E)` 설정 및 작업에 `연결 허용(L)`로 설정 후 `확인`을 눌러 저장합니다.
 
 <div align="center">
-  
-![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-RDP-Setting/7.png){: width="45%" height="45%"}
-![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-RDP-Setting/8.png){: width="45%" height="45%"}
-  
+  <img src="https://blog.false.kr/assets/image/Post/Windows/Windows-Server-RDP-Setting/7.png" width="45%" height="45%">
+  <img src="https://blog.false.kr/assets/image/Post/Windows/Windows-Server-RDP-Setting/8.png" width="45%" height="45%">
 </div>
   
 ---
