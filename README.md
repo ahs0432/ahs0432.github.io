@@ -1,2 +1,2 @@
 # Chance DevLog Creating...
-- [[CentOS] OpenVPN 서버 & 클라이언트 설정](https://blog.false.kr/)
+- [Chance Github DevLog](https://blog.false.kr/)
