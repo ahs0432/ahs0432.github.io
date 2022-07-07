@@ -28,7 +28,8 @@ last_modified_at: 2019-01-29
   * 사용 상태가 아닌 경우 사용으로 변경하여 원격 데스크톱을 이용할 수 있도록 변경합니다.
 
 ![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-RDP-Setting/1.png){: width="90%" height="90%"}{: .align-center}
-  
+
+### 시스템 설정 상 원격 설정 활성화
 * 제어판을 열어 시스템 및 보안을 클릭합니다.
   * 만약 아래와 같이 표기되지 않는 경우 우측 상단에 `보기 기준`을 `범주`로 변경합니다.
 
@@ -46,6 +47,7 @@ last_modified_at: 2019-01-29
 
 ![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-RDP-Setting/5.png){: width="45%" height="45%"}{: .align-center}
 
+### 방화벽 설정 상 원격 데스크톱 
 * 시작 창에서 `firewall` 또는 `방화벽`을 검색하여 `고급 보안이 포함된 Windows Defender 방화벽`을 열어줍니다.
   * 인바운드 규칙을 선택한 뒤 `원격 데스크톱 - 사용자 모드`로 명시된 규칙을 각각 클릭하여 열어줍니다.
 
