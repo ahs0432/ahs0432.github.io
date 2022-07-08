@@ -46,11 +46,11 @@ last_modified_at: 2019-03-11
 ## Test Code 작성 및 접근 시도
 ### JAVA JSP 기준 Test Code 작성
 ```java
-<%@page import="java.sql.Statement"%>
-<%@page import="java.sql.DriverManager"%>
-<%@page import="java.sql.Connection"%>
-<%@page language="java" contentType="text/html; charset=UTF-8"
-  pageEncoding="UTF-8"%>
+<% @page import="java.sql.Statement" %>
+<% @page import="java.sql.DriverManager" %>
+<% @page import="java.sql.Connection" %>
+<% @page language="java" contentType="text/html; charset=UTF-8"
+  pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
   <head>
