@@ -63,12 +63,11 @@ last_modified_at: 2019-03-11
   
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Client-to-Client/1.png){: width="70%" height="70%"}{: .align-center}
 
-* 두 `Client` 모두 `OS`에 맞게 설정 값을 적용하여 연결합니다.
-  * Windows OS (Client 1)
-
+* `Windows OS(Client 1)`의 `VPN` 연결을 진행합니다.
+  
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Client-to-Client/2.png){: width="70%" height="70%"}{: .align-center}
 
-  * macOS (Client 2)
+* 이어서 `macOS (Client 2)`의 `VPN` 연결을 진행합니다.
   
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Client-to-Client/3.png){: width="70%" height="70%"}{: .align-center}
 
@@ -77,5 +76,8 @@ last_modified_at: 2019-03-11
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Client-to-Client/4.png){: width="70%" height="70%"}{: .align-center}
 
 ---
+
+`OpenVPN`에서 동작하는 대역이 마치 하나의 사설망처럼 동작된다는 것을 보여주기 위한 포스팅입니다.  
+혹시나 `VPN`을 구축한다거나 `OpenVPN`을 활용하여 사설망 구축 시 참고 부탁드립니다!  
   
-긴 포스팅을 읽어주셔서 감사합니다! :D
+긴 포스팅을 읽어주셔서 감사합니다! :)
