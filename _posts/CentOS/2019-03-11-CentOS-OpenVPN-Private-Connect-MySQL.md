@@ -79,15 +79,15 @@ last_modified_at: 2019-03-11
 ### 페이지 접근을 통한 MySQL 통신 확인
 * 아래 사진과 같이 `VPN` 연결을 진행하지 않고 Test Page 접속 시 DB 연결에 실패가 확인됩니다.
   
-![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Private-Connect-MySQL/1.png){: width="45%" height="45%"}{: .align-center}
+![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Private-Connect-MySQL/1.png){: width="70%" height="70%"}{: .align-center}
 
 * 이 상태에서 `OpenVPN Client`를 실행하여 `OpenVPN Server`로 정상 연결되는지 우선 확인합니다.
   
-![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Private-Connect-MySQL/2.png){: width="45%" height="45%"}{: .align-center}
+![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Private-Connect-MySQL/2.png){: width="70%" height="70%"}{: .align-center}
 
 * 정상적으로 OpenVPN에 접근된 이후 Test Page에 접근할 경우 정상적으로 DB와의 통신이 확인됩니다.
   
-![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Private-Connect-MySQL/3.png){: width="45%" height="45%"}{: .align-center}
+![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Private-Connect-MySQL/3.png){: width="70%" height="70%"}{: .align-center}
 
 ---
 
