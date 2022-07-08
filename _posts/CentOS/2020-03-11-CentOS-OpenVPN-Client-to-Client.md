@@ -16,6 +16,11 @@ date: 2020-03-11
 last_modified_at: 2020-03-11
 ---
 
+> 해당 포스팅은 `OpenVPN`으로 사전 구성이 완료되어 연결이 가능한 상황 하에 진행됩니다.  
+> 만약 `OpenVPN Server`와 `Client`를 구축하는 단계부터 진행하길 원하시면 아래 포스팅 참고바랍니다.  
+> * [[CentOS] OpenVPN 서버 & 클라이언트 설정](https://blog.false.kr/centos/CentOS-OpenVPN-Server-Client-Setting/)
+
+
 ## 테스트 환경
 ### OpenVPN Server
 - CentOS Linux release 7.0.1406 (Core)
@@ -31,11 +36,6 @@ last_modified_at: 2020-03-11
 - JAVA 1.8.0_211
 - Tomcat 8.5
   
-  
-해당 포스팅은 `OpenVPN`으로 사전 구성이 완료되어 연결이 가능한 상황 하에 진행됩니다.  
-만약 `OpenVPN Server`와 `Client`를 구축하는 단계부터 진행하길 원하시면 아래 포스팅 참고바랍니다.  
-* [[CentOS] OpenVPN 서버 & 클라이언트 설정](https://blog.false.kr/centos/CentOS-OpenVPN-Server-Client-Setting/)
-
 ## 사전 준비
 * `OpenVPN Client`를 2개 구축하여 1번은 10.8.0.2, 2번은 10.8.0.3 VPN IP를 부여했습니다.
 * `Client 2`에서 `Tomcat`을 기동하여 Test Page를 출력하므로 `Client 2`에 `Tomcat`을 구축합니다.
