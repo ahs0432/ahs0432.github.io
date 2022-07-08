@@ -46,15 +46,15 @@ last_modified_at: 2019-03-11
 ## Test Code 작성 및 접근 시도
 ### JAVA JSP 기준 Test Code 작성
 ```java
-<% @page import="java.sql.Statement" %>
-<% @page import="java.sql.DriverManager" %>
-<% @page import="java.sql.Connection" %>
-<% @page language="java" contentType="text/html; charset=UTF-8"
+<%@page import="java.sql.Statement" %>
+<%@page import="java.sql.DriverManager" %>
+<%@page import="java.sql.Connection" %>
+<%@page language="java" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset=UTF-8">
+    <meta charset="UTF-8">
     <title>Test</title>
   </head>
   <body>
@@ -72,7 +72,7 @@ last_modified_at: 2019-03-11
   </body>
 </html>
 ```
-* 사진과 같이 JAVA JSP 기준으로 Test Code를 작성하여줍니다.
+* 상위 Code처럼 JAVA JSP 기준으로 Test Code를 작성하여줍니다.
 * [] 로 표기된 내용은 기입된 사항에 맞게 DB 정보를 입력합니다.
 * 모든 정보를 정상적으로 입력한 경우 Tomcat을 기동 시켜줍니다.
 
