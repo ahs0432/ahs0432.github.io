@@ -85,7 +85,7 @@ last_modified_at: 2019-03-11
   
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Private-Connect-MySQL/2.png){: width="70%" height="70%"}{: .align-center}
 
-* 정상적으로 `VPN`에 된 이후 Test Page에 접근할 경우 정상적으로 DB와의 통신이 확인됩니다.
+* 정상적으로 `VPN`에 연결된 이후 Test Page에 접근할 경우 정상적으로 DB와의 통신이 확인됩니다.
   
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Private-Connect-MySQL/3.png){: width="70%" height="70%"}{: .align-center}
 
