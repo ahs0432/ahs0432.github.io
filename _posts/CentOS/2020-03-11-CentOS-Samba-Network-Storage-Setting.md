@@ -124,10 +124,10 @@ $ systemctl start smb
 
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/3.png){: width="90%" height="90%"}{: .align-center}
 
-### Office 군(Word, Excel 등) 동일 파일 다중 오픈 처리 확인
+### Office(Word, Excel 등) 동일 파일 다중 오픈 처리 확인
 > PC 두 대를 동일한 공유 폴더에 연결하여 동일한 파일을 열었을 때의 테스트입니다.  
-> Office 군의 경우 파일이 열려있을 경우 다른 사용자가 접근하지 못하도록 제한합니다.  
-> Samba도 NFS, CIFS를 이용한 공유 폴더이기 때문에 동일한 효과를 보이는지 확인합니다.  
+> `Office`의 경우 파일이 열려있을 경우 다른 사용자가 접근하지 못하도록 제한합니다.  
+> `Samba`도 `NFS`, `CIFS`를 이용한 공유 폴더이기 때문에 동일한 효과를 보이는지 확인합니다.  
 
 - 확인을 위해 공유 폴더 내에 `text.xlsx` 명칭의 파일을 생성하였습니다.
 
