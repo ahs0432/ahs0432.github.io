@@ -25,7 +25,7 @@ last_modified_at: 2019-01-29
   
 ## 확인 방법
 ### 이벤트 뷰어를 통한 원격 데스크톱 로그 확인
-* 실행 창(Win + R)을 열고 실행창에 `eventvwr`를 입력하여 이벤트 뷰어를 열어줍니다.
+* 실행 창(`Windows` + `R`)을 열고 실행창에 `eventvwr`를 입력하여 이벤트 뷰어를 열어줍니다.
 
 ![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-RDP-Log-Check/1.png){: width="45%" height="45%"}{: .align-center}
 
