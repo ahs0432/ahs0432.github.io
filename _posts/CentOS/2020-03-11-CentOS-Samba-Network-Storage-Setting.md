@@ -91,7 +91,7 @@ directory mask = 0777 # 디렉토리 권한을 선택합니다.
 ```
 - `Samba`의 설정 경로로 이동하여 대상 파일을 열어줍니다.
 - 대상 공유 폴더 명칭과 대상 경로 및 권한 등 설정을 기입합니다.
-- 이외 더 상세한 설정은 [`Samba`](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html) 설정 매뉴얼를 참고 부탁드립니다.
+- 이외 더 상세한 설정은 [설정 매뉴얼](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html) 를 참고 부탁드립니다.
 
 ```bash
 $ firewall-cmd --permanent --zone=public --add-service-samba
@@ -114,11 +114,11 @@ $ systemctl start smb
 ### 접속 대상 Samba 공유 폴더 접근 방법
 - 실행 창(`Windows` + `R`)을 열고 실행창에 `\\[Samba Server IP]`를 입력합니다.  
 
-![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/1.png){: width="40%" height="40%"}{: .align-center}
+![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/1.png){: width="50%" height="50%"}{: .align-center}
 
 - 정상적으로 통신된다면 출력되는 로그인 팝업에 설정한 계정/패스워드를 입력합니다.  
 
-![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/2.png){: width="40%" height="40%"}{: .align-center}
+![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/2.png){: width="50%" height="50%"}{: .align-center}
 
 - 정상적으로 로그인된 경우 아래 사진과 같이 공유 폴더가 노출됩니다.
 
