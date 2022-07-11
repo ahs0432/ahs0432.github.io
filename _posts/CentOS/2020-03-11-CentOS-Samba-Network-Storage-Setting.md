@@ -39,7 +39,7 @@ $ yum update –y
 ```bash
 $ yum install -y samba
 ```
-- yum 명령어를 이용하여 Samba 패키지를 설치합니다.
+- `yum` 명령어를 이용하여 `Samba` 패키지를 설치합니다.
 
 ### 계정 생성 및 공유 폴더 권한 설정
 ```bash
@@ -48,7 +48,7 @@ New SMB password: [Password]
 Retype new SMB password: [Password]
 Failed to add entry for user [Account].
 ```
-- Samba에서 사용할 계정을 smbpasswd 명령어를 사용하여 생성합니다.
+- `Samba`에서 사용할 계정을 `smbpasswd` 명령어를 사용하여 생성합니다.
 - 생성 과정에서 대상 계정이 존재하지 않는 경우 상위와 같이 실패됩니다.
   
 ```bash
@@ -69,7 +69,7 @@ $ chmod [Permission] [Directory]
 # ex) chmod 777 /home
 ```
 - 자신이 사용하고자하는 공유 디렉토리 권한을 설정해줍니다.
-- SMB에서 사용할 권한이므로 적절하게 설정하는 것이 좋습니다.
+- `Samba`에서 사용할 권한이므로 적절하게 설정하는 것이 좋습니다.
 - (여기선 모든 권한을 부여하는 조건으로 777로 진행하였습니다.)
 
 ### smb.conf 파일 수정 및 서비스 등록/시작
@@ -89,17 +89,17 @@ write list = root     # 접속할 계정을 선택합니다.
 create mask = 0777    # 생성 권한을 선택합니다.
 directory mask = 0777 # 디렉토리 권한을 선택합니다.
 ```
-- Samba의 설정 경로로 이동하여 대상 파일을 열어줍니다.
+- `Samba`의 설정 경로로 이동하여 대상 파일을 열어줍니다.
 - 대상 공유 폴더 명칭과 대상 경로 및 권한 등 설정을 기입합니다.
-- 이외 더 상세한 설정은 [Samba](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html) 설정 매뉴얼를 참고 부탁드립니다.
+- 이외 더 상세한 설정은 [`Samba`](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html) 설정 매뉴얼를 참고 부탁드립니다.
 
 ```bash
 $ firewall-cmd --permanent --zone=public --add-service-samba
 ```
-- 방화벽 설정에 맞게 설정을 추가하여 Samba 통신이 가능하도록 합니다.
+- 방화벽 설정에 맞게 설정을 추가하여 `Samba` 통신이 가능하도록 합니다.
 
 > __참고사항__
->- 기본적으로 ISP에서 SMB 프로토콜 취약성으로 인한 차단 정책이 존재합니다.  
+>- 기본적으로 `ISP`에서 `SMB` 프로토콜 취약성으로 인한 차단 정책이 존재합니다.  
 > 이로 인해 외부 방화벽 설정이 이뤄지더라도 외부 통신이 불가할 수 있습니다.  
 > 가능하더라도 취약 사항으로 인해 공인망에서의 사용은 권장하지는 않습니다.
 
@@ -107,7 +107,7 @@ $ firewall-cmd --permanent --zone=public --add-service-samba
 $ systemctl enable smb
 $ systemctl start smb
 ```
-- Samba 서비스를 자동으로 시작되도록 등록하고 실행합니다.    
+- `Samba` 서비스를 자동으로 시작되도록 등록하고 실행합니다.    
 
 
 ## Windows OS 환경에서 Samba 접속
