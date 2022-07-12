@@ -66,8 +66,8 @@ $ make && make install
 > ```bash
 > $ vim /usr/local/src/mod-cband-0.9.7.5/src/mod_cband.c
 > ```
-> 1. 파일 내 모든 remote_ip &rarr; client_ip 로 변경
-> 2. 1365 Lines에 있는 remote_addr &rarr; client_addr 로 변경
+> 1. 파일 내 모든 `remote_ip` &rarr; `client_ip` 로 변경
+> 2. `1365 Lines`에 있는 `remote_addr` &rarr; `client_addr` 로 변경
 
 
 ```bash
@@ -122,6 +122,32 @@ $ vim /etc/httpd/conf.d/httpd-vhosts.conf
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Apache-CBand/1.png){: width="90%" height="90%"}{: .align-center}
 - 설정 완료 후 http://도메인/cband-status 접근 시 설정한 호스트에 대한 정보 확인이 가능합니다.
 - 홈페이지에 접속하여 제한을 주었던 사항과 쌓인 트래픽의 총량 등의 사항을 확인할 수 있습니다.
+
+> 사이트 내 표기된 내용
+> 1. VirtualHosts
+> - Virtual host name : 자신이 설정한 VHost 목록
+> - reset all/reset : 모든 vhost에 대한 기록을 리셋/해당 vhost에 대한 기록을 리셋
+> - time to refresh : 해당 시간이 지나면 갱신
+> - Total Limit/Slice/Used : 해당 vhost의 트래픽 제한 / 나눈 기간에 따른 트래픽 / 지정된 기간동안의 트래픽 사용량
+> - Class 0 Limit/Slice/Used : 해당 IP범위에 대한 트래픽 제한 / 나눈 기간에 따른 트래픽 / 해당 IP범위에서 사용된 트래픽
+> - Class 1 Limit/Slice/Used : 해당 IP범위에 대한 트래픽 제한 / 나눈 기간에 따른 트래픽 / 해당 IP범위에서 사용된 트래픽
+> - Class 2 Limit/Slice/Used : 해당 IP범위에 대한 트래픽 제한 / 나눈 기간에 따른 트래픽 / 해당 IP범위에서 사용된 트래픽
+> - kbps Limit/Current : 초당 최대 전송 속도 / 측정된 전송 속도
+> - rps Limit/Current : 초당 최대 요청수 / 측정된 요청 수
+> - Connections Limit/Current : 최대 동시 접속자 수 / 현재 동시 접속자 수
+> - user : 지정된 유저
+> 2. Remote Client
+> - Remote IP : 접속자 IP 주소
+> - Virtualhost : 접속한 vhost 명
+> - Connections Limit/Current : 해당 IP에 대한 접속자 수 제한 / 해당 IP의 접속자 수
+> - Last speed/conn [kbps] : 마지막 접속자의 속도
+> 3. Server summary
+> - Server uptime : 서버의 가동 시간
+> - Total virtualhosts : 총 vhost의 개수
+> - Total users : 총 user 수
+> - Total connections : 총 커넥션의 수
+> - Total traffic : 총 트래픽
+> - Current speed : 측정된 속도
 
 ---
   
