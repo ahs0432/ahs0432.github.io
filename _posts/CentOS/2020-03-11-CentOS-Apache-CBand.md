@@ -125,29 +125,50 @@ $ vim /etc/httpd/conf.d/httpd-vhosts.conf
 
 > 사이트 내 표기된 내용
 > 1. VirtualHosts
-> - Virtual host name : 자신이 설정한 VHost 목록
-> - reset all/reset : 모든 vhost에 대한 기록을 리셋/해당 vhost에 대한 기록을 리셋
-> - time to refresh : 해당 시간이 지나면 갱신
-> - Total Limit/Slice/Used : 해당 vhost의 트래픽 제한 / 나눈 기간에 따른 트래픽 / 지정된 기간동안의 트래픽 사용량
-> - Class 0 Limit/Slice/Used : 해당 IP범위에 대한 트래픽 제한 / 나눈 기간에 따른 트래픽 / 해당 IP범위에서 사용된 트래픽
-> - Class 1 Limit/Slice/Used : 해당 IP범위에 대한 트래픽 제한 / 나눈 기간에 따른 트래픽 / 해당 IP범위에서 사용된 트래픽
-> - Class 2 Limit/Slice/Used : 해당 IP범위에 대한 트래픽 제한 / 나눈 기간에 따른 트래픽 / 해당 IP범위에서 사용된 트래픽
-> - kbps Limit/Current : 초당 최대 전송 속도 / 측정된 전송 속도
-> - rps Limit/Current : 초당 최대 요청수 / 측정된 요청 수
-> - Connections Limit/Current : 최대 동시 접속자 수 / 현재 동시 접속자 수
-> - user : 지정된 유저
+> - Virtual host name
+>   - 설정한 VirtualHost 목록
+> - reset all/reset
+>   - 모든 vhost에 대한 기록을 리셋/해당 vhost에 대한 기록을 리셋
+> - time to refresh
+>   - 해당 시간이 지나면 갱신
+> - Total Limit/Slice/Used
+>   - 해당 vhost의 트래픽 제한 / 나눈 기간에 따른 트래픽 / 지정된 기간동안의 트래픽 사용량
+> - Class 0 Limit/Slice/Used
+>   - 해당 IP범위에 대한 트래픽 제한 / 나눈 기간에 따른 트래픽 / 해당 IP범위에서 사용된 트래픽
+> - Class 1 Limit/Slice/Used
+>   - 해당 IP범위에 대한 트래픽 제한 / 나눈 기간에 따른 트래픽 / 해당 IP범위에서 사용된 트래픽
+> - Class 2 Limit/Slice/Used
+>   - 해당 IP범위에 대한 트래픽 제한 / 나눈 기간에 따른 트래픽 / 해당 IP범위에서 사용된 트래픽
+> - kbps Limit/Current
+>   - 초당 최대 전송 속도 / 측정된 전송 속도
+> - rps Limit/Current
+>   - 초당 최대 요청수 / 측정된 요청 수
+> - Connections Limit/Current
+>   - 최대 동시 접속자 수 / 현재 동시 접속자 수
+> - user
+>    - 지정된 유저
 > 2. Remote Client
-> - Remote IP : 접속자 IP 주소
-> - Virtualhost : 접속한 vhost 명
-> - Connections Limit/Current : 해당 IP에 대한 접속자 수 제한 / 해당 IP의 접속자 수
-> - Last speed/conn [kbps] : 마지막 접속자의 속도
+> - Remote IP
+>   - 접속자 IP 주소
+> - Virtualhost
+>   - 접속한 VirtualHost 명
+> - Connections Limit/Current
+>   - 해당 IP에 대한 접속자 수 제한 / 해당 IP의 접속자 수
+> - Last speed/conn [kbps]
+>   - 마지막 접속자의 속도
 > 3. Server summary
-> - Server uptime : 서버의 가동 시간
-> - Total virtualhosts : 총 vhost의 개수
-> - Total users : 총 user 수
-> - Total connections : 총 커넥션의 수
-> - Total traffic : 총 트래픽
-> - Current speed : 측정된 속도
+> - Server uptime
+>   - 서버의 가동 시간
+> - Total virtualhosts
+>   - 총 VirtualHost의 개수
+> - Total users
+>   - 총 User 수
+> - Total connections
+>   - 총 커넥션의 수
+> - Total traffic
+>   - 총 트래픽
+> - Current speed
+>   - 측정된 속도
 
 ---
   
