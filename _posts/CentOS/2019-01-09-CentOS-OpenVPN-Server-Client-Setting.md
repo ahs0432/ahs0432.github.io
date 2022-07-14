@@ -30,7 +30,7 @@ $ yum clean all
 $ yum install –y epel-release
 $ yum update –y --exclude=kernel*
 ```
-* 위 과정을 통해 OpenVPN을 설치할 환경을 구성합니다.
+* 위 과정을 통해 `OpenVPN`을 설치할 환경을 구성합니다.
 
 ### 패키지 설치 진행
 ```bash
