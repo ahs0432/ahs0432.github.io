@@ -25,10 +25,10 @@ last_modified_at: 2019-01-09
 
 ### CentOS yum 업데이트 및 버전에 맞는 repo 설치
 ```bash
-$ yum update –y
+$ yum update –y --exclude=kernel*
 $ yum clean all
 $ yum install –y epel-release
-$ yum update –y
+$ yum update –y --exclude=kernel*
 ```
 * 위 과정을 통해 OpenVPN을 설치할 환경을 구성합니다.
 
