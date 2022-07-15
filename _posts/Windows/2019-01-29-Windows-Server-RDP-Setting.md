@@ -45,6 +45,7 @@ last_modified_at: 2019-01-29
 * 시스템 속성에서 `이 컴퓨터에 대한 원격 연결 허용(L)`을 체크하고 `확인`을 눌러 저장합니다.
 
 ### 방화벽 설정 상 원격 데스크톱 
+
 ![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-RDP-Setting/6.png){: width="90%" height="90%"}{: .align-center}
 * 시작 창에서 `firewall` 또는 `방화벽`을 검색하여 `고급 보안이 포함된 Windows Defender 방화벽`을 열어줍니다.
   * 인바운드 규칙을 선택한 뒤 `원격 데스크톱 - 사용자 모드`로 명시된 규칙을 각각 클릭하여 열어줍니다.
