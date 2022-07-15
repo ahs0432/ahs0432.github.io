@@ -112,34 +112,29 @@ $ systemctl start smb
 
 ## Windows OS 환경에서 Samba 접속
 ### 접속 대상 Samba 공유 폴더 접근 방법
-- 실행 창(`Windows` + `R`)을 열고 실행창에 `\\[Samba Server IP]`를 입력합니다.  
 
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/1.png){: width="50%" height="50%"}{: .align-center}
-
-- 정상적으로 통신된다면 출력되는 로그인 팝업에 설정한 계정/패스워드를 입력합니다.  
+- 실행 창(`Windows` + `R`)을 열고 실행창에 `\\[Samba Server IP]`를 입력합니다. 
 
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/2.png){: width="50%" height="50%"}{: .align-center}
-
-- 정상적으로 로그인된 경우 아래 사진과 같이 공유 폴더가 노출됩니다.
+- 정상적으로 통신된다면 출력되는 로그인 팝업에 설정한 계정/패스워드를 입력합니다.  
 
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/3.png){: width="90%" height="90%"}{: .align-center}
+- 정상적으로 로그인된 경우 아래 사진과 같이 공유 폴더가 노출됩니다.
 
 ### Office(Word, Excel 등) 동일 파일 다중 오픈 처리 확인
 > PC 두 대를 동일한 공유 폴더에 연결하여 동일한 파일을 열었을 때의 테스트입니다.  
 > `Office`의 경우 파일이 열려있을 경우 다른 사용자가 접근하지 못하도록 제한합니다.  
 > `Samba`도 `NFS`, `CIFS`를 이용한 공유 폴더이기 때문에 동일한 효과를 보이는지 확인합니다.  
 
+![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/4.png){: width="90%" height="90%"}{: .align-center}
 - 확인을 위해 공유 폴더 내에 `text.xlsx` 명칭의 파일을 생성하였습니다.
 
-![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/4.png){: width="90%" height="90%"}{: .align-center}
-
+![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/5.png){: width="90%" height="90%"}{: .align-center}
 - 1번 PC에서 `text.xlsx` 파일을 열었고 정상적으로 열리는 것이 확인됩니다.
 
-![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/5.png){: width="90%" height="90%"}{: .align-center}
-
-- 2번 PC에서 `text.xlsx` 파일을 열었을 때에는 사진과 같이 제한되는 것이 확인됩니다.
-
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/6.png){: width="90%" height="90%"}{: .align-center}
+- 2번 PC에서 `text.xlsx` 파일을 열었을 때에는 사진과 같이 제한되는 것이 확인됩니다.
 
 이를 통해 Office 군에서 제공하는 동일 파일 편집 제한 기능이 정상 사용되는 것이 확인됩니다.
 

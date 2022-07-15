@@ -59,21 +59,18 @@ last_modified_at: 2020-03-11
 * 특별한 기능을 필요로 하는 것이 아니기 때문에 `HTML`로 간단하게 작성합니다.
 
 ### 페이지 접근을 통한 Client to Client 통신 확인
+![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Client-to-Client/1.png){: width="70%" height="70%"}{: .align-center}
 * 두 `Client` 모두 `VPN`을 접속하지 않은 상태에서 상대 IP 입력 시 접근되지 않습니다.
   
-![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Client-to-Client/1.png){: width="70%" height="70%"}{: .align-center}
-
+![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Client-to-Client/2.png){: width="70%" height="70%"}{: .align-center}
 * `Windows OS(Client 1)`의 `VPN` 연결을 진행합니다.
   
-![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Client-to-Client/2.png){: width="70%" height="70%"}{: .align-center}
-
-* 이어서 `macOS (Client 2)`의 `VPN` 연결을 진행합니다.
-  
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Client-to-Client/3.png){: width="70%" height="70%"}{: .align-center}
+* 이어서 `macOS (Client 2)`의 `VPN` 연결을 진행합니다.
 
-* 정상적으로 `VPN`에 연결된 경우 `Client 1` &rarr; `Client 2` 통신 시도 시 아래와 같이 접근됩니다.
   
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Client-to-Client/4.png){: width="70%" height="70%"}{: .align-center}
+* 정상적으로 `VPN`에 연결된 경우 `Client 1` &rarr; `Client 2` 통신 시도 시 아래와 같이 접근됩니다.
 
 ---
 
