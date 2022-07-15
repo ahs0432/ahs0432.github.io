@@ -120,7 +120,7 @@ $ systemctl start smb
 - 정상적으로 통신된다면 출력되는 로그인 팝업에 설정한 계정/패스워드를 입력합니다.  
 
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-Samba-Network-Storage-Setting/3.png){: width="90%" height="90%"}{: .align-center}
-- 정상적으로 로그인된 경우 아래 사진과 같이 공유 폴더가 노출됩니다.
+- 정상적으로 로그인된 경우 사진과 같이 공유 폴더가 노출됩니다.
 
 ### Office(Word, Excel 등) 동일 파일 다중 오픈 처리 확인
 > PC 두 대를 동일한 공유 폴더에 연결하여 동일한 파일을 열었을 때의 테스트입니다.  

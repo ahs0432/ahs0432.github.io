@@ -70,7 +70,7 @@ last_modified_at: 2020-03-11
 
   
 ![image](https://blog.false.kr/assets/image/Post/CentOS/CentOS-OpenVPN-Client-to-Client/4.png){: width="70%" height="70%"}{: .align-center}
-* 정상적으로 `VPN`에 연결된 경우 `Client 1` &rarr; `Client 2` 통신 시도 시 아래와 같이 접근됩니다.
+* 정상적으로 `VPN`에 연결된 경우 `Client 1` &rarr; `Client 2` 통신 시도 시 사진와 같이 접근됩니다.
 
 ---
 
