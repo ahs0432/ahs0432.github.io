@@ -24,7 +24,7 @@ last_modified_at: 2020-03-13
 - `Update`로 인해 갑작스럽게 증가된 용량 중 임시 파일이 가지고 있던 용량을 확보합니다.
   
 ## Windows Update 임시 파일 삭제
-### 현재 상황 (가정 상황)
+### 현재 상황
 
 ![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Update-Temp-file-Delete/1.png){: width="90%" height="90%"}{: .align-center}
 - `Windows Update` 상태가 최신이 아님에도 신규 업데이트를 받아오지 못하는 현상이 확인된다고 가정합니다.
