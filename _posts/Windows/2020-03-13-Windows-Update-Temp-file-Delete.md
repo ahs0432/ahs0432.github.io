@@ -48,7 +48,7 @@ last_modified_at: 2020-03-13
 - `C:\Windows\System32` 경로에 `catroot2` 폴더를 삭제합니다.
 - 해당 폴더 삭제 후 다시 `services.msc` 창으로 돌아와 중지하였던 서비스를 시작합니다.
 
-![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Update-Temp-file-Delete/6.png){: width="90%" height="90%"}{: .align-center}
+![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Update-Temp-file-Delete/6.png){: width="60%" height="60%"}{: .align-center}
 - 이후 업데이트를 추가 확인할 시 확인하지 못했던 업데이트가 불러와지는 것을 확인할 수 있습니다.
 
 ---
