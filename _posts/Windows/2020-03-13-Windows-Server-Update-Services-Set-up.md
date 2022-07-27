@@ -60,7 +60,7 @@ last_modified_at: 2020-03-17
 ### Windows Server Update Services 설정
 
 ![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/6.png){: width="40%" height="40%"}{: .align-center}
-- 설치가 완료된 경우 검색을 통해 `Windwos Server Update Services`를 확인하고 실행합니다.
+- 설치가 완료된 경우 검색을 통해 `Windows Server Update Services`를 확인하고 실행합니다.
 
 ![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/7.png){: width="60%" height="60%"}{: .align-center}
 - 추가적인 사후 구성 및 설치가 진행되는데 이전 저장 위치와 동일한지 확인합니다.
