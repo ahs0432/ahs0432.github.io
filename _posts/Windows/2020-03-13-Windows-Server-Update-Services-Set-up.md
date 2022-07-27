@@ -46,7 +46,7 @@ last_modified_at: 2020-03-17
 ![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/2.png){: width="80%" height="80%"}{: .align-center}
 - `서버 역할 선택`에서 `Windows Server Update Services` 역할을 체크합니다.
 
-![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/3.png){: width="60%" height="60%"}{: .align-center}
+![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/3.png){: width="50%" height="50%"}{: .align-center}
 - 필요한 기능이 모두 설치될 수 있도록 `기능 추가`를 클릭하여 기능을 추가합니다.
 - 기능 추가 후 `서버 역할 선택` 창에서 `다음(N)`을 클릭하여 넘어갑니다.
 
