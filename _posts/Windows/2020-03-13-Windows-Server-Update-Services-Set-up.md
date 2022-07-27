@@ -46,7 +46,7 @@ last_modified_at: 2020-03-17
 ![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/2.png){: width="80%" height="80%"}{: .align-center}
 - `서버 역할 선택`에서 `Windows Server Update Services` 역할을 체크합니다.
 
-![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/3.png){: width="70%" height="70%"}{: .align-center}
+![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/3.png){: width="60%" height="60%"}{: .align-center}
 - 필요한 기능이 모두 설치될 수 있도록 `기능 추가`를 클릭하여 기능을 추가합니다.
 - 기능 추가 후 `서버 역할 선택` 창에서 `다음(N)`을 클릭하여 넘어갑니다.
 
@@ -59,14 +59,14 @@ last_modified_at: 2020-03-17
 
 ### Windows Server Update Services 설정
 
-![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/6.png){: width="60%" height="60%"}{: .align-center}
+![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/6.png){: width="40%" height="40%"}{: .align-center}
 - 설치가 완료된 경우 검색을 통해 `Windwos Server Update Services`를 확인하고 실행합니다.
 
-![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/7.png){: width="70%" height="70%"}{: .align-center}
+![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/7.png){: width="60%" height="60%"}{: .align-center}
 - 추가적인 사후 구성 및 설치가 진행되는데 이전 저장 위치와 동일한지 확인합니다.
 - 만약 이전 설정과 문제가 없는 경우 `실행`을 클릭하여 사후 설치 작업을 진행합니다.
 
-![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/8.png){: width="70%" height="70%"}{: .align-center}
+![image](https://blog.false.kr/assets/image/Post/Windows/Windows-Server-Update-Services-Set-up/8.png){: width="60%" height="60%"}{: .align-center}
 - 사후 설치 작업이 완료될 시 `닫기`를 클릭하여 다음 창으로 넘어갑니다.
 
 
