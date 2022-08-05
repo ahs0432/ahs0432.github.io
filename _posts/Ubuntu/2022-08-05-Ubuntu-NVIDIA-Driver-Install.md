@@ -24,7 +24,7 @@ last_modified_at: 2022-08-05
 
 ## 진행 배경
 - 2021년 12월 외부 클라우드 교육 이후 GPU 자원에 대한 지원이 예정됐었고  
-KT Cloud를 통해 사용한 **NVIDIA Tesla A100** 자원을 사용하게 되었다<br>  
+KT Cloud를 통해서 **NVIDIA Tesla A100** 자원을 제공받아 사용하게 되었다<br>  
 당시 KT Cloud에서 **NVIDIA Tesla A100** 상품을 공식적으로 제공하지 않았기에  
 서버 내에 `NVIDIA Driver`와 `CUDA`를 사용자가 확인 후 설치를 진행해야 했었다.<br>  
 현재는 이후에 출시된 **NVIDIA Quadro RTX4000** 자원도 별도 OS를 제공하므로,  
