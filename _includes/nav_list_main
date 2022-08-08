@@ -49,6 +49,15 @@
                 {% endif %}
             {% endfor %}
         </ul>
+
+        <span class="nav__sub-title">Database</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "MySQL" %}
+                    <li><a href="/categories/MySQL" class="">MySQL ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
         
         <span class="nav__sub-title">Trends</span>
         <ul>
