@@ -96,7 +96,9 @@ HTTP URI를 통해 자원을 지정하고 Method(`GET`, `POST`, `PUT`, `DELETE`)
 - HTTP에 의존적이기 때문에 다른 Protocol에서의 개발 구현에 어려움이 있다.
 - 보안과 통신 규약 등은 다루지 않기 때문에 개발자가 직접 설계, 구현해야한다.
 
-</br>
+
+<br>
+
 
 # 📖 REST API 란?
 ## 📝 REST API 등장 배경
@@ -161,7 +163,7 @@ GET /members/:id
 ```
 POST /members
 ```
-- `:id` 멤버를 정보를 수정하는 URI
+- `:id` 멤버 정보를 수정하는 URI
 ```
 PUT /members/:id
 ```
@@ -236,6 +238,10 @@ GET /members/:id/books
 |405|Method Not Allowed|Client가 허용되지 않는 HTTP Method로 요청한 상태|
 |||(예를 들어 삭제가 불가한 자원에 DELETE 요청을 한 경우..)|
 |500|Internal Server Error|Server에서 오류가 발생되어 작업을 수행할 수 없는 상태|
+
+
+<br>
+
 
 # 📖 RESTful API란?
 REST API를 제공하는 Web 서비스를 RESTful하다고 표현하고 있기도 하고,  
