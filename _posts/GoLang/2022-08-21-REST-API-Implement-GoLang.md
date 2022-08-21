@@ -25,6 +25,9 @@ last_modified_at: 2022-08-21
 - GoLang 1.18
 - Postman 9.27.2
 
+## 🧲 GitHub Repository
+- [https://github.com/ahs0432/RestAPI-TEST-GoLang](https://github.com/ahs0432/RestAPI-TEST-GoLang)
+
 ## 📁 사용 Directory 구성
 ```bash
 $ mkdir RESTAPI
