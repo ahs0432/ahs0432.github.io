@@ -780,7 +780,7 @@ Postman 개발한 API를 테스트하고 그 결과를 공유, 보관할 수 있
 
 ![image](../../assets/image/Post/GoLang/REST-API-Implement-GoLang/4.png){: width="90%" height="90%"}{: .align-center}
 
-```JSON
+```json
 {
     "nickname": "chan",
     "email": "ahs0432@naver.com"
@@ -788,7 +788,7 @@ Postman 개발한 API를 테스트하고 그 결과를 공유, 보관할 수 있
 ```
 - 내가 추가할 값은 위와 같은 JSON 형태의 값이다.
 
-```JSON
+```json
 {
     "nickname": "chan",
     "email": "ahs0432@naver.com",
