@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Chance"
 description              : "소소한 개발 블로그"
-url                      : "https://ahs0432.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://blog.false.kr" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ahs0432/ahs0432.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
