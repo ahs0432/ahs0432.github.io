@@ -859,7 +859,7 @@ PUT 요청과 동일한 형태로 PATCH 요청으로 자원을 교체하고 어�
 - 필수 필드에 대해서만 교체를 요청했을 때 요청한 값만 변경됐다.
 - PUT과는 다르게 요청한 필드에 대해서만 값이 수정된 것이 확인된다.
 
-### ❌ DELETE 요청 테스트 (DELETE /users/:idx)
+### 🗑️ DELETE 요청 테스트 (DELETE /users/:idx)
 DELETE 요청으로 대상 자원을 지정하고 삭제해보도록 하겠다.
 
 ![image](../../assets/image/Post/GoLang/REST-API-Implement-GoLang/20.png){: width="90%" height="90%"}{: .align-center}
