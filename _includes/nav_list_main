@@ -71,8 +71,8 @@
         <span class="nav__sub-title">Trends</span>
         <ul>
             {% for category in site.categories %}
-                {% if category[0] == "Securitys" %}
-                    <li><a href="/categories/Securitys" class="">Securitys ({{category[1].size}})</a></li>
+                {% if category[0] == "Security" %}
+                    <li><a href="/categories/Security" class="">Security ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
