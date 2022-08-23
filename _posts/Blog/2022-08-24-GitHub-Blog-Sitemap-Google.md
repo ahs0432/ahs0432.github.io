@@ -43,40 +43,7 @@ url : "https://blog.false.kr"
 생성한 파일에는 일반적으로 아래와 같이 내용을 작성하는 것으로 확인된다.  
 (Default 값을 두고 만약 포스트에 해당 값 중 기입된 것이 있다면 반영한다.)
 
-```xml
----
-layout: null
----
-
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    \{% for post in site.posts %\}
-    <url>
-        <loc>\{\{ site.url }}{{ post.url }}</loc>
-        {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-        {% endif %}
-
-        {% if post.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
-        {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-        {% endif %}
-
-        {% if post.sitemap.priority == null %}
-        <priority>0.5</priority>
-        {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-        {% endif %}
-
-    </url>
-    {% endfor %}
-</urlset>
-```
+<script src="https://gist.github.com/ahs0432/a9e2cfc6a91194c2a3277c35726e98e4.js"></script>
 
 여기에 표기된 내용 중 changefreq, priority가 무엇인지에 대한 의문이 들었다.  
 priority는 우선 순위니까 포스팅 우선 순위일거 같은데 changefreq는 뭘까 싶었다.  
@@ -141,37 +108,7 @@ RSS Feed는 RSS 리더를 이용하여 최신 콘텐츠 게시 등의 알람을 
 ### ROOT Path에 feed.xml 파일 추가하기
 크게 사용될 것 같지는 않지만 혹시나 나중에 잘 쓰일 수도 있으니 설정하겠다.
 
-```xml
----
-layout: none
----
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-	<lastBuildDate>{% for post in site.posts limit:1 %}{{ post.date | date_to_rfc822 }}{% endfor %}</lastBuildDate>
-	{% for post in site.posts limit:10 %}
-	<item>
-		<title>{{ post.title | xml_escape }}</title>
-        {% if post.author.name %}
-            <dc:creator>{{ post.author.name | xml_escape }}</dc:creator>
-        {% endif %}
-        {% if post.excerpt %}
-            <description>{{ post.excerpt | xml_escape }}</description>
-        {% else %}
-            <description>{{ post.content | xml_escape }}</description>
-        {% endif %}
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ site.url }}{{ post.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-      </item>
-    {% endfor %}
-  </channel>
-</rss>
-```
+<script src="https://gist.github.com/ahs0432/7af58f56da9da5ed7ef63eceb4ae0c38.js"></script>
 
 적용하고 Build한 뒤 https://[블로그 도메인]/feed.xml에 접속하게 되면  
 사진처럼 블로그 포스팅 내용으로 RSS Feed 값이 만들어진 것이 확인된다.
