@@ -43,7 +43,7 @@ url : "https://blog.false.kr"
 생성한 파일에는 일반적으로 아래와 같이 내용을 작성하는 것으로 확인된다.  
 (Default 값을 두고 만약 포스트에 해당 값 중 기입된 것이 있다면 반영한다.)
 
-```xml
+```html
 ---
 layout: null
 ---
@@ -141,7 +141,7 @@ RSS Feed는 RSS 리더를 이용하여 최신 콘텐츠 게시 등의 알람을 
 ### ROOT Path에 feed.xml 파일 추가하기
 크게 사용될 것 같지는 않지만 혹시나 나중에 잘 쓰일 수도 있으니 설정하겠다.
 
-```xml
+```html
 ---
 layout: none
 ---
