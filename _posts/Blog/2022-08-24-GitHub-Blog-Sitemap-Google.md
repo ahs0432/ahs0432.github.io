@@ -23,11 +23,11 @@ last_modified_at: 2022-08-24
 꽤나 많은 게시물을 작성했는데 구글 애널리틱스에서 접속자가 전혀 늘지 않았다.  
 이유가 뭘까 생각했더니 블로그에 대한 등록 작업을 하지 않았구나 해서 진행했다.
 
-## GitHub 블로그 내 Sitemap 만들기
+## 📕 GitHub 블로그 내 Sitemap 만들기
 Sitemap은 직역하자면 사이트의 지도로 사이트가 어떤 구조로 돼있는지 표현하게 된다.  
 그렇기 때문에 웹 크롤러를 통해 내가 원하는 페이지를 노출시키는 목적으로 만들게 된다.
 
-### _config.yml 파일 내 url 설정 확인하기
+### 📃 _config.yml 파일 내 url 설정 확인하기
 우선 _config.yml 파일에 url 설정 값이 비어있지는 않은지 내 URL이 맞는지 확인해야한다.  
 이는 이후 작성할 sitemap에서 _config.yml에 기재된 url을 호출하기 때문에 꼭 확인해야한다.  
 
@@ -38,7 +38,7 @@ Sitemap은 직역하자면 사이트의 지도로 사이트가 어떤 구조로 
 url : "https://blog.false.kr"
 ```
 
-### ROOT Path에 sitemap.xml 파일 추가하기
+### 📃 ROOT Path에 sitemap.xml 파일 추가하기
 블로그 소스 중 ROOT(최상위) Path에 sitemap.xml 파일을 생성한다.  
 생성한 파일에는 일반적으로 아래와 같이 내용을 작성하는 것으로 확인된다.  
 (Default 값을 두고 만약 포스트에 해당 값 중 기입된 것이 있다면 반영한다.)
@@ -84,11 +84,11 @@ sitemap:
 
 ![image](../../assets/image/Post/Blog/GitHub-Blog-Sitemap-Google/1.png){: width="90%" height="90%"}{: .align-center}
 
-## GitHub 블로그 내 robots.txt 만들기
+## 📗 GitHub 블로그 내 robots.txt 만들기
 robots.txt 파일은 크롤러가 엑세스할 수 있는 파일을 제어할 때 사용한다.  
 여기서 작성 및 구성되는 각 규칙은 대상 경로에 엑세스 허용/차단 역할을 한다.
 
-### ROOT Path에 robots.txt 파일 추가하기
+### 📃 ROOT Path에 robots.txt 파일 추가하기
 마찬가지로 블로그 소스 중 ROOT(최상위) Path에 robots.txt 파일을 생성한다. 
 
 ```
@@ -101,11 +101,11 @@ Sitemap: https://[블로그 도메인]/sitemap.xml
 따로 차단할 것은 없고 사이트맵이 어디인지 알려주기 위해 상위와 같이 설정했다.  
 차단이 필요한 경우 `Disallow: /foo/bar/` 이런 형식으로 내용을 추가하면 된다.
 
-## GitHub 블로그 내 RSS feed 만들기
+## 📘 GitHub 블로그 내 RSS feed 만들기
 RSS Feed도 이용할 수 있도록 feed.xml 파일도 추가해두도록 하겠다.  
 RSS Feed는 RSS 리더를 이용하여 최신 콘텐츠 게시 등의 알람을 받는다.
 
-### ROOT Path에 feed.xml 파일 추가하기
+### 📃 ROOT Path에 feed.xml 파일 추가하기
 크게 사용될 것 같지는 않지만 혹시나 나중에 잘 쓰일 수도 있으니 설정하겠다.
 
 <script src="https://gist.github.com/ahs0432/7af58f56da9da5ed7ef63eceb4ae0c38.js"></script>
@@ -115,13 +115,13 @@ RSS Feed는 RSS 리더를 이용하여 최신 콘텐츠 게시 등의 알람을 
 
 ![image](../../assets/image/Post/Blog/GitHub-Blog-Sitemap-Google/2.png){: width="90%" height="90%"}{: .align-center}
 
-## Google Search Console에 사이트 등록하기
+## 🔓 Google Search Console에 사이트 등록하기
 Google은 검색 서비스를 위해서 웹 크롤러를 이용하여 공개된 웹 페이지를 검색하게 된다.  
 검색된 사이트의 콘텐츠를 렌더링하고 색인을 생성하여 최종적으로 사용자에게 제공하게 된다.
 
 자세한 동작 방법은 [Google 검색의 작동 방식](https://www.google.com/intl/ko/search/howsearchworks/)에 기재된 내용을 참고하여 확인할 수 있다.
 
-### Google Search 도메인 등록
+### 🔍 Google Search 도메인 인증 및 사이트맵 등록
 먼저 [Google Search Console](https://search.google.com/search-console)에 접속한 뒤 등록하고자 하는 방법을 선택한다.  
 나는 내 도메인으로 블로그를 운영하기 때문에 DNS 인증으로 진행하게 됐다.  
 
