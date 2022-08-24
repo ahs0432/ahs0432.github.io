@@ -47,12 +47,12 @@ ProtectHome=false
 ```bash
 $ systemctl daemon-reload
 ```
-- systemd에 반영된 service 설정 파일을 동기화합니다.
+- systemd에 반영된 service 설정 파일을 동기화한다.
 
 ```
 $ systemctl restart mariadb
 ```
-- MariaDB를 재시작하면 정상적으로 동작되는 것이 확인됩니다.
+- MariaDB를 재시작하면 정상적으로 동작되는 것이 확인된다.
 
 ---
 
