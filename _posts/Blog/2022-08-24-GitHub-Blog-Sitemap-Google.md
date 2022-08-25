@@ -1,5 +1,5 @@
 ---
-title:  "[Blog] GitHub Blog Google Sitemap 설정 하기"
+title:  "[Blog] GitHub Blog Google Sitemap 설정 방법"
 
 categories:
   - Blog
