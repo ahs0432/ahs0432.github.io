@@ -1,5 +1,5 @@
 ---
-title:  "[CentOS] JAVA 여러 개 설치 방법" 
+title:  "[CentOS] Java 여러 개 설치 방법" 
 
 categories:
   - CentOS
