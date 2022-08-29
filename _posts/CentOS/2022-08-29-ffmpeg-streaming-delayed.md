@@ -7,8 +7,8 @@ tags:
   - FFmpeg
   - Streaming
   - HLS
+  - MPEG-TS
   - m3u8
-  - ts
 
 toc: true
 toc_sticky: true
