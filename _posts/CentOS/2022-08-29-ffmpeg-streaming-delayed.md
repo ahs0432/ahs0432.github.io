@@ -42,7 +42,7 @@ $ ffmpeg -report -i rtsp://"$CREDENTIAL"@"$CCTVIP"/$PROFILE/media.smp -vcodec co
 
 이 문제를 해결한 방법은 아래와 같이 세 가지 검사를 진행하고 해소하도록 했다.
 
-1. FFmpeg 프로세스가 정상 실행된 상태인지 확인한다.
+1. FFmpeg 프로세스가 정상 실행된 상태인지 확인한다.  
 ```bash
 PCOUNT=`ps -eaf | grep rtsp | grep -v grep | wc -l`
 
@@ -51,7 +51,7 @@ if [ $PCOUNT -ne 1 ]; then
 fi
 # 추가 검사 명령어
 ```
-2. web.m3u8 파일의 생성 여부를 확인한다.
+2. web.m3u8 파일의 생성 여부를 확인한다.  
 ```bash
 PID=`ps -eaf | grep ffmpeg | grep -v grep | awk '{print $2}'`
 
@@ -64,7 +64,7 @@ else
   ## 실행 명령어
 fi
 ```
-3. web.m3u8 파일의 최종 수정 시간을 확인한다.
+3. web.m3u8 파일의 최종 수정 시간을 확인한다.  
 ```bash
 # 30초 지연 확인
 DELAY=30
