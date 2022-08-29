@@ -214,18 +214,18 @@ if [ -f $WEBPATH/web.m3u8 ]; then
     # 대상 프로세스 안전 종료
     kill -15 $PID
     ## 실행 명령어
-  fi
+  else
+    # TARGETDURATION이 1로 기록돼있는지 확인한다.
+    DURATION=`cat $WEBPATH/web.m3u8 | grep "EXT-X-TARGETDURATION:1" | wc -l`
+    # EXTINF 파일에 0.0이 기록된 것이 없는지 확인한다.
+    INFTIME=`cat $WEBPATH/web.m3u8 | grep "EXTINF:0.0" | wc -l`
 
-  # TARGETDURATION이 1로 기록돼있는지 확인한다.
-  DURATION=`cat $WEBPATH/web.m3u8 | grep "EXT-X-TARGETDURATION:1" | wc -l`
-  # EXTINF 파일에 0.0이 기록된 것이 없는지 확인한다.
-  INFTIME=`cat $WEBPATH/web.m3u8 | grep "EXTINF:0.0" | wc -l`
-
-  # TARGETDURATION이 1인 상태인지, EXTINF 파일에 0.0이 기록된게 0개가 아닌지 확인한다.
-  if [ $DURATION -eq 1 ] && [ $INFTIME -ne 0 ]; then
-    # 대상 프로세스 안전 종료
-    kill -15 $PID
-    ## 실행 명령어
+    # TARGETDURATION이 1인 상태인지, EXTINF 파일에 0.0이 기록된게 0개가 아닌지 확인한다.
+    if [ $DURATION -eq 1 ] && [ $INFTIME -ne 0 ]; then
+      # 대상 프로세스 안전 종료
+      kill -15 $PID
+      ## 실행 명령어
+    fi
   fi
 else
   # 대상 프로세스 안전 종료
