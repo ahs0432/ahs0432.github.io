@@ -135,9 +135,9 @@ $ cat web.m3u8
 #EXT-X-TARGETDURATION:3
 #EXT-X-MEDIA-SEQUENCE:35028
 #EXTINF:2.500000,
-webcam35028.ts
+web35028.ts
 #EXTINF:2.499011,
-webcam35029.ts
+web35029.ts
 ```
 
 ```bash
@@ -150,9 +150,9 @@ $ cat web.m3u8
 #EXT-X-TARGETDURATION:1
 #EXT-X-MEDIA-SEQUENCE:36028
 #EXTINF:0.000033,
-webcam36028.ts
+web36028.ts
 #EXTINF:0.000033,
-webcam36029.ts
+web36029.ts
 ```
 
 두 파일에서 차이점은 보면 알 수 있듯이 `EXT-X-TARGETDURATION`과 `EXTINF`에 있다.
