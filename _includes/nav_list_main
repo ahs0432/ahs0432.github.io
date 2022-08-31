@@ -97,6 +97,9 @@
                 {% if category[0] == "Blog" %}
                     <li><a href="/categories/Blog" class="">Blog ({{category[1].size}})</a></li>
                 {% endif %}
+                {% if category[0] == "Blog" %}
+                    <li><a href="/categories/GitHub" class="">GitHub ({{category[1].size}})</a></li>
+                {% endif %}
                 {% if category[0] == "Plan" %}
                     <li><a href="/categories/Plan" class="">Plan ({{category[1].size}})</a></li>
                 {% endif %}
