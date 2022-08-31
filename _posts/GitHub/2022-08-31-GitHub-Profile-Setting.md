@@ -165,7 +165,9 @@ Option은 자신의 입맛에 맞게 변경하고 아래 용도에 맞게 결과
 ```
 
 나는 아래처럼 Profile에 Dark 테마를 적용하여 내 등급을 확인하였다.
-
+```markdown
+![Chance's Stats](https://github-readme-stats.vercel.app/api?username=ahs0432&theme=vision-friendly-dark)
+```
 ![Chance's Stats](https://github-readme-stats.vercel.app/api?username=ahs0432&theme=vision-friendly-dark)
 
 ---
