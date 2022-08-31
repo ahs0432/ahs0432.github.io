@@ -75,7 +75,7 @@ Repositories로 이동 후 우측 상단에 위치한 `New`를 클릭하여 이�
 
 Capsule render를 사용하는 자세한 방법은 kyechan99님의 [GitHub](https://github.com/kyechan99/capsule-render)을 참고하도록 하자.
 
-#### shields.io
+#### 🌞 shields.io
 두 번째 소개할 것은 여러 아이콘을 만들어 사용할 수 있는 [shields.io](https://shields.io/) 이다.  
 내가 사용하는 언어 뿐만 아니라 굉장히 많은 아이콘을 만들어서 사용할 수 있다.
 
@@ -95,7 +95,7 @@ GoLang의 로고와 트레이드 컬러를 이용해 아이콘 제작 시 아래
 
 이에 대한 옵션은 [shields.io](https://shields.io/) 사이트 하단에 위치해있으니 참고하면 된다.
 
-#### Hits
+#### 🏓 Hits
 세 번째 소개할 것은 현재 페이지의 조회수를 확인하는 [Hits](https://hits.seeyoufarm.com/) 기능이다.
 
 사용 방법은 사이트에서 대상 사이트를 Target URL로 설정해주면 된다.  
@@ -111,7 +111,7 @@ Option은 자신의 입맛에 맞게 변경하고 아래 용도에 맞게 결과
 
 이걸 이용하면 조회수를 보이길 원하는 페이지에 적용하여 어디서든 사용 가능하다.
 
-#### Lecoq Metrics
+#### 📚 Lecoq Metrics
 네 번째 소개할 것은 Stats과 얼마나 활동을 했는지 나타내주는 [Lecoq Metrics](https://metrics.lecoq.io/)이다. 
 
 사용 방법은 사이트에서 Create your own metrics에 GitHub username을 입력한다.
@@ -133,7 +133,7 @@ Option은 자신의 입맛에 맞게 변경하고 아래 용도에 맞게 결과
 ![Metrics](https://metrics.lecoq.io/ahs0432?template=terminal&languages=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&languages=false&languages.skipped=ahs0432.github.io&languages.limit=8&languages.threshold=0%25&languages.other=false&languages.colors=github&languages.sections=most-used&languages.indepth=false&languages.analysis.timeout=15&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=31&config.timezone=Asia%2FSeoul&config.padding=0%2C%208)  
 ~~(터미널.. 뭔가 특이하고 개성 있어 보여...)~~
 
-#### Activity Graph
+#### 📈 Activity Graph
 다섯 번째 소개할 것은 활동 그래프를 보여주는 [Activity Graph](https://github.com/ashutosh00710/github-readme-activity-graph)이다.
 
 사용 방법은 아래 URL에 자신의 GitHub username을 적어서 사용할 수 있다.  
@@ -153,7 +153,7 @@ Option은 자신의 입맛에 맞게 변경하고 아래 용도에 맞게 결과
 
 사용하는 자세한 방법은 Ashutosh00710님의 [GitHub](https://github.com/ashutosh00710/github-readme-activity-graph)을 참고하도록 하자.
 
-#### Stats
+#### 🗂 Stats
 마지막은 Commit, Pull Request, Issue 등을 검사하여 등급을 매기는 [Stats](https://github.com/anuraghazra/github-readme-stats)이다.
 
 사용 방법은 아래 URL에 자신의 GitHub username을 적어서 사용할 수 있다.  
