@@ -43,7 +43,10 @@ last_modified_at: 2022-09-07
 (이렇게 되면 iPhone 8과 X 이후 처음으로 다른 디자인 동시 출시가 아닌가?)
 
 ![image](../../assets/image/Post/Think/Wait-for-2022-09-Apple-events/1.jpg "크래킹 페이지 확인"){: width="90%" height="90%"}{: .align-center}  
+<center>
+
 (출처: [MacRumors](https://www.macrumors.com/roundup/iphone-14/))
+</center>
 
 유출된 디자인을 기반으로 생긴 별명으로는 벌써 느낌표, 알약 등의 이름이 있다.   
 또한 일반 라인업은 신규 A16 프로세서가 아닌 A15을 사용한다는 얘기도 있다.
