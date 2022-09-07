@@ -23,14 +23,17 @@
                 {% if category[0] == "Cpp" %}
                     <li><a href="/categories/Cpp" class="">C++ ({{category[1].size}})</a></li>
                 {% endif %}
-                {% if category[0] == "JAVA" %}
-                    <li><a href="/categories/JAVA" class="">JAVA ({{category[1].size}})</a></li>
+                {% if category[0] == "GoLang" %}
+                    <li><a href="/categories/GoLang" class="">GoLang ({{category[1].size}})</a></li>
+                {% endif %}
+                {% if category[0] == "PHP" %}
+                    <li><a href="/categories/PHP" class="">PHP ({{category[1].size}})</a></li>
                 {% endif %}
                 {% if category[0] == "Python" %}
                     <li><a href="/categories/Python" class="">Python ({{category[1].size}})</a></li>
                 {% endif %}
-                {% if category[0] == "GoLang" %}
-                    <li><a href="/categories/GoLang" class="">GoLang ({{category[1].size}})</a></li>
+                {% if category[0] == "JAVA" %}
+                    <li><a href="/categories/JAVA" class="">JAVA ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
