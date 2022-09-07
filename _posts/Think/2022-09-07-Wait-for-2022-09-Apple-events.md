@@ -46,6 +46,7 @@ last_modified_at: 2022-09-07
 <center>
 
 (출처: [MacRumors](https://www.macrumors.com/roundup/iphone-14/))
+
 </center>
 
 유출된 디자인을 기반으로 생긴 별명으로는 벌써 느낌표, 알약 등의 이름이 있다.   
