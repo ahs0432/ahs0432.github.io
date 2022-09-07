@@ -106,8 +106,8 @@
                 {% if category[0] == "Plan" %}
                     <li><a href="/categories/Plan" class="">Plan ({{category[1].size}})</a></li>
                 {% endif %}
-                {% if category[0] == "Record" %}
-                    <li><a href="/categories/Record" class="">Record ({{category[1].size}})</a></li>
+                {% if category[0] == "Think" %}
+                    <li><a href="/categories/Think" class="">Think ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
