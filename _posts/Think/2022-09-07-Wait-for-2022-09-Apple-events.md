@@ -42,7 +42,7 @@ last_modified_at: 2022-09-07
 프로 라인업은 완전히 새로운 디자인을 적용하여 화면의 배젤을 줄인다는 얘기가 많다.  
 (이렇게 되면 iPhone 8과 X 이후 처음으로 다른 디자인 동시 출시가 아닌가?)
 
-![image](../../assets/image/Post/Think/Wait-for-2022-09-Apple-events/1.jpg "크래킹 페이지 확인"){: width="90%" height="90%"}{: .align-center}  
+![image](../../assets/image/Post/Think/Wait-for-2022-09-Apple-events/1.jpg){: width="90%" height="90%"}{: .align-center}  
 <p style='text-align:center'>
   (출처: <a href="https://www.macrumors.com/roundup/iphone-14/">MacRumors</a>)
 </p>
