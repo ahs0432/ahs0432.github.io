@@ -9,7 +9,7 @@ tags:
   - show
 
 toc: true
-toc_sticky: trueMySQL-Check-Procedure
+toc_sticky: true
 
 date: 2022-09-28
 last_modified_at: 2022-09-28
