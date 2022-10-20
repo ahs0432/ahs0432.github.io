@@ -61,7 +61,7 @@ OpenJDK 64-Bit Server VM (build 25.302-b08, mixed mode)
 - 설치된 OpenJDK의 버전을 확인해보면 OpenJDK 1.8 버전이 기본 버전으로 인식되고 있다.
 
 ```bash
-alternatives --config java
+$ alternatives --config java
 
 There are 2 programs which provide 'java'.
 
@@ -78,7 +78,7 @@ Enter to keep the current selection[+], or type selection number: 2
 (시스템에 즉시 반영되오니 변경 전 동작되는 버전 등에 문제가 없는지 꼭 확인하자.)
 
 ```bash
-java -version
+$ java -version
 openjdk version "11.0.12" 2021-07-20 LTS
 OpenJDK Runtime Environment 18.9 (build 11.0.12+7-LTS)
 OpenJDK 64-Bit Server VM 18.9 (build 11.0.12+7-LTS, mixed mode, sharing)
