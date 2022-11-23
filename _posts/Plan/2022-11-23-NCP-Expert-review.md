@@ -52,37 +52,23 @@ Professional 자격은 Expert 자격엔 없는 Troubleshooting 과목이 있기 
 네이버 클라우드는 어떤 서비스를 하고 있는가와 상품 소개가 중점으로 나온다.
 - 1과목으로 구성돼있고 매뉴얼 상 표기된 내용이나 설명을 읽으면 손쉽게 풀 수 있다.  
 총 60문제로 구성돼있고 시험 시간은 1시간으로 구성되어 꽤 널널하게 풀 수 있다.  
-  - 100
-    - Overview
-    - Compute/Storage/Database
-    - Network/Media
+  - 100 - Overview, Compute/Storage/Database, Network/Media
 - 자격증엔 딱히 관심이 없었는데 2022년 2월 회사 권유로 자격증을 취득하게 됐다.
 2. NAVER CLOUD PLATFORM Certified Professional
 - 네이버 클라우드를 어느정도 경험한 실무자를 위한 프로페셔널 중간 등급 자격증이다.
 - 3과목으로 구성돼있고 실무를 해본 사람이라면 1, 2과목은 쉽게 넘길 수 있다고 한다.
-  - 201
-    - Overview
-    - Compute/Storage
-  - 202
-    - Network/Media
-    - Database/Management/Analytics
-  - 207
-    - Troubleshooting
+  - 201 - Overview, Compute/Storage
+  - 202 - Network/Media, Database/Management/Analytics
+  - 207 - Troubleshooting
 - 나는 아직 해당 자격을 취득하지 않았기 때문에 상세한 설명이나 평은 어려울거 같다.  
 취득한 분들의 얘기론 NCA보단 난이도가 높으며 Troubleshooting이 어렵다고한다.
 3. NAVER CLOUD PLATFORM Certified Expert
 - 네이버 클라우드의 자격으로는 최종 종착점인 Expert 그러니까 최고 등급 자격증이다.
 - 4과목으로 구성돼있고 기본적인 실무 영역을 넘어 전반적인 서비스를 파악하고 있어야 한다.
-  - 301
-    - Compute/Storage
-  - 302
-    - Network/Media
-  - 303
-    - Database/Management/Analytics
-    - Security
-  - 305
-    - Application/AI
-    - Architect/Advanced(Hybrid/Global)
+  - 301 - Compute/Storage
+  - 302 - Network/Media
+  - 303 - Database/Management/Analytics, Security
+  - 305 - Application/AI, Architect/Advanced(Hybrid/Global)
 - 2022년 11월 초 자격을 취득하게 됐는데 1, 2과목은 실무 내용과 밀접한 관계가 있어서  
 컨테이너(쿠버네티스)를 중점적으로 공부했더니 어렵지 않게 합격할 수 있었던 것 같다.  
 3, 4과목이 내 실무와 거리가 조금 있어고 상품이 많아서 조금 어려움이 존재했었다.  
