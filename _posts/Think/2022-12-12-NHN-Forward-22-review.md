@@ -1,11 +1,15 @@
 ---
-title:  "[Think] Apple 2022년 9월 이벤트 후기"
+title:  "[Think] NHN Forward 22 참여 후기"
 
 categories:
   - Think
 tags:
-  - Apple
-  - Events
+  - NHN
+  - Forward
+  - Conference
+  - IT
+  - Review
+  - 후기
 
 toc: true
 toc_sticky: true
@@ -14,8 +18,8 @@ date: 2022-12-12
 last_modified_at: 2022-12-12
 ---
 
-## 🥳 NHN Foward 22
-2022년 11월 24일(목) NHN Foward 22 행사가 개최되었다.  
+## 🥳 NHN Forward 22
+2022년 11월 24일(목) NHN Forward 22 행사가 개최되었다.  
 나는 이전에 신청해뒀었는데 참가 확정 메일이 와서 참여하게 됐다.
 
 사실 처음엔 이번 행사가 오프라인으로 개최되는 줄 알고 참여했는데,  
@@ -24,18 +28,18 @@ last_modified_at: 2022-12-12
 19년도 이후 처음으로 오프라인 개최한다고 하여 참여를 결정했다.
 
 ## 😳 입장
-![image](../../assets/image/Post/Think/NHN-Foward-22-review/1.jpeg){: width="80%" height="80%"}{: .align-center}  
+![image](../../assets/image/Post/Think/NHN-Forward-22-review/1.jpeg){: width="80%" height="80%"}{: .align-center}  
 
 사진에서 볼 수 있듯이 9시 입장보다 일찍 왔는데 이렇게나 많은 사람이 있었다.  
 점심 식사는 1,200명까지 제공한다 했으니 그거보다 많은 인원이 왔을 것 같다.
 
-![image](../../assets/image/Post/Think/NHN-Foward-22-review/2.jpeg){: width="80%" height="80%"}{: .align-center}  
+![image](../../assets/image/Post/Think/NHN-Forward-22-review/2.jpeg){: width="80%" height="80%"}{: .align-center}  
 
 참가자 인증 후 들어와봤더니 식권이 포함된 부스 소개 등이 작성된 쿠폰을 받았다.  
 그리고 안쪽에 들어가서 NHN에서 준비한 슬리퍼, 스티커가 포함된 기념품을 받았다.
 
 ## 🗂 부스 체험
-![image](../../assets/image/Post/Think/NHN-Foward-22-review/3.jpeg){: width="80%" height="80%"}{: .align-center}  
+![image](../../assets/image/Post/Think/NHN-Forward-22-review/3.jpeg){: width="80%" height="80%"}{: .align-center}  
 
 초반 입장을 끝내고 뒤를 봤더니 엄청난 인파가 하나의 줄에 모여있는게 보였다.  
 GitHub 부스 라인이었는데 개발자가 얼마나 GitHub에 열광하는지 알 수 있었다.  
@@ -71,7 +75,7 @@ OSINT에 대한 내용은 나중에 내가 조금 더 내용을 정리하여 포
 ## 점심 식사
 위 주제에 대한 세션이 종료된 이후 바로 점심 식사 시간이 되어 점심을 먹을 수 있었다.
 
-![image](../../assets/image/Post/Think/NHN-Foward-22-review/4.jpeg){: width="80%" height="80%"}{: .align-center}  
+![image](../../assets/image/Post/Think/NHN-Forward-22-review/4.jpeg){: width="80%" height="80%"}{: .align-center}  
 
 식사 제공 인원인 1,200명 안에 들었기 때문에 사진과 같이 맛있는 식사가 제공됐다..!
 
@@ -203,13 +207,13 @@ GoLang에서 이를 사용하기 위해 SWIG를 이용하여 코드 연결을 �
 
 ## 다녀온 후
 먼저 멋있는 호텔에서 진행했고 다양한 행사가 존재했던 것은 칭찬할만 하다.
-![image](../../assets/image/Post/Think/NHN-Foward-22-review/5.jpeg){: width="80%" height="80%"}{: .align-center} 
+![image](../../assets/image/Post/Think/NHN-Forward-22-review/5.jpeg){: width="80%" height="80%"}{: .align-center} 
 - 2023년은 다 내꺼라고 GitHub이 그랬다.. 그리고 나는 RedHat을 먹었다.
 
-![image](../../assets/image/Post/Think/NHN-Foward-22-review/6.jpeg){: width="80%" height="80%"}{: .align-center} 
+![image](../../assets/image/Post/Think/NHN-Forward-22-review/6.jpeg){: width="80%" height="80%"}{: .align-center} 
 - 호텔 1층에 있는 대형 트리 샹들리에 솔직히 멋있었다.
 
-![image](../../assets/image/Post/Think/NHN-Foward-22-review/9.jpeg){: width="80%" height="80%"}{: .align-center} 
+![image](../../assets/image/Post/Think/NHN-Forward-22-review/9.jpeg){: width="80%" height="80%"}{: .align-center} 
 - 많은 사은품....!!
 
 단지 아쉬운 점이라면 확실히 몰릴만한 세션에 대한 조치가 조금 아쉬웠다.  
@@ -217,7 +221,7 @@ GoLang에서 이를 사용하기 위해 SWIG를 이용하여 코드 연결을 �
 
 ---
 
-NHN Foward 22에 참여한 후기에 대해서 작성해봤습니다.
+NHN Forward 22에 참여한 후기에 대해서 작성해봤습니다.
 
 오랜 시간이 지나서 조금 생각이 안나는 부분이 많았기도 했고,  
 행사 과정에서 불편했던 점도 여러가지 존재했다고 생각이 들지만,  
