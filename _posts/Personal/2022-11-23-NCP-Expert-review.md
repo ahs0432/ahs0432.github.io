@@ -35,7 +35,7 @@ UI나 전체적인 서비스가 개발, 운영의 경우 AWS의 방향성을 모
 나는 2019년도부터 네이버 클라우드를 다뤘는데 올해부터 여러 자격증을 취득하게 됐다.
 
 ## 기술자격증 현황
-![image](../../assets/image/Post/Plan/NCP-Expert-review/20221123_%EC%9E%90%EA%B2%A9%EC%A6%9D%20%EC%B7%A8%EB%93%9D%20%EC%83%81%ED%99%A9.png){: width="90%" height="90%"}{: .align-center}  
+![image](../../assets/image/Post/Personal/NCP-Expert-review/20221123_%EC%9E%90%EA%B2%A9%EC%A6%9D%20%EC%B7%A8%EB%93%9D%20%EC%83%81%ED%99%A9.png){: width="90%" height="90%"}{: .align-center}  
 
 내가 보유하고 있는 자격은 Associate와 Expert 이렇게 두 종류를 보유하고 있다.  
 사진 상 Professional 자격이 비어있는데 회사 권유로 Expert를 먼저 취득하게 됐다.
@@ -76,7 +76,7 @@ Professional 자격은 Expert 자격엔 없는 Troubleshooting 과목이 있기 
 솔직한 NCE 자격에 대한 평은 **문제가 어렵진 않지만 출제 범위가 넓다**라는 것이다.
 
 ## 후기
-![image](../../assets/image/Post/Plan/NCP-Expert-review/NCE%20%EC%9E%90%EA%B2%A9%EC%A6%9D.png){: width="90%" height="90%"}{: .align-center}  
+![image](../../assets/image/Post/Personal/NCP-Expert-review/NCE%20%EC%9E%90%EA%B2%A9%EC%A6%9D.png){: width="90%" height="90%"}{: .align-center}  
 
 솔직히 자격증 도전은 꽤나 오랜만에 진행하는 것이었는데 새로운 기분이었다.  
 올해 7월에 나온 나름 따끈따끈한 자격증을 취득했다는 것에 성취감이 느껴진다.

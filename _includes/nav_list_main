@@ -103,8 +103,8 @@
                 {% if category[0] == "GitHub" %}
                     <li><a href="/categories/GitHub" class="">GitHub ({{category[1].size}})</a></li>
                 {% endif %}
-                {% if category[0] == "Plan" %}
-                    <li><a href="/categories/Plan" class="">Plan ({{category[1].size}})</a></li>
+                {% if category[0] == "Personal" %}
+                    <li><a href="/categories/Personal" class="">Personal ({{category[1].size}})</a></li>
                 {% endif %}
                 {% if category[0] == "Think" %}
                     <li><a href="/categories/Think" class="">Think ({{category[1].size}})</a></li>
