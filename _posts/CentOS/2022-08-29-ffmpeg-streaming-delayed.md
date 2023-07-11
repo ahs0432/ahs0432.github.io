@@ -18,7 +18,7 @@ last_modified_at: 2022-08-29
 ---
 
 ## 🎇 테스트 환경
-- CentOS Linux release 7.5.1804 (Core)
+- CentOS Linux release 7.6.1804 (Core)
 - FFmpeg 3.2.7
 
 ## 🤔 발생 상황
