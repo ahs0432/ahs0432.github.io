@@ -71,6 +71,8 @@ export default hopeTheme({
     comment: {
       provider: "Giscus",
       repo: "ahs0432/ahs0432.github.io",
+      strict: true,
+      reactionsEnabled: true,
     },
 
     // Install @waline/client before enabling it
