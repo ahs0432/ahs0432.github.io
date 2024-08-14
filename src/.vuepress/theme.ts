@@ -23,7 +23,7 @@ export default hopeTheme({
       GitHub: "https://github.com/ahs0432",
       Linkedin: "https://www.linkedin.com/in/chance0432/",
       Naver: {
-        icon: "http://localhost:8080/assets/icon/naver_blog.svg",
+        icon: "https://blog.false.kr/assets/icon/naver_blog.svg",
         link: "https://blog.naver.com/chance0432",
       },
       Email: "mailto:chance0432@naver.com",
