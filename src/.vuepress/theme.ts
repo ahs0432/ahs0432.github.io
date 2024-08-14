@@ -71,7 +71,11 @@ export default hopeTheme({
     comment: {
       provider: "Giscus",
       repo: "ahs0432/ahs0432.github.io",
-      strict: true,
+      repoId: "R_kgDOHhnArg",
+      category: "Announcements",
+      categoryId: "DIC_kwDOHhnArs4ChoQ-",
+      mapping: "pathname",
+      strict: false,
       reactionsEnabled: true,
     },
 
