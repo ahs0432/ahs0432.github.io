@@ -26,6 +26,10 @@ jobs:
           node-version: 20
           cache: npm
 
+      - name: Install Deps lagacy
+        run: |
+          npm install @vuepress/plugin-feed@next --legacy-peer-deps
+
       - name: Install Deps
         run: |
           corepack enable
