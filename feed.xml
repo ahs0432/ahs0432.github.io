@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Thu, 15 Aug 2024 17:37:48 GMT</pubDate>
-    <lastBuildDate>Thu, 15 Aug 2024 17:37:48 GMT</lastBuildDate>
+    <pubDate>Thu, 15 Aug 2024 17:41:04 GMT</pubDate>
+    <lastBuildDate>Thu, 15 Aug 2024 17:41:04 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Blog</category>
@@ -90,7 +90,7 @@
 <p>그리고 <code>Build and deployment</code> 내에 서비스되는 <code>Branch</code>를 변경하여 최종 반영했다.</p>
 <h2>🎉 결정과 이관</h2>
 <p>결국 이 포스팅을 하고 있다는 것은 내가 이관을 결심하여 이관까지 끝냈기 때문일 것이다.</p>
-<p>이관을 결정하는 데에는 Vuepress가 제공하고 있는 장점과 어차피 이관을 할 것 같아서였다.<br>
+<p>이관을 결정하는 데에는 <code>Vuepress</code>가 제공하고 있는 장점과 어차피 이관을 할 것 같아서였다.<br>
 내 성격 상 현재의 것보다 훨 낫다고 생각하면 덮을 수 있는 리스크라면 감내하여 하는 편이다.</p>
 <p>또한 지금 이 포스팅을 작성하고 있는 시점과 이관 시점은 나의 휴가 기간이기도 하다.<br>
 (휴가 기간에 블로그 이관 했다고 하면 이상하게 보는 사람들도 있을 것 같긴 하다..)</p>

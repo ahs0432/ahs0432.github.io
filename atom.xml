@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-08-15T17:37:48.865Z</updated>
+  <updated>2024-08-15T17:41:04.951Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -23,7 +23,7 @@
     <title type="text">[Blog] GitHub Jekyll 기반에서 Vuepress 기반으로 이관 후기</title>
     <id>https://blog.false.kr/posts/Personal/Blog/Migrate-Jekyll-to-Vuepress.html</id>
     <link href="https://blog.false.kr/posts/Personal/Blog/Migrate-Jekyll-to-Vuepress.html"/>
-    <updated>2024-08-15T17:37:06.000Z</updated>
+    <updated>2024-08-15T17:40:21.000Z</updated>
     <summary type="html"><![CDATA[<h2>😀 GitHub.io</h2>
 <p>현재 블로그는 <code>GitHub</code>에서 제공하고 있는 정적 웹 호스팅을 통해 제공되고 있다.<br>
 여기서 제공되는 옵션이 많지 않고 거의 Native로 <code>Jekyll</code> 정적 페이지를 제공한다.</p>
@@ -90,7 +90,7 @@
 <p>그리고 <code>Build and deployment</code> 내에 서비스되는 <code>Branch</code>를 변경하여 최종 반영했다.</p>
 <h2>🎉 결정과 이관</h2>
 <p>결국 이 포스팅을 하고 있다는 것은 내가 이관을 결심하여 이관까지 끝냈기 때문일 것이다.</p>
-<p>이관을 결정하는 데에는 Vuepress가 제공하고 있는 장점과 어차피 이관을 할 것 같아서였다.<br>
+<p>이관을 결정하는 데에는 <code>Vuepress</code>가 제공하고 있는 장점과 어차피 이관을 할 것 같아서였다.<br>
 내 성격 상 현재의 것보다 훨 낫다고 생각하면 덮을 수 있는 리스크라면 감내하여 하는 편이다.</p>
 <p>또한 지금 이 포스팅을 작성하고 있는 시점과 이관 시점은 나의 휴가 기간이기도 하다.<br>
 (휴가 기간에 블로그 이관 했다고 하면 이상하게 보는 사람들도 있을 것 같긴 하다..)</p>
