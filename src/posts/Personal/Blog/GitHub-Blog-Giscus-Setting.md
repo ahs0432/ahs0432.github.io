@@ -43,11 +43,11 @@ lastUpdated: true
 자신이 설정한 `Repository`의 `Settings`로 이동하여 `Features`로 이동한 뒤  
 `Discussions`의 체크박스가 비활성 상태라면 활성화하여 기능을 켜주도록 합니다.
 
-![](/assets/image/Post/Blog/GitHub-Blog-Giscus-Setting/1.png =90%x90%)
+![](/assets/image/Post/Personal/Blog/GitHub-Blog-Giscus-Setting/1.png =90%x90%)
 
 정상적으로 활성화 됐다면 아래 사진과 같이 `Discussions` 메뉴가 접근 가능한 상태가 됩니다.
 
-![](/assets/image/Post/Blog/GitHub-Blog-Giscus-Setting/2.png =90%x90%)
+![](/assets/image/Post/Personal/Blog/GitHub-Blog-Giscus-Setting/2.png =90%x90%)
 
 ### Giscus 설정 추가
 [Giscus 가이드](https://giscus.app/ko) 페이지에서 제공되는 설정 부분을 이용하여 나에게 맞는 설정을 만들도록 합니다.
@@ -82,7 +82,7 @@ lastUpdated: true
 
 아래와 같이 정상적으로 각 포스팅 하단에 댓글이 적용된 것을 확인할 수 있었다.
 
-![](/assets/image/Post/Blog/GitHub-Blog-Giscus-Setting/3.png =90%x90%)
+![](/assets/image/Post/Personal/Blog/GitHub-Blog-Giscus-Setting/3.png =90%x90%)
 
 
 ## utterances에서 댓글 이관
