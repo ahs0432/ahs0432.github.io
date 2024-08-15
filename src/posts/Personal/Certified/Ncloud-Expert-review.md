@@ -8,7 +8,7 @@ tags:
   - 네이버
   - NAVER CLOUD PLATFORM
   - 네이버 클라우드 플랫폼
-  - NCP
+  - Ncloud
   - Expert
   - NCE
   - 자격증
