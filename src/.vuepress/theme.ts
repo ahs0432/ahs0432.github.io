@@ -75,7 +75,7 @@ export default hopeTheme({
       category: "Announcements",
       categoryId: "DIC_kwDOHhnArs4ChoQ-",
       mapping: "pathname",
-      strict: false,
+      strict: true,
       reactionsEnabled: true,
     },
 
