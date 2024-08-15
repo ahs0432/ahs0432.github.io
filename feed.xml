@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Thu, 15 Aug 2024 18:26:23 GMT</pubDate>
-    <lastBuildDate>Thu, 15 Aug 2024 18:26:23 GMT</lastBuildDate>
+    <pubDate>Thu, 15 Aug 2024 18:31:30 GMT</pubDate>
+    <lastBuildDate>Thu, 15 Aug 2024 18:31:30 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Blog</category>
@@ -161,7 +161,8 @@
 그렇다보니 그 중 가장 나은 <code>Giscus</code> 시스템으로 이관을 결심했고 댓글을 옮기게 됐다.</p>
 <p>기존의 댓글은 <code>Issue</code> 형태로 보관됐지만 이관하게 되면 <code>Discussions</code>로 관리한다.<br>
 <code>Issue</code>에 보관된 댓글을 별도로 이관하는 작업을 추가로 해야한다는 번거로움이 생긴다.</p>
-<p>그래도 이관이 가능하다는 점에서 나는 별도로 이관하는 절차를 진행해둔 상태이다.</p>
+<p>그래도 이관이 가능하다는 점에서 나는 별도로 이관하는 절차를 진행해둔 상태이다.<br>
+댓글 시스템 설정과 이관 과정은 <a href="/posts/Personal/Blog/GitHub-Blog-Giscus-Setting.html" target="_blank">별도로 포스팅</a>을 남겨두었으니 필요하다면 참고바란다.</p>
 <h3>마크다운 언어의 차이</h3>
 <p>기본적으로 제공되는 형식의 차이는 거의 없지만 이미지 반영 부분의 차이가 있었다.</p>
 <div class="language-markdown line-numbers-mode" data-highlighter="shiki" data-ext="markdown" data-title="markdown" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">### 기존 </span></span>
@@ -174,6 +175,7 @@
 <p>마지막으로 배포 방식에서 <code>Jekyll</code>하고 가장 큰 차이를 보이고 단점이 있었다.</p>
 <p>우선 <code>Jekyll</code>의 경우 <code>GitHub</code> 자체에서 제공하기에 자체적으로 정적 페이지가 제작된다.<br>
 <code>Vuepress</code>는 별도의 정적 페이지 변환 작업을 <code>GitHub Action</code>을 통해 만들어줘야한다.</p>
+<p>또한 <code>GitHub Action</code>을 사용해야하니 <code>GitHub Token</code>도 필요로 되는 사항이 존재한다.</p>
 <p>물론 기본적으로 <code>Vuepress</code>와 <code>Theme</code>에서 제공하고 있지만 어느정도 이해는 필요한 부분이다.</p>
 <p>나의 경우 기존 <code>main</code> Branch를 기반으로 서비스를 하고 있었는데 이에 변경이 필요하게 됐다.<br>
 이번 구조는 <code>main</code> Branch 내 <code>Source</code>로 정적 페이지를 <code>gh-pages</code>에 생성하게 했다.</p>
