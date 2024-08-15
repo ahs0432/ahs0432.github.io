@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Thu, 15 Aug 2024 18:40:40 GMT</pubDate>
-    <lastBuildDate>Thu, 15 Aug 2024 18:40:40 GMT</lastBuildDate>
+    <pubDate>Thu, 15 Aug 2024 18:52:11 GMT</pubDate>
+    <lastBuildDate>Thu, 15 Aug 2024 18:52:11 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Blog</category>
@@ -588,8 +588,8 @@ GoLang에서 이를 사용하기 위해 SWIG를 이용하여 코드 연결을 �
     </item>
     <item>
       <title>[Personal] NAVER CLOUD PLATFORM Certified Expert 취득 후기</title>
-      <link>https://blog.false.kr/posts/Personal/Certified/NCP-Expert-review.html</link>
-      <guid>https://blog.false.kr/posts/Personal/Certified/NCP-Expert-review.html</guid>
+      <link>https://blog.false.kr/posts/Personal/Certified/Ncloud-Expert-review.html</link>
+      <guid>https://blog.false.kr/posts/Personal/Certified/Ncloud-Expert-review.html</guid>
       <source url="https://blog.false.kr/feed.xml">[Personal] NAVER CLOUD PLATFORM Certified Expert 취득 후기</source>
       <description>NAVER CLOUD PLATFORM? 나는 다양한 클라우드 플랫폼에 대해 매니지드 서비스를 제공하는 업체에서 근무 중이다. 그렇다보니 가장 유명한 AWS를 포함하여 다양한 플랫폼을 다루게 되는데 그 중 하나이다. 네이버 클라우드 플랫폼(네이버 클라우드)은 이름에서 볼 수 있듯이 네이버에서 만들었다. UI나 전체적인...</description>
       <category>Personal</category>

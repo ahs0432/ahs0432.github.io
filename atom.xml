@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-08-15T18:40:40.156Z</updated>
+  <updated>2024-08-15T18:52:11.793Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -607,9 +607,9 @@ GoLang에서 이를 사용하기 위해 SWIG를 이용하여 코드 연결을 �
   </entry>
   <entry>
     <title type="text">[Personal] NAVER CLOUD PLATFORM Certified Expert 취득 후기</title>
-    <id>https://blog.false.kr/posts/Personal/Certified/NCP-Expert-review.html</id>
-    <link href="https://blog.false.kr/posts/Personal/Certified/NCP-Expert-review.html"/>
-    <updated>2024-08-14T14:25:16.000Z</updated>
+    <id>https://blog.false.kr/posts/Personal/Certified/Ncloud-Expert-review.html</id>
+    <link href="https://blog.false.kr/posts/Personal/Certified/Ncloud-Expert-review.html"/>
+    <updated>2024-08-15T18:51:29.000Z</updated>
     <summary type="html"><![CDATA[<h2>NAVER CLOUD PLATFORM?</h2>
 <p>나는 다양한 클라우드 플랫폼에 대해 매니지드 서비스를 제공하는 업체에서 근무 중이다.<br>
 그렇다보니 가장 유명한 AWS를 포함하여 다양한 플랫폼을 다루게 되는데 그 중 하나이다.</p>
