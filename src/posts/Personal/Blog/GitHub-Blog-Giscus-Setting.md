@@ -1,5 +1,5 @@
 ---
-title: "[Blog] GitHub Blog Google Sitemap 설정 방법"
+title: "[Blog] GitHub Blog Giscus 댓글 설정 방법"
 
 categories:
   - Blog
