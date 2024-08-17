@@ -76,9 +76,11 @@ lastUpdated: true
 자격 응시 및 취득을 위한 페이지도 제공하고 있고 [여기](https://learn.microsoft.com/ko-kr/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification)가 해당 페이지이니 참고하도록 하자.
 
 `시험 준비` 과정에서 `과정 학습`을 통해 자격 관련 문서를 통해 관련 내용 습득이 가능하다.  
+
 ![](/assets/image/Post/Personal/Certified/Azure-Fundamentals-certified/1.png "과정 학습" =90%x90%)
 
 다음은 `시험 실습`으로 제공되고 있는 `지식 평가` 시스템을 이용해서 예제 문제를 풀어볼 수 있다.   
+
 ![](/assets/image/Post/Personal/Certified/Azure-Fundamentals-certified/2.png "시험 실습" =90%x90%)
 
 `지식 평가` 일부 문제는 실제로 시험에서 출제되기도 하니 여러 번 풀어보는 것이 중요하다.
