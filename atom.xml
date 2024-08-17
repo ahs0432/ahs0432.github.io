@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-08-16T19:20:21.838Z</updated>
+  <updated>2024-08-17T06:35:09.775Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -23,7 +23,7 @@
     <title type="text">[Personal] Microsoft Azure Fundamentals 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Azure-Fundamentals-certified.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Azure-Fundamentals-certified.html"/>
-    <updated>2024-08-16T19:19:42.000Z</updated>
+    <updated>2024-08-17T06:34:28.000Z</updated>
     <summary type="html"><![CDATA[<h2>취득 배경</h2>
 <p>2024년 7월 재직 중인 회사에서 <code>Microsoft Azure</code> 서비스를 위한 준비를 위해<br>
 사내 인원에 자격증 취득을 권장하는 Promotion을 진행하게 되어 취득을 준비하게 됐다.</p>
@@ -120,6 +120,73 @@
 </ul>
 </li>
 </ul>
+<h2>시험 방식</h2>
+<p>시험 방식은 크게 온라인과 오프라인으로 나뉘어 진행되는 구조를 가지고 있다.</p>
+<p>많은 외국계 시험에서 이용하고 있는 <code>Pearson Vue</code>를 통해 시험을 진행하게 된다.<br>
+필자는 온라인을 통해 집에서 편안하게 시험을 응시했고 이에 대한 후기를 작성하려고 한다.</p>
+<h3>온라인</h3>
+<p>온라인은 경험 상으로 아래와 같은 절차로 이뤄진다고 볼 수 있다.</p>
+<ol>
+<li>시험 응시 언어 선택</li>
+<li>감독관의 언어 선택 (영어/일본어)</li>
+<li>시험 일정 예약</li>
+<li>시험 응시를 위한 환경 테스트</li>
+<li>신분 확인 및 시험 환경 평가</li>
+</ol>
+<ul>
+<li>신분증 사진과 시험 환경 사진을 찍어 제출한다.</li>
+<li>제출 이후 대기할 경우 감독관이 내용을 확인하고 입실한다.</li>
+</ul>
+<ol start="5">
+<li>시험 응시 및 결과 확인</li>
+</ol>
+<h4>장점</h4>
+<ol>
+<li>내가 마련해둔 환경이 있다면 편안한 환경에서 시험을 볼 수 있다는 것이다.</li>
+<li>응시할 수 있는 시험이 15분 단위로 존재하기 떄문에 시간의 구애를 받지 않는다.</li>
+</ol>
+<ul>
+<li>0/15/30/45 이렇게 15분 단위로 시험이 있고 취소하는 인원도 있기에 나름 널널하다.</li>
+</ul>
+<h4>단점</h4>
+<ol>
+<li>주어진 환경이 없다면 아무래도 환경을 마련하는데에 스트레스를 받을 것 같다.</li>
+</ol>
+<ul>
+<li>또한 환경 검사를 하는 감독관마다 성향이 달라 검사하는 범위의 차이가 있다.</li>
+</ul>
+<ol start="2">
+<li>감독관의 언어가 한국어를 지원하지 않기 때문에 이로 인한 곤욕을 치룰 수 있다.</li>
+</ol>
+<ul>
+<li>감독관의 마이크가 계속 깨져들려서 <code>Chat plz</code>라고 이야기 해서 채팅으로도 받아봤다.</li>
+</ul>
+<ol start="3">
+<li>여권 등 국제적으로 인증이 가능한 신분증이 없는 경우 시험 응시에 어려움이 있다.</li>
+</ol>
+<ul>
+<li>운전면허증도 가능하다고 하는데 영문 이름이 없는 경우 어려움이 있을 수 있다.</li>
+</ul>
+<h3>오프라인</h3>
+<p>오프라인은 응시해본 적이 없기에 정확히 알 수 없지만 방식은 대강 아래와 같이 이뤄진다.</p>
+<ol>
+<li>원하는 일자에 시험 일정을 예약한다.</li>
+</ol>
+<ul>
+<li>시험 장소에 따라 제공되는 일정이 다를 수 있기에 주의해서 신청한다.</li>
+</ul>
+<ol start="2">
+<li>국가에서 인정하는 신분증을 가지고 시험을 응시한다.</li>
+</ol>
+<ul>
+<li>온라인과 다르게 주민등록증으로도 인증이 가능하니 참고하도록 하자.</li>
+</ul>
+<h4>장점</h4>
+<ol>
+<li>별도의 장소를 마련할 필요없이 이미 구축된 장소에서 시험을 볼 수 있다.</li>
+<li>신분증을 준비하는 것이 국제 표준을 지켜야하는데 이는 그럴 필요가 없다.</li>
+<li>한국인이 감독관으로 있기에 더 편한 환경(?)에서 시험을 응시할 수 있다.</li>
+</ol>
 <h2>결과</h2>
 <p>시험 결과는 무려 <code>952점</code>이라는 거의 만점에 가까운 높은 점수로 합격을 하게 됐다.<br>
 준비를 열심히 하지는 않았지만 기초적인 부분이라 지식적인 부담이 적었던 시험이었다.</p>
