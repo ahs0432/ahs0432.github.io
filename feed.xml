@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Sat, 17 Aug 2024 07:08:46 GMT</pubDate>
-    <lastBuildDate>Sat, 17 Aug 2024 07:08:46 GMT</lastBuildDate>
+    <pubDate>Sat, 17 Aug 2024 07:14:18 GMT</pubDate>
+    <lastBuildDate>Sat, 17 Aug 2024 07:14:18 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Personal</category>
@@ -68,7 +68,7 @@
 <li>연속 문제
 <ul>
 <li>주어진 상황에서 <code>Solution</code>이 유효한지 평가</li>
-<li>동일 Case에 대해 3문제 정도가 출제되어 평가</li>
+<li>동일 Case에 대해 3~5문제 정도가 출제되어 평가</li>
 </ul>
 </li>
 </ul>
