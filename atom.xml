@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-08-17T07:14:18.544Z</updated>
+  <updated>2024-08-18T09:24:43.323Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -23,7 +23,7 @@
     <title type="text">[Personal] Microsoft Azure Administrator Associate 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Azure-Administrator-Associate-certified.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Azure-Administrator-Associate-certified.html"/>
-    <updated>2024-08-17T07:13:39.000Z</updated>
+    <updated>2024-08-18T09:23:59.000Z</updated>
     <summary type="html"><![CDATA[<h2>취득 배경</h2>
 <p>취득 배경은 <a href="/posts/Personal/Certified/Azure-Fundamentals-certified.html" target="_blank">[Personal] Microsoft Azure Fundamentals 취득 후기</a>와 동일하다.</p>
 <p>2024년 7월 재직 중인 회사에서 <code>Microsoft Azure</code> 서비스를 위한 준비를 위해<br>
@@ -90,7 +90,7 @@
 <p>다음은 <code>시험 실습</code>으로 제공되고 있는 <code>지식 평가</code> 시스템을 이용해서 예제 문제를 풀어볼 수 있다.</p>
 <figure><img src="/assets/image/Post/Personal/Certified/Azure-Administrator-Associate-certified/2.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption>시험 실습</figcaption></figure>
 <h3>Dump 페이지 이용</h3>
-<p>마찬가지로 많이 하는 방법은 아니지만 자격 취득을 위해서라면 해당 방법이 빠른 방법이긴 하다.</p>
+<p>마찬가지로 추천 하는 방법은 아니지만 자격 취득을 위해서라면 해당 방법이 빠른 방법이긴 하다.</p>
 <p>지난번 시험에서는 <a href="https://www.exam-answer.com/microsoft/az-104" target="_blank" rel="noopener noreferrer">ExamAnswer</a>를 어느정도 추천했는데 이번 시험에서는 추천하지 않는다.<br>
 왜 추천하지 않는지는 포스팅 끝에 내용을 서술하겠지만 우선 <a href="https://www.examtopics.com/exams/microsoft/az-104/view/" target="_blank" rel="noopener noreferrer">ExamTopics</a>를 참고하도록 하자.</p>
 <p><code>AZ-104</code> 시험을 기준으로는 총 150문제가 무료로 제공되고 있는 것으로 보이고 있다.<br>
