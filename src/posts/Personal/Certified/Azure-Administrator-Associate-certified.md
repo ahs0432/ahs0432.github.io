@@ -1,5 +1,5 @@
 ---
-title:  "[Personal] Microsoft Azure Administrator Associate 취득 후기"
+title:  "[Azure] Microsoft Azure Administrator Associate 취득 후기"
 
 categories:
   - Personal

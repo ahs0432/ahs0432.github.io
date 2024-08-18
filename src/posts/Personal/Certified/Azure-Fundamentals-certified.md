@@ -1,5 +1,5 @@
 ---
-title:  "[Personal] Microsoft Azure Fundamentals 취득 후기"
+title:  "[Azure] Microsoft Azure Fundamentals 취득 후기"
 
 categories:
   - Personal
