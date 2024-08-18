@@ -22,16 +22,19 @@ lastUpdated: true
 #### Infra
 - Microsoft Certified: Azure Fundamentals (AZ-900)
   - Earned: 2024-07-07
+  
 ![AZ-900](/assets/aboutme/AZ-900.png)
 
 - Microsoft Certified: Azure Administrator Associate (AZ-104)
   - Earned: 2024-07-14
   - Expires: 2025-07-15
+
 ![AZ-104](/assets/aboutme/AZ-104.png)
 
 - Microsoft Certified: Azure Solutions Architect Expert (AZ-305)
   - Earned: 2024-08-04
   - Expires: 2025-08-05
+
 ![AZ-305](/assets/aboutme/AZ-305.png)
 
 #### Developer
@@ -39,6 +42,7 @@ lastUpdated: true
 - Microsoft Certified: Azure Developer Associate (AZ-204)
   - Earned: 2024-08-11
   - Expires: 2025-08-12
+
 ![AZ-204](/assets/aboutme/AZ-204.png)
 
 - - - 
@@ -46,18 +50,22 @@ lastUpdated: true
 #### Specialty
 - NAVER Cloud Platform Certified: Trainer (NCT)
   - Earned: 2023-08
+
 ![NAVER Cloud Platform Trainer](/assets/aboutme/NCT.png)
 
 #### Infra
 - NAVER Cloud Platform Certified: Associate (NCA)
   - Earned: 2022-02-09
+
 ![NAVER Cloud Platform Associate](/assets/aboutme/NCA.png)
 
 - NAVER Cloud Platform Certified: Expert (NCE)
   - Earned: 2022-11-17
+
 ![NAVER Cloud Platform Expert](/assets/aboutme/NCE.png)
 
 #### Artificial Intelligence
 - NAVER Cloud Platform Certified: AI (NCP-AI)
   - Earned: 2024-02-06
+
 ![NAVER Cloud Platform AI](/assets/aboutme/NCP-AI.png)
