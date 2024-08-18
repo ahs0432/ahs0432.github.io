@@ -92,7 +92,7 @@ lastUpdated: true
 ![](/assets/image/Post/Personal/Certified/Azure-Administrator-Associate-certified/2.png "시험 실습" =90%x90%)
 
 ### Dump 페이지 이용
-마찬가지로 많이 하는 방법은 아니지만 자격 취득을 위해서라면 해당 방법이 빠른 방법이긴 하다.
+마찬가지로 추천 하는 방법은 아니지만 자격 취득을 위해서라면 해당 방법이 빠른 방법이긴 하다.
 
 지난번 시험에서는 [ExamAnswer](https://www.exam-answer.com/microsoft/az-104)를 어느정도 추천했는데 이번 시험에서는 추천하지 않는다.  
 왜 추천하지 않는지는 포스팅 끝에 내용을 서술하겠지만 우선 [ExamTopics](https://www.examtopics.com/exams/microsoft/az-104/view/)를 참고하도록 하자.
