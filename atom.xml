@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-08-18T10:12:44.995Z</updated>
+  <updated>2024-08-18T10:16:19.311Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -23,7 +23,7 @@
     <title type="text">[Azure] Microsoft Azure Solutions Architect Expert 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Azure-Solutions-Architect-Expert-certified.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Azure-Solutions-Architect-Expert-certified.html"/>
-    <updated>2024-08-18T10:11:56.000Z</updated>
+    <updated>2024-08-18T10:15:35.000Z</updated>
     <summary type="html"><![CDATA[<h2>취득 배경</h2>
 <p>취득 배경은 <a href="/posts/Personal/Certified/Azure-Fundamentals-certified.html" target="_blank">[Personal] Microsoft Azure Fundamentals 취득 후기</a>와 동일하다.</p>
 <p>2024년 7월 재직 중인 회사에서 <code>Microsoft Azure</code> 서비스를 위한 준비를 위해<br>
@@ -176,7 +176,7 @@
 <h2>시험 방식</h2>
 <p>시험 방식은 다른 자격과 차이나지 않기에 <a href="/posts/Personal/Certified/Azure-Fundamentals-certified.html" target="_blank">기존 포스팅</a>을 참고 부탁한다.</p>
 <h2>결과</h2>
-<p>시험 결과는 <code>852점</code>이라는 나름 준수한(?) 성적으로 시험을 합격할 수 있었다.</p>
+<p>시험 결과는 <code>875점</code>이라는 나름 준수한(?) 성적으로 시험을 합격할 수 있었다.</p>
 <p>처음으로 <code>Dump</code>의 전체 문제를 받고 본 시험인데 나름 익숙한 문제들이 80% 정도 출제됐다.<br>
 역시 최신 문제까지 갱신된 문제를 보면 시험의 출제 빈도 자체각 다르구나라는 생각이 들었다.</p>
 <p>그리고 <code>Dump</code>를 이용한 부분은 <code>Learn</code>을 이용한 것에 비해 훨씬 적었음에도 영향도가 크긴하다.</p>
