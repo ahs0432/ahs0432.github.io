@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Sun, 18 Aug 2024 10:10:40 GMT</pubDate>
-    <lastBuildDate>Sun, 18 Aug 2024 10:10:40 GMT</lastBuildDate>
+    <pubDate>Sun, 18 Aug 2024 10:12:44 GMT</pubDate>
+    <lastBuildDate>Sun, 18 Aug 2024 10:12:44 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Personal</category>
@@ -23,10 +23,10 @@
     <category>Windows</category>
     <category>Ubuntu</category>
     <item>
-      <title>[Personal] Microsoft Azure Solutions Architect Expert 취득 후기</title>
+      <title>[Azure] Microsoft Azure Solutions Architect Expert 취득 후기</title>
       <link>https://blog.false.kr/posts/Personal/Certified/Azure-Solutions-Architect-Expert-certified.html</link>
       <guid>https://blog.false.kr/posts/Personal/Certified/Azure-Solutions-Architect-Expert-certified.html</guid>
-      <source url="https://blog.false.kr/feed.xml">[Personal] Microsoft Azure Solutions Architect Expert 취득 후기</source>
+      <source url="https://blog.false.kr/feed.xml">[Azure] Microsoft Azure Solutions Architect Expert 취득 후기</source>
       <description>취득 배경 취득 배경은 와 동일하다. 2024년 7월 재직 중인 회사에서 Microsoft Azure 서비스를 위한 준비를 위해 사내 인원에 자격증 취득을 권장하는 Promotion을 진행하게 되어 취득을 준비하게 됐다. 필자는 7월 중순 대학 여름학기로 인해 기말고사, 프로젝트 등을 위해 8월에 응시하게 됐다. M...</description>
       <category>Personal</category>
       <pubDate>Sun, 18 Aug 2024 00:00:00 GMT</pubDate>
@@ -189,10 +189,10 @@
       <enclosure url="https://blog.false.kr/assets/image/Post/Personal/Certified/Azure-Solutions-Architect-Expert-certified/1.png &quot;자기 주도&quot; =90%x90%" type="image/"/>
     </item>
     <item>
-      <title>[Personal] Microsoft Azure Administrator Associate 취득 후기</title>
+      <title>[Azure] Microsoft Azure Administrator Associate 취득 후기</title>
       <link>https://blog.false.kr/posts/Personal/Certified/Azure-Administrator-Associate-certified.html</link>
       <guid>https://blog.false.kr/posts/Personal/Certified/Azure-Administrator-Associate-certified.html</guid>
-      <source url="https://blog.false.kr/feed.xml">[Personal] Microsoft Azure Administrator Associate 취득 후기</source>
+      <source url="https://blog.false.kr/feed.xml">[Azure] Microsoft Azure Administrator Associate 취득 후기</source>
       <description>취득 배경 취득 배경은 와 동일하다. 2024년 7월 재직 중인 회사에서 Microsoft Azure 서비스를 위한 준비를 위해 사내 인원에 자격증 취득을 권장하는 Promotion을 진행하게 되어 취득을 준비하게 됐다. Microsoft Azure Administrator Associate 자격 Azure Fund...</description>
       <category>Personal</category>
       <pubDate>Sat, 17 Aug 2024 00:00:00 GMT</pubDate>
@@ -332,10 +332,10 @@
       <enclosure url="https://blog.false.kr/assets/image/Post/Personal/Certified/Azure-Administrator-Associate-certified/1.png &quot;과정 학습&quot; =90%x90%" type="image/"/>
     </item>
     <item>
-      <title>[Personal] Microsoft Azure Fundamentals 취득 후기</title>
+      <title>[Azure] Microsoft Azure Fundamentals 취득 후기</title>
       <link>https://blog.false.kr/posts/Personal/Certified/Azure-Fundamentals-certified.html</link>
       <guid>https://blog.false.kr/posts/Personal/Certified/Azure-Fundamentals-certified.html</guid>
-      <source url="https://blog.false.kr/feed.xml">[Personal] Microsoft Azure Fundamentals 취득 후기</source>
+      <source url="https://blog.false.kr/feed.xml">[Azure] Microsoft Azure Fundamentals 취득 후기</source>
       <description>취득 배경 2024년 7월 재직 중인 회사에서 Microsoft Azure 서비스를 위한 준비를 위해 사내 인원에 자격증 취득을 권장하는 Promotion을 진행하게 되어 취득을 준비하게 됐다. Microsoft Azure 란? 이름에서 짐작하듯 Microsoft 사에서 서비스하고 있는 Cloud Platform 서...</description>
       <category>Personal</category>
       <pubDate>Sat, 17 Aug 2024 00:00:00 GMT</pubDate>

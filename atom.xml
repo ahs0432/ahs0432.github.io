@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-08-18T10:10:40.271Z</updated>
+  <updated>2024-08-18T10:12:44.995Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -20,10 +20,10 @@
   <category term="Windows"/>
   <category term="Ubuntu"/>
   <entry>
-    <title type="text">[Personal] Microsoft Azure Solutions Architect Expert 취득 후기</title>
+    <title type="text">[Azure] Microsoft Azure Solutions Architect Expert 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Azure-Solutions-Architect-Expert-certified.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Azure-Solutions-Architect-Expert-certified.html"/>
-    <updated>2024-08-18T10:09:55.000Z</updated>
+    <updated>2024-08-18T10:11:56.000Z</updated>
     <summary type="html"><![CDATA[<h2>취득 배경</h2>
 <p>취득 배경은 <a href="/posts/Personal/Certified/Azure-Fundamentals-certified.html" target="_blank">[Personal] Microsoft Azure Fundamentals 취득 후기</a>와 동일하다.</p>
 <p>2024년 7월 재직 중인 회사에서 <code>Microsoft Azure</code> 서비스를 위한 준비를 위해<br>
@@ -189,10 +189,10 @@
     <published>2024-08-18T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">[Personal] Microsoft Azure Administrator Associate 취득 후기</title>
+    <title type="text">[Azure] Microsoft Azure Administrator Associate 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Azure-Administrator-Associate-certified.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Azure-Administrator-Associate-certified.html"/>
-    <updated>2024-08-18T09:23:59.000Z</updated>
+    <updated>2024-08-18T10:11:56.000Z</updated>
     <summary type="html"><![CDATA[<h2>취득 배경</h2>
 <p>취득 배경은 <a href="/posts/Personal/Certified/Azure-Fundamentals-certified.html" target="_blank">[Personal] Microsoft Azure Fundamentals 취득 후기</a>와 동일하다.</p>
 <p>2024년 7월 재직 중인 회사에서 <code>Microsoft Azure</code> 서비스를 위한 준비를 위해<br>
@@ -335,10 +335,10 @@
     <published>2024-08-17T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">[Personal] Microsoft Azure Fundamentals 취득 후기</title>
+    <title type="text">[Azure] Microsoft Azure Fundamentals 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Azure-Fundamentals-certified.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Azure-Fundamentals-certified.html"/>
-    <updated>2024-08-17T06:44:27.000Z</updated>
+    <updated>2024-08-18T10:11:56.000Z</updated>
     <summary type="html"><![CDATA[<h2>취득 배경</h2>
 <p>2024년 7월 재직 중인 회사에서 <code>Microsoft Azure</code> 서비스를 위한 준비를 위해<br>
 사내 인원에 자격증 취득을 권장하는 Promotion을 진행하게 되어 취득을 준비하게 됐다.</p>
