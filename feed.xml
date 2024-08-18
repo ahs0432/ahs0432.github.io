@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Sun, 18 Aug 2024 10:25:28 GMT</pubDate>
-    <lastBuildDate>Sun, 18 Aug 2024 10:25:28 GMT</lastBuildDate>
+    <pubDate>Sun, 18 Aug 2024 13:09:31 GMT</pubDate>
+    <lastBuildDate>Sun, 18 Aug 2024 13:09:31 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Personal</category>
@@ -107,7 +107,7 @@
 (참고로 필자는 시험 10시간 전에 이걸 알아내서 전체 문제라고 하지만 한 번 완독했다.)</p>
 <h3>공부 커리큘럼</h3>
 <ul>
-<li>총합 공부에 소요된 시간: <code>약 19시간</code>
+<li>총합 공부에 소요된 시간: <code>약 22시간</code>
 <ul>
 <li>시험 예약: 2024.08.04(일) 22:15 (2024.08.02(금) 23:31 예약)</li>
 <li>시험 입실: 2024.08.04(일) 21:45</li>
@@ -115,8 +115,14 @@
 </li>
 <li>공부 방법
 <ul>
-<li>2024.07.29(월) - 총 3시간 내외
+<li>2024.07.29(월) - 총 6시간 내외
 <ul>
+<li><code>Microsoft Learn</code> 페이지에 <code>무료 실습 평가 받기</code>를 이용한 수준 평가 (3시간 내외)
+<ul>
+<li>필자의 경우 Try 과정에서 오답이 많아 지속적으로 100%를 만들기 위해 노력했다.</li>
+<li>틀리면 아예 문제를 초기화하여 처음부터 다시 푸는 형식으로 100%의 늪을 만들었다.</li>
+</ul>
+</li>
 <li><code>Microsoft Learn</code> 페이지 <code>자기 주도</code> (3시간 내외)
 <ul>
 <li>AZ-305 Microsoft Azure Architect Design 필수 조건</li>
@@ -179,7 +185,7 @@
 <h2>결과</h2>
 <p>시험 결과는 <code>875점</code>이라는 나름 준수한(?) 성적으로 시험을 합격할 수 있었다.</p>
 <p>처음으로 <code>Dump</code>의 전체 문제를 받고 본 시험인데 나름 익숙한 문제들이 80% 정도 출제됐다.<br>
-역시 최신 문제까지 갱신된 문제를 보면 시험의 출제 빈도 자체각 다르구나라는 생각이 들었다.</p>
+역시 최신 문제까지 갱신된 문제를 보면 시험의 출제 빈도 자체가 다르구나라는 생각이 들었다.</p>
 <p>그리고 <code>Dump</code>를 이용한 부분은 <code>Learn</code>을 이용한 것에 비해 훨씬 적었음에도 영향도가 크긴하다.</p>
 <figure><img src="/assets/image/Post/Personal/Certified/Azure-Solutions-Architect-Expert-certified/3.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption>자격 발급</figcaption></figure>
 <hr>
