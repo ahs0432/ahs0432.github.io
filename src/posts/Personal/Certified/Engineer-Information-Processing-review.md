@@ -1,8 +1,8 @@
 ---
-title:  "[Personal] 정보처리기사 취득 후기"
+title:  "[Certified] 정보처리기사 취득 후기"
 
 categories:
-  - Personal
+  - Certified
 tags:
   - 국가자격
   - 정보

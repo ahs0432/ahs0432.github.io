@@ -2,7 +2,7 @@
 title:  "[Azure] Microsoft Azure Fundamentals 취득 후기"
 
 categories:
-  - Personal
+  - Certified
 tags:
   - Microsoft
   - Microsoft Azure

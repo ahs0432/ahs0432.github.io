@@ -2,7 +2,7 @@
 title:  "[Azure] Microsoft Azure Developer Associate 취득 후기"
 
 categories:
-  - Personal
+  - Certified
 tags:
   - Microsoft
   - Microsoft Azure

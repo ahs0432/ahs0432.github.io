@@ -1,8 +1,8 @@
 ---
-title:  "[Personal] NAVER CLOUD PLATFORM Certified Expert 취득 후기"
+title:  "[Ncloud] NAVER CLOUD PLATFORM Certified Expert 취득 후기"
 
 categories:
-  - Personal
+  - Certified
 tags:
   - NAVER
   - 네이버
