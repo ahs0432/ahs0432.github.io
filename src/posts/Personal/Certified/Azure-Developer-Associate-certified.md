@@ -117,7 +117,7 @@ lastUpdated: true
   - 시험 입실: 2024.08.11(일) 21:45
 - 공부 방법
   - 2024.08.06(화) - 총 1시간 내외
-    - `Microsoft Learn` 페이지 `과정 학습` (3시간 내외)
+    - `Microsoft Learn` 페이지 `과정 학습` (1시간 내외)
       - AZ-204: Azure App Service 웹앱 구현
   - 2024.08.07(수) - 총 1시간 내외
     - `Microsoft Learn` 페이지 `과정 학습` (1시간 내외)
