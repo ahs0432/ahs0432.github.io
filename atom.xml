@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-08-26T14:47:44.520Z</updated>
+  <updated>2024-08-26T14:50:35.336Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -23,7 +23,7 @@
     <title type="text">[Azure] Microsoft DevOps Engineer Expert 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Azure-DevOps-Engineer-Expert-certified.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Azure-DevOps-Engineer-Expert-certified.html"/>
-    <updated>2024-08-26T14:46:52.000Z</updated>
+    <updated>2024-08-26T14:49:49.000Z</updated>
     <summary type="html"><![CDATA[<h2>취득 배경</h2>
 <p>취득 배경은 <a href="/posts/Personal/Certified/Azure-Fundamentals-certified.html" target="_blank">[Personal] Microsoft Azure Fundamentals 취득 후기</a>와 동일하다.</p>
 <p>2024년 7월 재직 중인 회사에서 <code>Microsoft Azure</code> 서비스를 위한 준비를 위해<br>
@@ -114,7 +114,7 @@
 <p>마찬가지로 이번에도 추천하는 Dump 페이지는 <a href="https://www.examtopics.com/exams/microsoft/az-400/view/" target="_blank" rel="noopener noreferrer">ExamTopics</a>이니 참고하여 공부하도록 하자.</p>
 <h3>공부 커리큘럼</h3>
 <ul>
-<li>총합 공부에 소요된 시간: <code>약 23시간</code>
+<li>총합 공부에 소요된 시간: <code>약 20시간</code>
 <ul>
 <li>시험 예약: 2024.08.25(일) 22:15 (2024.08.24(토) 22:18 예약)</li>
 <li>시험 입실: 2024.08.25(일) 21:45</li>
