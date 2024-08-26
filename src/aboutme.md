@@ -45,6 +45,12 @@ lastUpdated: true
 
 ![AZ-204](/assets/aboutme/AZ-204.png)
 
+- Microsoft Certified: DevOps Engineer Expert (AZ-400)
+  - Earned: 2024-08-25
+  - Expires: 2025-08-26
+
+![AZ-400](/assets/aboutme/AZ-400.png)
+
 - - - 
 ### NAVER Cloud Platform (Korea)
 #### Specialty
