@@ -65,29 +65,28 @@ $ dnf install -y gitlab-ce
 ```bash
 $ vim /etc/gitlab/gitlab.rb
 ```
-
-- 호스트 이름 변경
-```ruby
-external_url 'http://<Hostname>'
-# 도메인을 갖고 있다면 외부에서 연결할 도메인을 아니라면 IP를 <Hostname>에 작성합니다.
-```
-
-- 데이터 경로 변경
-```ruby
-# 기존
-# git_data_dirs({
-#   "default" => {
-#     "path" => "/mnt/nfs-01/git-data"
-#    }
-# })
-
-# 변경 추가
-git_data_dirs({
-   "default" => {
-     "path" => "/data/git-data"
-    }
-})
-```
+> - 호스트 이름 변경
+> ```ruby
+> external_url 'http://<Hostname>'
+> # 도메인을 갖고 있다면 외부에서 연결할 도메인을 아니라면 IP를 <Hostname>에 작성합니다.
+> ```
+> 
+> - 데이터 경로 변경
+> ```ruby
+> # 기존
+> # git_data_dirs({
+> #   "default" => {
+> #     "path" => "/mnt/nfs-01/git-data"
+> #    }
+> # })
+> 
+> # 변경 추가
+> git_data_dirs({
+>    "default" => {
+>      "path" => "/data/git-data"
+>     }
+> })
+> ```
 
 설정 파일에 반영한 데이터 경로를 생성합니다.
 ```bash
@@ -122,7 +121,9 @@ Password: <패스워드>
 ![](/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/2.png "메인 페이지" =90%x90%)
 
 ### GitLab 사용자 비밀번호 변경
-> 버전에 따른 메뉴 형태는 차이가 있을 수 있어 이부분 유의 부탁드립니다!
+::: info
+📢 버전에 따른 메뉴 형태는 차이가 있을 수 있어 이부분 유의 부탁드립니다!
+:::
 
 우측 상단에 위치한 사용자 아이콘을 클릭하여 드롭다운 메뉴를 오픈합니다.
 - 사용자 프로필 등의 설정은 `Edit profile`을 이용합니다.
