@@ -65,6 +65,7 @@ $ dnf install -y gitlab-ce
 ```bash
 $ vim /etc/gitlab/gitlab.rb
 ```
+
 - 호스트 이름 변경
 ```ruby
 external_url 'http://<Hostname>'
@@ -72,16 +73,15 @@ external_url 'http://<Hostname>'
 ```
 
 - 데이터 경로 변경
-  - 변경 전
 ```ruby
+# 기존
 # git_data_dirs({
 #   "default" => {
 #     "path" => "/mnt/nfs-01/git-data"
 #    }
 # })
-```
-  - 변경 후
-```ruby
+
+# 변경 추가
 git_data_dirs({
    "default" => {
      "path" => "/data/git-data"
@@ -131,11 +131,11 @@ Password: <패스워드>
 
 현재 단계에서는 간단하게 패스워드 변경만 수행할 것으로 좌측 메뉴에서 `Password`를 선택합니다.
 
-![](/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/4.png "드롭다운 메뉴" =50%x50%)
+![](/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/4.png "좌측 메뉴" =30%x30%)
 
 비밀번호 변경 페이지로 접근됐다면 패스워드를 변경합니다.
 
-![](/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/5.png "드롭다운 메뉴" =50%x50%)
+![](/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/5.png "패스워드 변경 페이지" =90%x90%)
 
 ### GitLab 관련 명령
 
