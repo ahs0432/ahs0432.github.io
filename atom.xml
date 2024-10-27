@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-10-27T05:44:12.351Z</updated>
+  <updated>2024-10-27T05:50:04.316Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -24,7 +24,7 @@
     <title type="text">[Rocky] GitLab-CE 설치 방법</title>
     <id>https://blog.false.kr/posts/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install.html</id>
     <link href="https://blog.false.kr/posts/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install.html"/>
-    <updated>2024-10-27T05:43:31.000Z</updated>
+    <updated>2024-10-27T05:49:16.000Z</updated>
     <summary type="html"><![CDATA[<h2>테스트 환경</h2>
 <h3>Server</h3>
 <ul>
@@ -67,7 +67,8 @@
 <div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> dnf</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -y</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> gitlab-ce</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><code>GitLab</code> 서비스 설치 전 접근할 때 사용할 호스트 이름과 일부 설정을 변경합니다.</p>
 <div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> vim</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/gitlab/gitlab.rb</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ul>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><blockquote>
+<ul>
 <li>호스트 이름 변경</li>
 </ul>
 <div class="language-ruby line-numbers-mode" data-highlighter="shiki" data-ext="ruby" data-title="ruby" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">external_url </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'http://&lt;Hostname&gt;'</span></span>
@@ -88,7 +89,8 @@
 <span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">     "path"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =&gt; </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"/data/git-data"</span></span>
 <span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">    }</span></span>
 <span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">})</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>설정 파일에 반영한 데이터 경로를 생성합니다.</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></blockquote>
+<p>설정 파일에 반영한 데이터 경로를 생성합니다.</p>
 <div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> mkdir</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -p</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /data/git-data</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>변경 설정을 모두 적용하였다면 <code>gitlab-ctl</code>을 이용한 설정 동기화를 수행합니다.</p>
 <ul>
@@ -111,9 +113,10 @@
 <span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"># NOTE: This file will be automatically deleted in the first reconfigure run after 24 hours.</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/2.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption>메인 페이지</figcaption></figure>
 <h3>GitLab 사용자 비밀번호 변경</h3>
-<blockquote>
-<p>버전에 따른 메뉴 형태는 차이가 있을 수 있어 이부분 유의 부탁드립니다!</p>
-</blockquote>
+<div class="hint-container info">
+<p class="hint-container-title">정보</p>
+<p>📢 버전에 따른 메뉴 형태는 차이가 있을 수 있어 이부분 유의 부탁드립니다!</p>
+</div>
 <p>우측 상단에 위치한 사용자 아이콘을 클릭하여 드롭다운 메뉴를 오픈합니다.</p>
 <ul>
 <li>사용자 프로필 등의 설정은 <code>Edit profile</code>을 이용합니다.</li>
