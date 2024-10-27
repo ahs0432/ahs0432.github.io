@@ -6,10 +6,11 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Mon, 26 Aug 2024 14:50:35 GMT</pubDate>
-    <lastBuildDate>Mon, 26 Aug 2024 14:50:35 GMT</lastBuildDate>
+    <pubDate>Sun, 27 Oct 2024 05:40:23 GMT</pubDate>
+    <lastBuildDate>Sun, 27 Oct 2024 05:40:23 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <category>Rocky</category>
     <category>Certified</category>
     <category>Blog</category>
     <category>Think</category>
@@ -22,6 +23,119 @@
     <category>Network</category>
     <category>Windows</category>
     <category>Ubuntu</category>
+    <item>
+      <title>[Rocky] GitLab-CE 설치 방법</title>
+      <link>https://blog.false.kr/posts/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install.html</link>
+      <guid>https://blog.false.kr/posts/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install.html</guid>
+      <source url="https://blog.false.kr/feed.xml">[Rocky] GitLab-CE 설치 방법</source>
+      <description>테스트 환경 Server Rocky 8.8 GitLab-CE 16.7.0 참고 사항 GitLab 이란? GitLab은 GitHub과 같이 Git 저장소를 제공하는 솔루션이라 볼 수 있습니다. 대표적으로 SaaS 형태로 제공되는 서비스와 자체 호스팅이 가능한 서비스가 있습니다. GitLab CE는 무료 라이선스로 자체...</description>
+      <category>Rocky</category>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>테스트 환경</h2>
+<h3>Server</h3>
+<ul>
+<li>Rocky 8.8</li>
+<li>GitLab-CE 16.7.0</li>
+</ul>
+<h2>참고 사항</h2>
+<h3>GitLab 이란?</h3>
+<p><code>GitLab</code>은 <code>GitHub</code>과 같이 <code>Git</code> 저장소를 제공하는 솔루션이라 볼 수 있습니다.<br>
+대표적으로 <code>SaaS</code> 형태로 제공되는 서비스와 <code>자체 호스팅</code>이 가능한 서비스가 있습니다.</p>
+<p><code>GitLab CE</code>는 무료 라이선스로 자체 호스팅이 가능하도록 서비스를 제공하고 있으며,<br>
+해당 서비스 내에서는 <code>GitLab CI</code>와 같은 여러 개발 도구도 같이 포함되어 제공됩니다.</p>
+<h3>사용 방안</h3>
+<ul>
+<li><code>GitLab</code>에서 제공하는 <code>Community Edition</code>을 이용한 <code>Self-host</code> 형상 관리 구축을 할 수 있습니다.</li>
+<li><code>Private Git</code>을 구축하여 자체적인 <code>형상 관리</code> 서비스 관리가 가능합니다.</li>
+</ul>
+<h2>설치 및 설정 과정</h2>
+<h3>GitLab 설치</h3>
+<p><code>GitLab</code> 설치 환경을 만들기 위해 의존성 패키지를 설치합니다.</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> dnf</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -y</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> curl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> policycoreutils-python-utils</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> openssh-server</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> perl</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> dnf</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -y</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> postfix</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p><code>Postfix</code>의 경우 <code>GitLab</code>의 이메일 발송 기능 이용 간 사용되니 서비스를 시작하고 등록합니다.</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> systemctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> enable</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --now</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> postfix</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><code>GitLab</code>에서 제공하는 스크립트를 이용하여 <code>GitLab</code> 설치 환경을 구성합니다.</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> curl</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -sS</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> | </span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> bash</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>환경 구성이 완료됐다면 <code>GitLab-CE</code> 패키지를 DNF를 이용하여 패키지 설치합니다.</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> dnf</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -y</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> gitlab-ce</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><code>GitLab</code> 서비스 설치 전 접근할 때 사용할 호스트 이름과 일부 설정을 변경합니다.</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> vim</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/gitlab/gitlab.rb</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ul>
+<li>호스트 이름 변경</li>
+</ul>
+<div class="language-ruby line-numbers-mode" data-highlighter="shiki" data-ext="ruby" data-title="ruby" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">external_url </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'http://&lt;Hostname&gt;'</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"># 도메인을 갖고 있다면 외부에서 연결할 도메인을 아니라면 IP를 &lt;Hostname&gt;에 작성합니다.</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>데이터 경로 변경
+<ul>
+<li>변경 전</li>
+</ul>
+</li>
+</ul>
+<div class="language-ruby line-numbers-mode" data-highlighter="shiki" data-ext="ruby" data-title="ruby" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"># git_data_dirs({</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic">#   "default" =&gt; {</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic">#     "path" =&gt; "/mnt/nfs-01/git-data"</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic">#    }</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"># })</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>변경 후</li>
+</ul>
+<div class="language-ruby line-numbers-mode" data-highlighter="shiki" data-ext="ruby" data-title="ruby" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">git_data_dirs({</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">   "default"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =&gt; {</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">     "path"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =&gt; </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"/data/git-data"</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">    }</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">})</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>설정 파일에 반영한 데이터 경로를 생성합니다.</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> mkdir</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -p</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /data/git-data</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>변경 설정을 모두 적용하였다면 <code>gitlab-ctl</code>을 이용한 설정 동기화를 수행합니다.</p>
+<ul>
+<li>추후 <code>gitlab.rb</code> 파일의 추가 갱신이 생길 경우에도 이용합니다.</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> gitlab-ctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> reconfigure</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>정상적으로 작업이 완료됐다면 지정한 도메인으로 접근하여 로그인 페이지를 확인합니다.</p>
+<figure><img src="/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/1.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption>로그인 페이지</figcaption></figure>
+<p>로그인의 경우 <code>root</code> 계정으로 수행하며 서버 내 발급된 <code>임시 비밀번호</code>를 이용하여 로그인합니다.</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> cat</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/gitlab/initial_root_password</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> </span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"># WARNING: This value is valid only in the following conditions</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic">#          1. If provided manually (either via `GITLAB_ROOT_PASSWORD` environment variable or via `gitlab_rails['initial_root_password']` setting in `gitlab.rb`, it was provided before database was seeded for the first time (usually, the first reconfigure run).</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic">#          2. Password hasn't been changed manually, either via UI or via command line.</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic">#</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic">#          If the password shown here doesn't work, you must reset the admin password following https://docs.gitlab.com/ee/security/reset_user_password.html#reset-your-root-password.</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">Password:</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> &lt;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">패스워</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">드&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"># NOTE: This file will be automatically deleted in the first reconfigure run after 24 hours.</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/2.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption>메인 페이지</figcaption></figure>
+<h3>GitLab 사용자 비밀번호 변경</h3>
+<blockquote>
+<p>버전에 따른 메뉴 형태는 차이가 있을 수 있어 이부분 유의 부탁드립니다!</p>
+</blockquote>
+<p>우측 상단에 위치한 사용자 아이콘을 클릭하여 드롭다운 메뉴를 오픈합니다.</p>
+<ul>
+<li>사용자 프로필 등의 설정은 <code>Edit profile</code>을 이용합니다.</li>
+</ul>
+<figure><img src="/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/3.png" alt="" width="50%" height="50%" tabindex="0" loading="lazy"><figcaption>드롭다운 메뉴</figcaption></figure>
+<p>현재 단계에서는 간단하게 패스워드 변경만 수행할 것으로 좌측 메뉴에서 <code>Password</code>를 선택합니다.</p>
+<figure><img src="/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/4.png" alt="" width="50%" height="50%" tabindex="0" loading="lazy"><figcaption>드롭다운 메뉴</figcaption></figure>
+<p>비밀번호 변경 페이지로 접근됐다면 패스워드를 변경합니다.</p>
+<figure><img src="/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/5.png" alt="" width="50%" height="50%" tabindex="0" loading="lazy"><figcaption>드롭다운 메뉴</figcaption></figure>
+<h3>GitLab 관련 명령</h3>
+<p>서비스 시작 명령어</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> gitlab-ctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> start</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>서비스 정지 명령어</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> gitlab-ctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> stop</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>서비스 재시작 명령어</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> gitlab-ctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> restart</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>서비스 재설정 명령어</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> gitlab-ctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> reconfigure</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><hr>
+<p>가이드가 도움이 되셨길 바랍니다!<br>
+끝까지 포스팅을 읽어주셔서 감사드립니다. 😎</p>
+]]></content:encoded>
+      <enclosure url="https://blog.false.kr/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/1.png &quot;로그인 페이지&quot; =90%x90%" type="image/"/>
+    </item>
     <item>
       <title>[Azure] Microsoft DevOps Engineer Expert 취득 후기</title>
       <link>https://blog.false.kr/posts/Personal/Certified/Azure-DevOps-Engineer-Expert-certified.html</link>
