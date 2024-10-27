@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Sun, 27 Oct 2024 05:40:23 GMT</pubDate>
-    <lastBuildDate>Sun, 27 Oct 2024 05:40:23 GMT</lastBuildDate>
+    <pubDate>Sun, 27 Oct 2024 05:44:12 GMT</pubDate>
+    <lastBuildDate>Sun, 27 Oct 2024 05:44:12 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Rocky</category>
@@ -67,26 +67,22 @@
 <div class="language-ruby line-numbers-mode" data-highlighter="shiki" data-ext="ruby" data-title="ruby" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">external_url </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'http://&lt;Hostname&gt;'</span></span>
 <span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"># 도메인을 갖고 있다면 외부에서 연결할 도메인을 아니라면 IP를 &lt;Hostname&gt;에 작성합니다.</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ul>
-<li>데이터 경로 변경
-<ul>
-<li>변경 전</li>
+<li>데이터 경로 변경</li>
 </ul>
-</li>
-</ul>
-<div class="language-ruby line-numbers-mode" data-highlighter="shiki" data-ext="ruby" data-title="ruby" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"># git_data_dirs({</span></span>
+<div class="language-ruby line-numbers-mode" data-highlighter="shiki" data-ext="ruby" data-title="ruby" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"># 기존</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"># git_data_dirs({</span></span>
 <span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic">#   "default" =&gt; {</span></span>
 <span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic">#     "path" =&gt; "/mnt/nfs-01/git-data"</span></span>
 <span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic">#    }</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"># })</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
-<li>변경 후</li>
-</ul>
-<div class="language-ruby line-numbers-mode" data-highlighter="shiki" data-ext="ruby" data-title="ruby" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">git_data_dirs({</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"># })</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-dark:#7F848E;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"># 변경 추가</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">git_data_dirs({</span></span>
 <span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">   "default"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =&gt; {</span></span>
 <span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">     "path"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =&gt; </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"/data/git-data"</span></span>
 <span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">    }</span></span>
 <span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">})</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>설정 파일에 반영한 데이터 경로를 생성합니다.</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>설정 파일에 반영한 데이터 경로를 생성합니다.</p>
 <div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> mkdir</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -p</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /data/git-data</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>변경 설정을 모두 적용하였다면 <code>gitlab-ctl</code>을 이용한 설정 동기화를 수행합니다.</p>
 <ul>
@@ -118,9 +114,9 @@
 </ul>
 <figure><img src="/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/3.png" alt="" width="50%" height="50%" tabindex="0" loading="lazy"><figcaption>드롭다운 메뉴</figcaption></figure>
 <p>현재 단계에서는 간단하게 패스워드 변경만 수행할 것으로 좌측 메뉴에서 <code>Password</code>를 선택합니다.</p>
-<figure><img src="/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/4.png" alt="" width="50%" height="50%" tabindex="0" loading="lazy"><figcaption>드롭다운 메뉴</figcaption></figure>
+<figure><img src="/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/4.png" alt="" width="30%" height="30%" tabindex="0" loading="lazy"><figcaption>좌측 메뉴</figcaption></figure>
 <p>비밀번호 변경 페이지로 접근됐다면 패스워드를 변경합니다.</p>
-<figure><img src="/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/5.png" alt="" width="50%" height="50%" tabindex="0" loading="lazy"><figcaption>드롭다운 메뉴</figcaption></figure>
+<figure><img src="/assets/image/Post/Computing/OS/Linux/Rocky/Rocky-Gitlab-CE-Install/5.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption>패스워드 변경 페이지</figcaption></figure>
 <h3>GitLab 관련 명령</h3>
 <p>서비스 시작 명령어</p>
 <div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> gitlab-ctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> start</span></span></code></pre>
