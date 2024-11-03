@@ -12,6 +12,7 @@ tags:
   - 뉴밋
   - 객체인식
   - Object Detection
+  - SSD MobileNet V2
   - LLM
   - 대규모 언어 모델
   - HyperClova X
@@ -310,18 +311,119 @@ for search in searchs:
 $ docker pull tensorflow/tensorflow:2.15.0.post1-gpu-jupyter
 ```
 
-`TensorFlow` 이미지의 컨테이너 상 특정 경로를 매핑하여 파일을 읽을 수 있도록 했고,  
-해당 데이터 기반으로 모델이 학습되도록 모델을 임의로 섞고 8:2의 데이터로 분할했습니다.
+`TensorFlow` 이미지의 컨테이너 상 특정 경로를 매핑하여 파일을 읽을 수 있도록 했습니다.  
+또한 `GPU`를 할당 및 `Notebook`의 8888 포트와 `TensorBoard`의 6006 포트를 포워딩했습니다.
 
 ```powershell
-$ 
+$ docker run --gpus all --name tf -p 8888:8888 -p 6006:6006 -v <경로>:/tf/ -d tensorflow/tensorflow:2.15.0.post1-gpu-jupyter
 ```
+
+모델 학습 간 사용할 이미지를 하나의 경로로 이동 및 `Pascal VOC` 기반의  
+내용 중 문제가 될 수 있는 `path`와 `filename`을 전처리로 수정하였습니다.
 
 ```python
+import shutil
 
+fruits = []
+now_index = 1
+
+for forder in folder_list:
+    fruits.append(forder)
+    file_list = os.listdir(path + forder + "/")
+    
+    for file in file_list:
+        if 'jpg' in file:
+            file0 = file.split('.')[0]
+            shutil.copy(path + forder + "/" + file0 + ".jpg", move_dir + str(now_index).zfill(8) + ".jpg")
+            
+            new_text_content = ''
+            with open(path + forder + "/" + file0 + ".xml", 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+                for i, l in enumerate(lines):
+                    if i == 1:
+                        new_string = '<folder></folder>'
+                    elif i == 2:
+                        new_string = f'<filename>{str(now_index).zfill(8)}.jpg</filename>'
+                    elif i == 3:
+                        new_string = f'<path>{str(now_index).zfill(8)}.jpg</path>'
+                    elif i == 4:
+                        new_string = '<source>'
+                    else:
+                        new_string = l.strip()
+                    
+                    if new_string:
+                        new_text_content += new_string + '\n'
+                    else:
+                        new_text_content += '\n'
+            
+            with open(move_dir + str(now_index).zfill(8) + ".xml",'w') as f:
+                f.write(new_text_content)
+
+            now_index += 1
 ```
 
+한 경로로 모인 모든 데이터를 `학습 데이터`와 `테스트 데이터`로 분할했고  
+데이터가 약 `8:2` 비율로 분할되도록 확률적인 코드를 작성하여 분할했습니다.
+
+아래 코드대로 실행 시에 파일의 개수가 항상 일정하게 분배되지는 않습니다.  
+추후에는 해당 코드 외 다른 코드 형태로 데이터를 분할하여 사용할까 합니다.
+
+```python
+# TEST DATA
+import random
+
+test_dir = '../images/test/'
+train_file_list = os.listdir(move_dir)
+print(len(train_file_list)//2)
+
+test_data = 2
+
+for file in train_file_list:
+    if 'jpg' in file:
+        if 10-test_data < random.randrange(1,11) <= 10:
+            xml_file = file.split('.')[0] + ".xml"
+            shutil.move(move_dir+file, test_dir+file)
+            shutil.move(move_dir+xml_file, test_dir+xml_file)
+            print(file)
+```
+
+모델 학습의 경우 `TensorFlow 2` 기반으로 [이 게시물](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html)을 참고하여 구현하였습니다.  
+자세한 학습 내용은 추후 `TensorFlow 2` 기반 모델 학습 방법으로 찾아오겠습니다.
+
+우선 여러 번의 학습을 반복했고 기본적으로 제공되는 사전 학습 모델의 기본 값인  
+`50,000 Epoch`를 기준으로 점차 횟수를 줄이면서 학습 5회 정도 수행하였습니다.
+
+학습 간 학습률과 손실에 대한 값을 `TensorBoard`에서 아래와 같이 확인 가능합니다.  
+(아래 값은 `20,000 Epoch` 실행 간 발생된 사항을 그래프로 기록한 사항입니다.)
+
 ![](/assets/image/Post/Personal/Newmit-retrospect/2.png  =90%x90%)
+
+확인 시 학습 데이터 양이 작기 때문인지 과대적합으로 인해 높은 `Epoch`인 경우  
+분류를 잘못하는 것으로 보였고 `10000~25000 Epoch`가 성능이 괜찮았습니다.  
+(위 테스트 데이터는 별도 그래프로 저장하지 못하여 아쉬울 따름입니다..)
+
+![](/assets/image/Post/Personal/Newmit-retrospect/3.png "테스트 데이터를 통한 확인" =70%x70%)
+
+이에 따라 `25,000 Epoch`를 기준으로 모델을 제작하여 추출하였습니다.  
+
+추출은 학습된 `Checkpoint` 파일에 `Export 스크립트`를 실행하는 방법을 이용합니다.  
+추출된 모델 파일은 아래와 같은 파일 구조를 갖게 되므로 내용 참고 부탁드리겠습니다.
+
+```
+Model/
+├─ checkpoint/
+├─ saved_model/
+│  ├─ checkpoint
+│  ├─ ckpt-0.data-00000-of-00001
+│  └─ ckpt-0.index
+├─ pipeline.config
+│  ├─ assets/
+│  ├─ variables/
+│  │  ├─ variables.data-00000-of-00001
+│  │  └─ variables.index
+│  ├─ fingerprint.pb
+│  └─ saved_model.pb
+```
 
 #### 모델 추출 및 Serving
 학습이 완료된 모델의 파일을 모두 추출하고 이를 외부에서 `API` 등의 형태로 호출이 필요했습니다.
@@ -332,7 +434,6 @@ $
 2. `TensorFlow Serving`
 
 두 가지 방식을 속도 등의 면에서 비교하였으며 이러한 비교 자료를 기반으로 선정을 하게 됐습니다.
-
 
 |항목|Django|TensorFlow Serving|
 |:--:|:--:|:--:|
@@ -352,15 +453,35 @@ $ docker pull tensorflow/serving:2.15.1
 `컨테이너` 상 특정 경로를 매핑하여 `모델`을 인식할 수 있도록 제공하였습니다.
 
 ```bash
-$ 
+$ docker run -d -i -t -p 8501:8501 -v "<모델경로>:/models/<모델명>" -e MODEL_NAME=<모델명> tensorflow/serving:2.15.1 --name tf_serving
 ```
 
 이후 아래와 같이 `API`를 호출하여 모델에 데이터를 입력 후 출력 데이터를 수신했습니다.
 
-```bash
-$
+|호출 주소|Method|내용|
+|:--:|:--:|:--:|
+|http://localhost:8501/v1/models/<모델명>:predict|POST|{"instances": [이미지 픽셀 데이터] }|
+
+출력 데이터는 아래와 같은 형식으로 제공되며 이중 필요한 데이터를 추출하여 사용합니다.
+
+```JSON
+{
+  "predictions": [
+    {
+      "detection_multiclass_scores": [[]], // Detection에 대한 클래스 별 점수
+      "detection_classes": [1.0], // 어떤 항목이 Detection 됐는지
+      "detection_anchor_indices": [], // NMS라는 Bounding Box를 줄이는 작업 진행 후 Box
+      "detection_boxes": [[0.1, 0.1, 0.1, 0.1]], // 항목의 Box 위치
+      "detection_scores": [0.92344], // Detection된 항목의 점수
+      "raw_detection_boxes": [], // NMS 작업 진행 전 전체 Box
+      "num_detections": 100.0, // Detection된 개수
+      "raw_detection_scores": [] // NMS 작업 진행 전 점수
+    }
+  ]
+}
 ```
 
+위 API를 사용하는 방법에 대해서 개발자에게 전달하여 시스템과 연계할 수 있었습니다.
 
 ### LLM
 `LLM`은 기존의 계획에는 없었지만 내부적으로 논의 간 추가적인 기능이 고안되어 추가했습니다.  
@@ -382,28 +503,25 @@ $
 요리 레시피를 알려주는 AI입니다. 
 요구사항에 맞춰 적절한 레시피를 추천합니다.
 
-
 ## 요구사항
 ingredients에 명시된 재료가 최대한 포함되는 레시피를 추천해주세요.
 except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 레시피도 제외합니다.
-
 
 ## 제공되는 형식
 재료와 추천 제외 요리는 아래와 같이 JSON 형식으로 제공됩니다.
 
 {
-    ingredients: ["양파", "파", "삼겹살"],
-    except_recipe: ["양파 조림"]
+    "ingredients": ["양파", "파", "삼겹살"],
+    "except_recipe": ["양파 조림"]
 }
-
 
 ## 제공하는 형식
 위와 같은 형식으로 제공받을 경우 아래와 같이 JSON 형태로 답안을 제공해줍니다.
 
 {
-    recipe_name: "삼겹살 덮밥",
-    recipe_ingredients: ["양파", "파", "삼겹살", "통깨", "쌀", "간장", "설탕", "맛술", "굴소스", "간장", "물엿", "다진마늘", "물", "생강가루", "후춧가루"],
-    recipes: [
+    "recipe_name": "삼겹살 덮밥",
+    "recipe_ingredients": ["양파", "파", "삼겹살", "통깨", "쌀", "간장", "설탕", "맛술", "굴소스", "간장", "물엿", "다진마늘", "물", "생강가루", "후춧가루"],
+    "recipes": [
         "양파는 얇게 채를 썬 후 찬물에 담갔다가 체에 밭쳐 물기를 빼고 쪽파는 송송 썰어주세요. 볼에 간장 소스 재료를 넣고 섞어주세요.",
         "달군 팬에 삼겹살을 올려 앞뒤로 노릇하게 굽고 한입 크기로 썰어주세요.",
         "팬에 삼겹살을 굽고 나온 기름을 닦아 낸 후 간장 소스를 넣고 중약불에서 윤기 나게 조려가며 익혀주세요.",
@@ -421,17 +539,17 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
 ```json
 // 입력 데이터
 {
-    ingredients: ["스파게티면", "미트볼", "삼겹살", "양파"],
-    except_recipe: []
+    "ingredients": ["스파게티면", "미트볼", "삼겹살", "양파"],
+    "except_recipe": []
 }
 ```
 
 ```json
 // 출력 데이터
 {
-    recipe_name: "미트볼 스파게티",
-    recipe_ingredients: ["스파게티면", "돼지고기 다짐육", "소고기 다짐육", "양파", "빵가루", "우유", "달걀", "소금", "후춧가루", "올리브오일", "마늘", "토마토소스", "페페론치노", "모차렐라 치즈"],
-    recipes: [
+    "recipe_name": "미트볼 스파게티",
+    "recipe_ingredients": ["스파게티면", "돼지고기 다짐육", "소고기 다짐육", "양파", "빵가루", "우유", "달걀", "소금", "후춧가루", "올리브오일", "마늘", "토마토소스", "페페론치노", "모차렐라 치즈"],
+    "recipes": [
         "먼저 미트볼을 만들어보겠습니다. 양파 1/4개는 잘게 다지고, 빵가루 2큰술과 우유 3큰술, 달걀 1/2개, 소금 약간, 후춧가루 약간을 넣어 끈기가 생길 때까지 치대어 주세요. 그리고 4등분하여 둥글납작하게 빚어 줍니다.",
         "이제 면을 삶아볼까요? 끓는 물에 소금 1큰술을 넣고 스파게티면 200g을 8분간 삶아 건져내 주세요. 삶은 면은 올리브오일을 뿌려 버무려 놓습니다.",
         "팬에 올리브오일을 두르고 다진 마늘 1큰술을 볶아 향을 내다가 토마토소스 1컵 반(400ml)을 붓고 페페론치노 5개를 손으로 부숴 넣습니다. 끓어오르면 미트볼을 넣어 굴려가며 6분간 끓여 익힙니다.",
@@ -447,12 +565,51 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
 인프라는 비용적인 부담이 있기에 자체적으로 보유 중인 크레딧이 존재하여  
 `네이버 클라우드`를 이용하였고 `객체인식`은 `Docker`로 배포하였습니다.
 
+실질적으로 `객체인식`을 위해 올라간 이미지는 `Serving` 관련 이미지입니다.  
+이를 기반으로 서비스의 구성도를 작성할 경우 아래와 같은 형식으로 동작합니다.
+
+![](/assets/image/Post/Personal/Newmit-retrospect/4.png "네이버 클라우드 기준 동작 구성도" =90%x90%)
+
+
 ## 서비스 이미지
-### ...
+### 로그인 및 회원가입
+![](/assets/image/Post/Personal/Newmit-retrospect/5.png  =20%x20%)
+
+### 메인 페이지 및 마이페이지
+![](/assets/image/Post/Personal/Newmit-retrospect/6.png  =20%x20%)  
+![](/assets/image/Post/Personal/Newmit-retrospect/7.png  =20%x20%)
+
+### 식자재 등록 페이지
+![](/assets/image/Post/Personal/Newmit-retrospect/8.png  =20%x20%)  
+![](/assets/image/Post/Personal/Newmit-retrospect/9.png  =20%x20%)
+
+### 식자재 목록과 상세 확인 페이지
+![](/assets/image/Post/Personal/Newmit-retrospect/10.png  =20%x20%)  
+![](/assets/image/Post/Personal/Newmit-retrospect/11.png  =20%x20%)
+
+### 등록된 레시피 확인 페이지
+![](/assets/image/Post/Personal/Newmit-retrospect/12.png  =20%x20%)  
+![](/assets/image/Post/Personal/Newmit-retrospect/13.png  =20%x20%)
+
+### 레시피 조리 확인 페이지
+![](/assets/image/Post/Personal/Newmit-retrospect/14.png  =20%x20%)  
+![](/assets/image/Post/Personal/Newmit-retrospect/15.png  =20%x20%)  
+![](/assets/image/Post/Personal/Newmit-retrospect/16.png  =20%x20%)  
+![](/assets/image/Post/Personal/Newmit-retrospect/17.png  =20%x20%)
+
+### 레시피 등록 페이지
+![](/assets/image/Post/Personal/Newmit-retrospect/18.png  =20%x20%)  
+![](/assets/image/Post/Personal/Newmit-retrospect/19.png  =20%x20%)  
+![](/assets/image/Post/Personal/Newmit-retrospect/20.png  =20%x20%)  
+![](/assets/image/Post/Personal/Newmit-retrospect/21.png  =20%x20%)
+
+### 인공지능 레시피 추천 페이지
+![](/assets/image/Post/Personal/Newmit-retrospect/22.png  =20%x20%)  
+![](/assets/image/Post/Personal/Newmit-retrospect/23.png  =20%x20%)
 
 ## 아쉬운 점
 ### 객체인식
-모델 학습 과정에서 다양한 기법을 통해 모델의 `파라미터`를 조정해보지 못한 것이 아쉽습니다.  
+모델 학습 과정에서 모델의 더 다양한`파라미터`를 조정해보지 못한 것이 아쉽습니다.  
 
 `교차검증`과 같은 방법을 통해 `학습`, `검증`, `테스트` 데이터를 나누지 못하여 성능 비교가 어려웠던 점,  
 학습 지표를 잘 활용하여 `Epoch` 별 학습률을 비교한 뒤 적정 학습률을 찾았으면 좋았을 걸 싶습니다.
@@ -464,7 +621,7 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
 이에 따라 최신성도 떨어질 수 있기에 다음엔 `RAG` 등을 이용하는 것도 좋다고 생각합니다.
 
 또한 현재는 `HyperClova X`와 같은 상용 모델을 사용하였지만 추후에는 모델을 바꾼다면,  
-자체적인 `LLM`을 만들 수 있도록 `Meta LLaMa`와 같은 오픈소스를 사용할까도 고민 중입니다.
+자체 `LLM`을 만들 수 있도록 `Meta LLaMa 3.1`과 같은 오픈소스를 사용할까 고민 중입니다.
 
 ### 인프라 구축
 물론 실제 업무가 `클라우드` 서비스 관련 업무이기 때문에 실제로는 다양한 상품을 다루고 있지만,  
