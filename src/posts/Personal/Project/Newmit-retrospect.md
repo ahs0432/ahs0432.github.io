@@ -578,48 +578,62 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
 
 ### 메인 페이지 및 마이페이지
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/6.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/7.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 
 ### 식자재 등록 페이지
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/8.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/9.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 
 ### 식자재 목록과 상세 확인 페이지
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/10.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/11.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 
 ### 등록된 레시피 확인 페이지
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/12.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/13.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p> 
 </figure>
 
 ### 레시피 조리 확인 페이지
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/14.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/15.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/16.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/17.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 
 ### 레시피 등록 페이지
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/18.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/19.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/20.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/21.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 
 ### 인공지능 레시피 추천 페이지
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/22.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/23.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 
 ## 아쉬운 점
