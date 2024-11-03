@@ -295,7 +295,7 @@ for search in searchs:
 수집된 이미지에 어떠한 항목이 어떤 것인지에 대해 확인 후 작성하는 것을 수행해야합니다.
 
 이 부분은 자동화가 어렵기에 [`LabelImg`](https://github.com/HumanSignal/labelImg)를 이용하여 아래와 같이 라벨링했습니다.  
-![](/assets/image/Post/Personal/Newmit-retrospect/1.png  =90%x90%)
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/1.png  =90%x90%)
 
 #### 모델 학습
 이미지 라벨링을 통해 이미지를 수집했고 이를 이용하여 모델의 학습 수행을 하게 됐습니다.
@@ -396,13 +396,13 @@ for file in train_file_list:
 학습 간 학습률과 손실에 대한 값을 `TensorBoard`에서 아래와 같이 확인 가능합니다.  
 (아래 값은 `20,000 Epoch` 실행 간 발생된 사항을 그래프로 기록한 사항입니다.)
 
-![](/assets/image/Post/Personal/Newmit-retrospect/2.png  =90%x90%)
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/2.png  =90%x90%)
 
 확인 시 학습 데이터 양이 작기 때문인지 과대적합으로 인해 높은 `Epoch`인 경우  
 분류를 잘못하는 것으로 보였고 `10000~25000 Epoch`가 성능이 괜찮았습니다.  
 (위 테스트 데이터는 별도 그래프로 저장하지 못하여 아쉬울 따름입니다..)
 
-![](/assets/image/Post/Personal/Newmit-retrospect/3.png "테스트 데이터를 통한 확인" =70%x70%)
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/3.png "테스트 데이터를 통한 확인" =70%x70%)
 
 이에 따라 `25,000 Epoch`를 기준으로 모델을 제작하여 추출하였습니다.  
 
@@ -568,44 +568,44 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
 실질적으로 `객체인식`을 위해 올라간 이미지는 `Serving` 관련 이미지입니다.  
 이를 기반으로 서비스의 구성도를 작성할 경우 아래와 같은 형식으로 동작합니다.
 
-![](/assets/image/Post/Personal/Newmit-retrospect/4.png "네이버 클라우드 기준 동작 구성도" =90%x90%)
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/4.png "네이버 클라우드 기준 동작 구성도" =90%x90%)
 
 
 ## 서비스 이미지
 ### 로그인 및 회원가입
-![](/assets/image/Post/Personal/Newmit-retrospect/5.png  =20%x20%)
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/5.png  =20%x20%)
 
 ### 메인 페이지 및 마이페이지
-![](/assets/image/Post/Personal/Newmit-retrospect/6.png  =20%x20%)  
-![](/assets/image/Post/Personal/Newmit-retrospect/7.png  =20%x20%)
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/6.png  =20%x20%)  
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/7.png  =20%x20%)
 
 ### 식자재 등록 페이지
-![](/assets/image/Post/Personal/Newmit-retrospect/8.png  =20%x20%)  
-![](/assets/image/Post/Personal/Newmit-retrospect/9.png  =20%x20%)
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/8.png  =20%x20%)  
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/9.png  =20%x20%)
 
 ### 식자재 목록과 상세 확인 페이지
-![](/assets/image/Post/Personal/Newmit-retrospect/10.png  =20%x20%)  
-![](/assets/image/Post/Personal/Newmit-retrospect/11.png  =20%x20%)
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/10.png  =20%x20%)  
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/11.png  =20%x20%)
 
 ### 등록된 레시피 확인 페이지
-![](/assets/image/Post/Personal/Newmit-retrospect/12.png  =20%x20%)  
-![](/assets/image/Post/Personal/Newmit-retrospect/13.png  =20%x20%)
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/12.png  =20%x20%)  
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/13.png  =20%x20%)
 
 ### 레시피 조리 확인 페이지
-![](/assets/image/Post/Personal/Newmit-retrospect/14.png  =20%x20%)  
-![](/assets/image/Post/Personal/Newmit-retrospect/15.png  =20%x20%)  
-![](/assets/image/Post/Personal/Newmit-retrospect/16.png  =20%x20%)  
-![](/assets/image/Post/Personal/Newmit-retrospect/17.png  =20%x20%)
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/14.png  =20%x20%)  
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/15.png  =20%x20%)  
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/16.png  =20%x20%)  
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/17.png  =20%x20%)
 
 ### 레시피 등록 페이지
-![](/assets/image/Post/Personal/Newmit-retrospect/18.png  =20%x20%)  
-![](/assets/image/Post/Personal/Newmit-retrospect/19.png  =20%x20%)  
-![](/assets/image/Post/Personal/Newmit-retrospect/20.png  =20%x20%)  
-![](/assets/image/Post/Personal/Newmit-retrospect/21.png  =20%x20%)
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/18.png  =20%x20%)  
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/19.png  =20%x20%)  
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/20.png  =20%x20%)  
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/21.png  =20%x20%)
 
 ### 인공지능 레시피 추천 페이지
-![](/assets/image/Post/Personal/Newmit-retrospect/22.png  =20%x20%)  
-![](/assets/image/Post/Personal/Newmit-retrospect/23.png  =20%x20%)
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/22.png  =20%x20%)  
+![](/assets/image/Post/Personal/Project/Newmit-retrospect/23.png  =20%x20%)
 
 ## 아쉬운 점
 ### 객체인식
