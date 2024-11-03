@@ -33,7 +33,7 @@ lastUpdated: true
 프로젝트의 전체 기한과 제가 수행한 인프라, 인공지능 파트를 소개합니다.
 :::
 
-## 프로젝트 개요
+## 🎨 프로젝트 개요
 보관 폐기, 먹지않은 음식물이 전체 버려지는 식자재 중 13%를 차지할 정도로  
 높은 비율을 차지하고 있고 식자재 관리에 어려움을 겪는 사용자가 굉장히 많습니다.
 
@@ -41,7 +41,7 @@ lastUpdated: true
 이를 위해 보관 위치나 소비 기한을 알려주거나 레시피를 제공하는 등의 기능으로  
 사용자가 식자재를 보다 쉽게 관리하고 이를 넘어 사용할 수 있는 방안을 제공합니다.
 
-### 프로젝트 참여자
+### 🧑‍💻 프로젝트 참여자
 - [강찬](https://github.com/ahs0432) (`Product Manager`)
   > `Image` 데이터 수집 및 가공  
   > `Object Detection` 모델 학습  
@@ -59,11 +59,11 @@ lastUpdated: true
   > `SpringBoot` 기반 서비스 개발  
   > `MySQL` 쿼리 설계 및 연동
 
-## 아이디어 스케치
+## 🖼️ 아이디어 스케치
 프로젝트 아이디어는 여러 가지가 존재하였고 최종 의견으로는 두 가지가 남았습니다.  
 의견은 아래 두 가지로 상세하진 않지만 간단한 아이디어로는 아래와 같게 구성됩니다.
 
-### 식자재 관리 플랫폼
+### 🥘 식자재 관리 플랫폼
 - 프로젝트 개요
   - 식자재를 관리하는 플랫폼을 제공하여 식자재를 손쉽게 등록하고 이를 소비할 방법 제공
 - 주요 기능
@@ -72,7 +72,7 @@ lastUpdated: true
   - 레시피: 자신의 레시피를 다른 사용자와 공유하고 식자재 별 레시피를 추천
     - 인공지능을 이용한 레시피 추천: `LLM`을 이용한 창의적인 레시피를 추천
 
-### 뉴스 키워드 분석을 통한 실시간 순위
+### 📜 뉴스 키워드 분석을 통한 실시간 순위
 - 프로젝트 개요
   - 뉴스의 주요 키워드를 분석하고 최근 화두가 되고 있는 키워드와 숨겨진 키워드를 발견
 - 주요 기능
@@ -80,7 +80,7 @@ lastUpdated: true
   - 주요 키워드를 이용한 실시간 화제 정보를 정리하여 페이지로 제공
   - 심각도가 높지만 실시간으로 화제가 되지 않고 있는 정보를 숨겨진 키워드로 제공
 
-## 개발 기간
+## ⌛ 개발 기간
 프로젝트 참여 인원이 모두 재직자이자 학생으로 적은 시간으로 참여하게 됐으며,  
 실제 프로젝트 기한은 이보다 더 타이트하게 이뤄진 점 참고 부탁드리겠습니다.
 
@@ -93,58 +93,60 @@ lastUpdated: true
   - 프롬프트 엔지니어링: 2024.05 ~ 2024.06
   - 최종 발표: 2024.06.08
 
-## 개발 스택
-### UI/UX
-#### 도구
+## 💻 개발 스택
+### 👔 UI/UX
+#### ✂️ 도구
 ![](https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![](https://img.shields.io/badge/photoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white)
 ![](https://img.shields.io/badge/illustrator-FF9A00?style=for-the-badge&logo=adobeillustrator&logoColor=white)
 
-#### 언어
+#### 🔧 언어
 ![](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![](https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![](https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 ![](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 ![](https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
-#### 프레임워크
+#### 🦴 프레임워크
 ![](https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![](https://img.shields.io/badge/materialdesign-757575?style=for-the-badge&logo=materialdesign&logoColor=white)
 ![](https://img.shields.io/badge/fontawesome-538DD7?style=for-the-badge&logo=fontawesome&logoColor=white)
 
-### 백엔드
-#### 도구
+### 🔬 백엔드
+#### ✂️ 도구
 <img src="https://img.shields.io/badge/intellijidea-000000?style=for-the-badge&logo=intellijidea&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
-#### 언어
-![](https://img.shields.io/badge/openjdk17-000000?style=for-the-badge&logo=openjdk&logoColor=white)
-![](https://img.shields.io/badge/springboot3-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+#### 🔧 언어
+<img src="https://img.shields.io/badge/openjdk17-000000?style=for-the-badge&logo=openjdk&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
-### 인프라
-#### 플랫폼
+#### 🦴 프레임워크
+<img src="https://img.shields.io/badge/springboot3-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+
+### 💺 인프라
+#### 🚌 플랫폼
 <img src="https://img.shields.io/badge/navercloud-03C75A?style=for-the-badge&logo=naver&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
-#### OS
+#### 🦾 OS
 <img src="https://img.shields.io/badge/rockylinux-10B981?style=for-the-badge&logo=rockylinux&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
-#### 컨테이너
+#### 🚢 컨테이너
 <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
-#### Database
+#### 🫙 Database
 <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
-### 인공지능
-#### 언어
+### 🤖 인공지능
+#### 🔧 언어
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
-#### 프레임워크
+#### 🦴 프레임워크
 <img src="https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
-#### LLM
+#### ✍️ LLM
 <img src="https://img.shields.io/badge/Hyperclovax-03C75A?style=for-the-badge&logo=naver&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
-## 구분 별 회고
-### 객체인식
+## 🤔 구분 별 회고
+### 😺 객체인식
 `객체인식`은 주요 기능이고, 처음 다뤄보는 분야이기에 러닝 커브가 존재했습니다.
 
 최근에는 `YOLO`를 이용한 학습 모델을 구현하는 것이 높은 인식률을 보여줍니다.  
@@ -153,7 +155,7 @@ lastUpdated: true
 `YOLO`의 경우 `PyTorch`를 기반으로 하기에 여기서는 모델 별 인식률을 확인하고  
 결과에 의거하여 최적의 모델을 확인한 뒤 `모델 학습` 및 `Serving` 하였습니다.
 
-#### 모델 선정
+#### 🔭 모델 선정
 사전 학습 모델 선택을 위해 `TensorFlow`에서 제공 중인 [Model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md)를 참고했습니다.  
 
 또한 가용할 수 있는 자원이 많지 않기에 모델은 CPU 가동이 가능한가도 평가했습니다.  
@@ -175,7 +177,7 @@ lastUpdated: true
 
 다만, 여러번 학습을 수행하여야 하기에 이에 중간 정도인 3번 모델을 대상 선정하였습니다.
 
-#### 이미지 수집
+#### 📷 이미지 수집
 이미지 수집은 모델이 내가 원하는 대상을 찾을 수 있도록 학습 시키기 위한 요소로  
 처음 데이터를 수집할 때는 Google 검색을 통해 데이터를 수집하여 보관하였습니다.
 
@@ -290,7 +292,7 @@ for search in searchs:
 
 이렇게 총 59가지의 종류의 라벨에 대한 2,082개의 이미지를 수집할 수 있었습니다.
 
-#### 이미지 라벨링
+#### 🏷️ 이미지 라벨링
 이미지 라벨링은 각 이미지 상 어떠한 부분을 무엇으로 구분할지 정답지를 주는 것으로,  
 수집된 이미지에 어떠한 항목이 어떤 것인지에 대해 확인 후 작성하는 것을 수행해야합니다.
 
@@ -298,7 +300,7 @@ for search in searchs:
 
 ![](/assets/image/Post/Personal/Project/Newmit-retrospect/1.png  =90%x90%)
 
-#### 모델 학습
+#### 🫠 모델 학습
 이미지 라벨링을 통해 이미지를 수집했고 이를 이용하여 모델의 학습 수행을 하게 됐습니다.
 
 학습은 `Docker`에 존재하는 `TensorFlow`에 대한 이미지를 활용하여 수행하게 됐으며,  
@@ -426,7 +428,7 @@ Model/
 │  └─ saved_model.pb
 ```
 
-#### 모델 추출 및 Serving
+#### ⏏️ 모델 추출 및 Serving
 학습이 완료된 모델의 파일을 모두 추출하고 이를 외부에서 `API` 등의 형태로 호출이 필요했습니다.
 
 이런 형태를 `Model Serving`이라 하고 `TensorFlow`는 대표적으로 2가지 방식이 있었습니다.
@@ -484,7 +486,7 @@ $ docker run -d -i -t -p 8501:8501 -v "<모델경로>:/models/<모델명>" -e MO
 
 위 API를 사용하는 방법에 대해서 개발자에게 전달하여 시스템과 연계할 수 있었습니다.
 
-### LLM
+### ✍️ LLM
 `LLM`은 기존의 계획에는 없었지만 내부적으로 논의 간 추가적인 기능이 고안되어 추가했습니다.  
 고안한 기능은 `LLM` 모델에서 사용자의 보유 식자재를 확인하고 레시피를 추천하는 기능입니다.
 
@@ -493,7 +495,7 @@ $ docker run -d -i -t -p 8501:8501 -v "<모델경로>:/models/<모델명>" -e MO
 
 저희는 `HyperClova X` 중 `HCX-003` 모델을 이용하여 서비스를 구현하게 됐습니다.
 
-#### 기능 구현
+#### 📖 기능 구현
 레시피는 등록된 데이터 외 `LLM`에서 자체적으로 데이터를 생성하여 제공하도록 진행하였고,  
 `System Prompt`를 통해 데이터의 형식을 제안하여 고안된 내용을 전달하도록 하였습니다.
 
@@ -562,7 +564,7 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
 내용을 보면 알 수 있듯 제법 괜찮은 내용을 전달하고 있는 것을 확인할 수 있습니다.  
 `LLM` 모델을 서비스 호출할 수 있도록 `호출 URL`을 만들어 개발자에게 전달하였습니다.
 
-## 인프라 구축
+## 💺 인프라 구축
 인프라는 비용적인 부담이 있기에 자체적으로 보유 중인 크레딧이 존재하여  
 `네이버 클라우드`를 이용하였고 `객체인식`은 `Docker`로 배포하였습니다.
 
@@ -571,12 +573,11 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
 
 ![](/assets/image/Post/Personal/Project/Newmit-retrospect/4.png "네이버 클라우드 기준 동작 구성도" =90%x90%)
 
-
-## 서비스 이미지
-### 로그인 및 회원가입
+## 😁 서비스 이미지
+### 🤩 로그인 및 회원가입
 ![](/assets/image/Post/Personal/Project/Newmit-retrospect/5.png  =20%x20%)
 
-### 메인 페이지 및 마이페이지
+### 🕵️ 메인 페이지 및 마이페이지
 <figure>
   <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/6.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
@@ -584,7 +585,7 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
   </p>
 </figure>
 
-### 식자재 등록 페이지
+### 🧙 식자재 등록 페이지
 <figure>
   <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/8.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
@@ -592,7 +593,7 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
   </p>
 </figure>
 
-### 식자재 목록과 상세 확인 페이지
+### 🎇 식자재 목록과 상세 확인 페이지
 <figure>
   <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/10.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
@@ -600,7 +601,7 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
   </p>
 </figure>
 
-### 등록된 레시피 확인 페이지
+### 🧑‍🚀 등록된 레시피 확인 페이지
 <figure>
   <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/12.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
@@ -608,7 +609,7 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
   </p> 
 </figure>
 
-### 레시피 조리 확인 페이지
+### 🍳 레시피 조리 확인 페이지
 <figure>
   <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/14.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
@@ -618,7 +619,7 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
   </p>
 </figure>
 
-### 레시피 등록 페이지
+### 🍔 레시피 등록 페이지
 <figure>
   <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/18.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
@@ -628,7 +629,7 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
   </p>
 </figure>
 
-### 인공지능 레시피 추천 페이지
+### ✨ 인공지능 레시피 추천 페이지
 <figure>
   <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/22.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
@@ -636,8 +637,8 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
   </p>
 </figure>
 
-## 아쉬운 점
-### 객체인식
+## 😅 아쉬운 점
+### 😺 객체인식
 모델 학습 과정에서 모델의 더 다양한`파라미터`를 조정해보지 못한 것이 아쉽습니다.  
 
 `교차검증`과 같은 방법을 통해 `학습`, `검증`, `테스트` 데이터를 나누지 못하여 성능 비교가 어려웠던 점,  
@@ -645,20 +646,20 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
 
 다음에 진행할 땐 이러한 개념을 잘 활용하여 학습률 비교 지표 등을 만들어보는게 목표입니다.
 
-### LLM
+### ✍️ LLM
 `LLM`을 커스텀하여 이용한 것이 아닌 `System Prompt`만 이용하여 진행하게 됐습니다.  
 이에 따라 최신성도 떨어질 수 있기에 다음엔 `RAG` 등을 이용하는 것도 좋다고 생각합니다.
 
 또한 현재는 `HyperClova X`와 같은 상용 모델을 사용하였지만 추후에는 모델을 바꾼다면,  
 자체 `LLM`을 만들 수 있도록 `Meta LLaMa 3.1`과 같은 오픈소스를 사용할까 고민 중입니다.
 
-### 인프라 구축
+### 💺 인프라 구축
 물론 실제 업무가 `클라우드` 서비스 관련 업무이기 때문에 실제로는 다양한 상품을 다루고 있지만,  
 비용적인 여건이 부족하기에 이번 프로젝트에선 제공되고 있는 다양한 상품을 사용하지 못했습니다. 
 
 추후에는 더 다양한 상품을 통해 간단한 서비스를 구축해보는 것도 하나의 경험일 것이라 생각됩니다.
 
-## 향후 계획
+## 😏 향후 계획
 `LLM`을 이용한 레시피 추천 기능은 아쉽게도 실제 조리했던 내용에 대한 사진이 없습니다.  
 `Stable Diffusion`과 같은 `이미지 생성형 모델`을 이용하여 사진을 생성할까 싶습니다.
 
