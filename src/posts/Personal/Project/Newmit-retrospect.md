@@ -122,9 +122,7 @@ lastUpdated: true
 
 ### 인프라
 #### 플랫폼
-<p>
-![](https://img.shields.io/badge/navercloud-03C75A?style=for-the-badge&logo=naver&logoColor=white)
-</p>
+<img src="https://img.shields.io/badge/navercloud-03C75A?style=for-the-badge&logo=naver&logoColor=white">
 
 #### OS
 ![](https://img.shields.io/badge/rockylinux-10B981?style=for-the-badge&logo=rockylinux&logoColor=white)
