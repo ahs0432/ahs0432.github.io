@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-11-03T13:56:15.424Z</updated>
+  <updated>2024-11-03T14:16:36.146Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -25,7 +25,7 @@
     <title type="text">[Project] &amp;quot;식자재 관리의 새로운 방법을 만나다, 뉴밋&amp;quot; 프로젝트 회고</title>
     <id>https://blog.false.kr/posts/Personal/Project/Newmit-retrospect.html</id>
     <link href="https://blog.false.kr/posts/Personal/Project/Newmit-retrospect.html"/>
-    <updated>2024-11-03T13:54:36.000Z</updated>
+    <updated>2024-11-03T14:15:17.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container info">
 <p class="hint-container-title">정보</p>
 <p>📢 현재 포스팅은 2024년 1학기에 진행한 <code>팀 프로젝트</code>에 대한 회고입니다.<br>
@@ -150,9 +150,7 @@
 <img src="https://img.shields.io/badge/springboot3-6DB33F?style=for-the-badge&amp;logo=springboot&amp;logoColor=white" alt="" loading="lazy"></p>
 <h3>인프라</h3>
 <h4>플랫폼</h4>
-<p>
-![](https://img.shields.io/badge/navercloud-03C75A?style=for-the-badge&amp;logo=naver&amp;logoColor=white)
-</p>
+<img src="https://img.shields.io/badge/navercloud-03C75A?style=for-the-badge&amp;logo=naver&amp;logoColor=white">
 <h4>OS</h4>
 <figure><img src="https://img.shields.io/badge/rockylinux-10B981?style=for-the-badge&amp;logo=rockylinux&amp;logoColor=white" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h4>컨테이너</h4>

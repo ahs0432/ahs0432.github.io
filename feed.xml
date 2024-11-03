@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Sun, 03 Nov 2024 13:56:15 GMT</pubDate>
-    <lastBuildDate>Sun, 03 Nov 2024 13:56:15 GMT</lastBuildDate>
+    <pubDate>Sun, 03 Nov 2024 14:16:36 GMT</pubDate>
+    <lastBuildDate>Sun, 03 Nov 2024 14:16:36 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Project</category>
@@ -148,9 +148,7 @@
 <img src="https://img.shields.io/badge/springboot3-6DB33F?style=for-the-badge&amp;logo=springboot&amp;logoColor=white" alt="" loading="lazy"></p>
 <h3>인프라</h3>
 <h4>플랫폼</h4>
-<p>
-![](https://img.shields.io/badge/navercloud-03C75A?style=for-the-badge&amp;logo=naver&amp;logoColor=white)
-</p>
+<img src="https://img.shields.io/badge/navercloud-03C75A?style=for-the-badge&amp;logo=naver&amp;logoColor=white">
 <h4>OS</h4>
 <figure><img src="https://img.shields.io/badge/rockylinux-10B981?style=for-the-badge&amp;logo=rockylinux&amp;logoColor=white" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h4>컨테이너</h4>
