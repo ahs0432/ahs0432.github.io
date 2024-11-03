@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-11-03T13:46:20.813Z</updated>
+  <updated>2024-11-03T13:56:15.424Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -25,7 +25,7 @@
     <title type="text">[Project] &amp;quot;식자재 관리의 새로운 방법을 만나다, 뉴밋&amp;quot; 프로젝트 회고</title>
     <id>https://blog.false.kr/posts/Personal/Project/Newmit-retrospect.html</id>
     <link href="https://blog.false.kr/posts/Personal/Project/Newmit-retrospect.html"/>
-    <updated>2024-11-03T13:44:52.000Z</updated>
+    <updated>2024-11-03T13:54:36.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container info">
 <p class="hint-container-title">정보</p>
 <p>📢 현재 포스팅은 2024년 1학기에 진행한 <code>팀 프로젝트</code>에 대한 회고입니다.<br>
@@ -150,7 +150,9 @@
 <img src="https://img.shields.io/badge/springboot3-6DB33F?style=for-the-badge&amp;logo=springboot&amp;logoColor=white" alt="" loading="lazy"></p>
 <h3>인프라</h3>
 <h4>플랫폼</h4>
-<figure><img src="https://img.shields.io/badge/navercloud-03C75A?style=for-the-badge&amp;logo=naver&amp;logoColor=white" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>
+![](https://img.shields.io/badge/navercloud-03C75A?style=for-the-badge&amp;logo=naver&amp;logoColor=white)
+</p>
 <h4>OS</h4>
 <figure><img src="https://img.shields.io/badge/rockylinux-10B981?style=for-the-badge&amp;logo=rockylinux&amp;logoColor=white" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h4>컨테이너</h4>
@@ -347,8 +349,8 @@
 <h4>이미지 라벨링</h4>
 <p>이미지 라벨링은 각 이미지 상 어떠한 부분을 무엇으로 구분할지 정답지를 주는 것으로,<br>
 수집된 이미지에 어떠한 항목이 어떤 것인지에 대해 확인 후 작성하는 것을 수행해야합니다.</p>
-<p>이 부분은 자동화가 어렵기에 <a href="https://github.com/HumanSignal/labelImg" target="_blank" rel="noopener noreferrer"><code>LabelImg</code></a>를 이용하여 아래와 같이 라벨링했습니다.<br>
-<img src="/assets/image/Post/Personal/Project/Newmit-retrospect/1.png" alt="" width="90%" height="90%" loading="lazy"></p>
+<p>이 부분은 자동화가 어렵기에 <a href="https://github.com/HumanSignal/labelImg" target="_blank" rel="noopener noreferrer"><code>LabelImg</code></a>를 이용하여 아래와 같이 라벨링했습니다.</p>
+<figure><img src="/assets/image/Post/Personal/Project/Newmit-retrospect/1.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h4>모델 학습</h4>
 <p>이미지 라벨링을 통해 이미지를 수집했고 이를 이용하여 모델의 학습 수행을 하게 됐습니다.</p>
 <p>학습은 <code>Docker</code>에 존재하는 <code>TensorFlow</code>에 대한 이미지를 활용하여 수행하게 됐으며,<br>
