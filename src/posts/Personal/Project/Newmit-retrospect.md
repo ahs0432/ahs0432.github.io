@@ -461,7 +461,7 @@ $ docker run -d -i -t -p 8501:8501 -v "<모델경로>:/models/<모델명>" -e MO
 
 |호출 주소|Method|내용|
 |:--:|:--:|:--:|
-|http://localhost:8501/v1/models/<모델명>:predict|POST|{"instances": [이미지 픽셀 데이터] }|
+|http://localhost:8501/v1/models/<모델명>:predict|POST|`{"instances": [이미지 픽셀 데이터] }`|
 
 출력 데이터는 아래와 같은 형식으로 제공되며 이중 필요한 데이터를 추출하여 사용합니다.
 
