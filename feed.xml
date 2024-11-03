@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Sun, 03 Nov 2024 15:10:17 GMT</pubDate>
-    <lastBuildDate>Sun, 03 Nov 2024 15:10:17 GMT</lastBuildDate>
+    <pubDate>Sun, 03 Nov 2024 15:17:33 GMT</pubDate>
+    <lastBuildDate>Sun, 03 Nov 2024 15:17:33 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Project</category>
@@ -586,42 +586,56 @@
 <figure><img src="/assets/image/Post/Personal/Project/Newmit-retrospect/5.png" alt="" width="20%" height="20%" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3>메인 페이지 및 마이페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/6.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/7.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 <h3>식자재 등록 페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/8.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/9.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 <h3>식자재 목록과 상세 확인 페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/10.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/11.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 <h3>등록된 레시피 확인 페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/12.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/13.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p> 
 </figure>
 <h3>레시피 조리 확인 페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/14.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/15.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/16.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/17.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 <h3>레시피 등록 페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/18.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/19.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/20.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/21.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 <h3>인공지능 레시피 추천 페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/22.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/23.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 <h2>아쉬운 점</h2>
 <h3>객체인식</h3>

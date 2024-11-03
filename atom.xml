@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-11-03T15:10:17.059Z</updated>
+  <updated>2024-11-03T15:17:33.835Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -25,7 +25,7 @@
     <title type="text">[Project] &amp;quot;식자재 관리의 새로운 방법을 만나다, 뉴밋&amp;quot; 프로젝트 회고</title>
     <id>https://blog.false.kr/posts/Personal/Project/Newmit-retrospect.html</id>
     <link href="https://blog.false.kr/posts/Personal/Project/Newmit-retrospect.html"/>
-    <updated>2024-11-03T14:54:16.000Z</updated>
+    <updated>2024-11-03T15:16:22.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container info">
 <p class="hint-container-title">정보</p>
 <p>📢 현재 포스팅은 2024년 1학기에 진행한 <code>팀 프로젝트</code>에 대한 회고입니다.<br>
@@ -588,42 +588,56 @@
 <figure><img src="/assets/image/Post/Personal/Project/Newmit-retrospect/5.png" alt="" width="20%" height="20%" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3>메인 페이지 및 마이페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/6.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/7.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 <h3>식자재 등록 페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/8.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/9.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 <h3>식자재 목록과 상세 확인 페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/10.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/11.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 <h3>등록된 레시피 확인 페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/12.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/13.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p> 
 </figure>
 <h3>레시피 조리 확인 페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/14.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/15.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/16.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/17.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 <h3>레시피 등록 페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/18.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/19.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/20.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/21.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 <h3>인공지능 레시피 추천 페이지</h3>
 <figure>
+  <p>
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/22.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
   <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/23.png" alt="" width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  </p>
 </figure>
 <h2>아쉬운 점</h2>
 <h3>객체인식</h3>
