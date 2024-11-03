@@ -122,7 +122,9 @@ lastUpdated: true
 
 ### 인프라
 #### 플랫폼
+<p>
 ![](https://img.shields.io/badge/navercloud-03C75A?style=for-the-badge&logo=naver&logoColor=white)
+</p>
 
 #### OS
 ![](https://img.shields.io/badge/rockylinux-10B981?style=for-the-badge&logo=rockylinux&logoColor=white)
@@ -295,6 +297,7 @@ for search in searchs:
 수집된 이미지에 어떠한 항목이 어떤 것인지에 대해 확인 후 작성하는 것을 수행해야합니다.
 
 이 부분은 자동화가 어렵기에 [`LabelImg`](https://github.com/HumanSignal/labelImg)를 이용하여 아래와 같이 라벨링했습니다.  
+
 ![](/assets/image/Post/Personal/Project/Newmit-retrospect/1.png  =90%x90%)
 
 #### 모델 학습
