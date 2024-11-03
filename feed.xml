@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Sun, 03 Nov 2024 15:55:29 GMT</pubDate>
-    <lastBuildDate>Sun, 03 Nov 2024 15:55:29 GMT</lastBuildDate>
+    <pubDate>Sun, 03 Nov 2024 16:02:01 GMT</pubDate>
+    <lastBuildDate>Sun, 03 Nov 2024 16:02:01 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Project</category>
@@ -482,7 +482,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><code>컨테이너</code> 상 특정 경로를 매핑하여 <code>모델</code>을 인식할 수 있도록 제공하였습니다.</p>
 <div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> docker</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> run</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -d</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -i</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -t</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -p</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 8501:8501</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -v</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "&lt;모델경로&gt;:/models/&lt;모델명&gt;"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -e</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> MODEL_NAME=</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">모델</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">명&gt; </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">tensorflow/serving:2.15.1</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --name</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> tf_serving</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>이후 아래와 같이 <code>API</code>를 호출하여 모델에 데이터를 입력 후 출력 데이터를 수신했습니다.</p>
-<table instances:[이미지픽셀데이터]="">
+<table>
 <thead>
 <tr>
 <th style="text-align:center">호출 주소</th>
@@ -494,7 +494,7 @@
 <tr>
 <td style="text-align:center">http://localhost:8501/v1/models/&lt;모델명&gt;:predict</td>
 <td style="text-align:center">POST</td>
-<td style="text-align:center"></td>
+<td style="text-align:center"><code>{"instances": [이미지 픽셀 데이터] }</code></td>
 </tr>
 </tbody>
 </table>
