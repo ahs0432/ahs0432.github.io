@@ -114,7 +114,7 @@ lastUpdated: true
 
 ### 백엔드
 #### 도구
-![](https://img.shields.io/badge/intellijidea-000000?style=for-the-badge&logo=intellijidea&logoColor=white)
+<img src="https://img.shields.io/badge/intellijidea-000000?style=for-the-badge&logo=intellijidea&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
 #### 언어
 ![](https://img.shields.io/badge/openjdk17-000000?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -122,26 +122,26 @@ lastUpdated: true
 
 ### 인프라
 #### 플랫폼
-<img src="https://img.shields.io/badge/navercloud-03C75A?style=for-the-badge&logo=naver&logoColor=white">
+<img src="https://img.shields.io/badge/navercloud-03C75A?style=for-the-badge&logo=naver&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
 #### OS
-![](https://img.shields.io/badge/rockylinux-10B981?style=for-the-badge&logo=rockylinux&logoColor=white)
+<img src="https://img.shields.io/badge/rockylinux-10B981?style=for-the-badge&logo=rockylinux&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
 #### 컨테이너
-![](https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+<img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
 #### Database
-![](https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
 ### 인공지능
 #### 언어
-![](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
 #### 프레임워크
-![](https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+<img src="https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
 #### LLM
-![](https://img.shields.io/badge/Hyperclovax-03C75A?style=for-the-badge&logo=naver&logoColor=white)
+<img src="https://img.shields.io/badge/Hyperclovax-03C75A?style=for-the-badge&logo=naver&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
 ## 구분 별 회고
 ### 객체인식
@@ -577,36 +577,50 @@ except_recipe에 명시된 레시피는 제외하고 비슷하거나 유사한 �
 ![](/assets/image/Post/Personal/Project/Newmit-retrospect/5.png  =20%x20%)
 
 ### 메인 페이지 및 마이페이지
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/6.png  =20%x20%)  
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/7.png  =20%x20%)
+<figure>
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/6.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/7.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+</figure>
 
 ### 식자재 등록 페이지
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/8.png  =20%x20%)  
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/9.png  =20%x20%)
+<figure>
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/8.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/9.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+</figure>
 
 ### 식자재 목록과 상세 확인 페이지
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/10.png  =20%x20%)  
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/11.png  =20%x20%)
+<figure>
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/10.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/11.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+</figure>
 
 ### 등록된 레시피 확인 페이지
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/12.png  =20%x20%)  
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/13.png  =20%x20%)
+<figure>
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/12.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/13.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+</figure>
 
 ### 레시피 조리 확인 페이지
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/14.png  =20%x20%)  
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/15.png  =20%x20%)  
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/16.png  =20%x20%)  
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/17.png  =20%x20%)
+<figure>
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/14.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/15.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/16.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/17.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+</figure>
 
 ### 레시피 등록 페이지
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/18.png  =20%x20%)  
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/19.png  =20%x20%)  
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/20.png  =20%x20%)  
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/21.png  =20%x20%)
+<figure>
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/18.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/19.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/20.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/21.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+</figure>
 
 ### 인공지능 레시피 추천 페이지
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/22.png  =20%x20%)  
-![](/assets/image/Post/Personal/Project/Newmit-retrospect/23.png  =20%x20%)
+<figure>
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/22.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+  <img src="/assets/image/Post/Personal/Project/Newmit-retrospect/23.png" alt width="20%" height="20%" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
+</figure>
 
 ## 아쉬운 점
 ### 객체인식
