@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Mon, 04 Nov 2024 06:43:39 GMT</pubDate>
-    <lastBuildDate>Mon, 04 Nov 2024 06:43:39 GMT</lastBuildDate>
+    <pubDate>Mon, 04 Nov 2024 06:48:20 GMT</pubDate>
+    <lastBuildDate>Mon, 04 Nov 2024 06:48:20 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>AI</category>
@@ -61,7 +61,7 @@
 <h4>학습률 (Learning rate)</h4>
 <p><code>학습률</code>은 <code>오차</code> 값을 기울기에 따라 반영 시 너무 크거나 낮은 값이 이동하는 것을 방지하기 위해<br>
 특정 값을 곱하여 학습 간 <code>최적해</code> 방향으로의 접근 값을 줄이는 행위를 의미하고 있습니다.</p>
-<p>일반적으로 <code>0.001</code>, <code>0.0001</code>과 같은 값이 쓰이며 해당 값을 찾는 것도 <code>학습률</code>에 중요한 요소입니다.</p>
+<p>일반적으로 <code>0.001</code>, <code>0.0001</code>과 같은 값이 쓰이며 해당 값을 찾는 것도 중요한 요소입니다.</p>
 <figure><img src="/assets/image/Post/Computing/AI/Gradient-descent/5.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>위 사진은 <code>학습률</code> 설정에 따른 <code>최적해</code> 방향으로의 이동 정도를 나타낸 것입니다.</p>
 <p>너무 낮을 경우 학습 반영의 시간이 오래걸리고 <code>Local Minimum</code>에 빠질 수 있으며,<br>

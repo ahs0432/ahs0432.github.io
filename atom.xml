@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-11-04T06:43:39.432Z</updated>
+  <updated>2024-11-04T06:48:20.984Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -26,7 +26,7 @@
     <title type="text">[Artificial Intelligence] 경사하강법에 대해 알아보자</title>
     <id>https://blog.false.kr/posts/Computing/AI/Gradient-descent.html</id>
     <link href="https://blog.false.kr/posts/Computing/AI/Gradient-descent.html"/>
-    <updated>2024-11-04T06:40:52.000Z</updated>
+    <updated>2024-11-04T06:47:19.000Z</updated>
     <summary type="html"><![CDATA[<h2>경사하강법 (Gradient Descent)?</h2>
 <p>기계학습 간 최적화 함수의 대표 격인 <code>경사하강법</code>에 대해서 간단하게 소개하고자 합니다.</p>
 <h3>기계학습의 간단한 동작 과정</h3>
@@ -60,7 +60,7 @@
 <h4>학습률 (Learning rate)</h4>
 <p><code>학습률</code>은 <code>오차</code> 값을 기울기에 따라 반영 시 너무 크거나 낮은 값이 이동하는 것을 방지하기 위해<br>
 특정 값을 곱하여 학습 간 <code>최적해</code> 방향으로의 접근 값을 줄이는 행위를 의미하고 있습니다.</p>
-<p>일반적으로 <code>0.001</code>, <code>0.0001</code>과 같은 값이 쓰이며 해당 값을 찾는 것도 <code>학습률</code>에 중요한 요소입니다.</p>
+<p>일반적으로 <code>0.001</code>, <code>0.0001</code>과 같은 값이 쓰이며 해당 값을 찾는 것도 중요한 요소입니다.</p>
 <figure><img src="/assets/image/Post/Computing/AI/Gradient-descent/5.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>위 사진은 <code>학습률</code> 설정에 따른 <code>최적해</code> 방향으로의 이동 정도를 나타낸 것입니다.</p>
 <p>너무 낮을 경우 학습 반영의 시간이 오래걸리고 <code>Local Minimum</code>에 빠질 수 있으며,<br>
