@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Mon, 04 Nov 2024 06:39:04 GMT</pubDate>
-    <lastBuildDate>Mon, 04 Nov 2024 06:39:04 GMT</lastBuildDate>
+    <pubDate>Mon, 04 Nov 2024 06:43:39 GMT</pubDate>
+    <lastBuildDate>Mon, 04 Nov 2024 06:43:39 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>AI</category>
@@ -61,9 +61,9 @@
 <h4>학습률 (Learning rate)</h4>
 <p><code>학습률</code>은 <code>오차</code> 값을 기울기에 따라 반영 시 너무 크거나 낮은 값이 이동하는 것을 방지하기 위해<br>
 특정 값을 곱하여 학습 간 <code>최적해</code> 방향으로의 접근 값을 줄이는 행위를 의미하고 있습니다.</p>
-<p>일반적으로 <code>0.001</code>, <code>0.0001</code>과 같은 값이 쓰이며 해당 값을 찾는 것도 학습률에 중요한 요소입니다.</p>
+<p>일반적으로 <code>0.001</code>, <code>0.0001</code>과 같은 값이 쓰이며 해당 값을 찾는 것도 <code>학습률</code>에 중요한 요소입니다.</p>
 <figure><img src="/assets/image/Post/Computing/AI/Gradient-descent/5.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
-<p>위 사진은 학습률 설정에 따른 <code>최적해</code> 방향으로의 이동 정도를 나타낸 것입니다.</p>
+<p>위 사진은 <code>학습률</code> 설정에 따른 <code>최적해</code> 방향으로의 이동 정도를 나타낸 것입니다.</p>
 <p>너무 낮을 경우 학습 반영의 시간이 오래걸리고 <code>Local Minimum</code>에 빠질 수 있으며,<br>
 반대로 너무 클 경우 <code>발산</code>을 하여 정확한 값을 찾지 못하는 현상이 발생될 수 있습니다.</p>
 <p>적절한 값을 찾을 경우 속도도 안정적으로 <code>최적해</code>에 도달하는 것을 볼 수 있습니다.</p>
@@ -73,7 +73,7 @@
 <p>둘의 차이는 가장 지대가 낮은 구간을 찾았는지 찾지 못했는지의 차이로 볼 수 있으며,<br>
 <code>Global Minimum</code>은 가장 낮은 지대를, <code>Local Minimum</code>은 낮은 지대 중 하나를 의미합니다.</p>
 <figure><img src="/assets/image/Post/Computing/AI/Gradient-descent/6.png" alt="" width="70%" height="70%" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
-<p>경사하강법의 기본 이론으로는 이를 극복하기 어렵기에 추가 고안된 다른 방법을 사용합니다.<br>
+<p><code>경사하강법</code>의 기본 이론으로는 이를 극복하기 어렵기에 추가 고안된 다른 방법을 사용합니다.<br>
 다른 방법 중 <code>Stochastic Gradient Descent</code> 방법은 다음 포스팅을 통해 소개하겠습니다.</p>
 <hr>
 <p>끝까지 읽어주셔서 감사드립니다. 😎</p>
