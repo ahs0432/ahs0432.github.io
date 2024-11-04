@@ -55,7 +55,7 @@ lastUpdated: true
 
 이러한 `경사하강법`의 학습 규칙을 수식 표현 시 아래와 같이 표현이 가능합니다.
 
-![](/assets/image/Post/Computing/AI/Gradient-descent/4.png  =70%x70%)
+![](/assets/image/Post/Computing/AI/Gradient-descent/4.png  =50%x50%)
 
 하나의 매개변수를 기반으로 `손실함수 J`를 `wᵢ`의 값으로 `편미분`한 값을 도출하고  
 `𝜌(rho)` 또는 `p`로 표현하는 `학습률`을 곱하여 값을 하강할 경사의 값을 조절한 뒤,  
