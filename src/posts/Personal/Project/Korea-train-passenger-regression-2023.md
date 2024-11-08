@@ -202,7 +202,7 @@ in_station_sorting.loc['2호선', '총 탑승자'].to_frame().style.background_g
 in_station_sorting.loc['2호선', '총 탑승자'].to_frame().plot(kind='bar')
 ```
 
-![](/assets/image/Post/Personal/Project/Korea-train-passenger-regression-2023/4.png  =90%x90%)
+![](/assets/image/Post/Personal/Project/Korea-train-passenger-regression-2023/4.png  =60%x60%)
 
 ## 🦾 기계 학습
 `월 별 데이터`를 가지고 데이터를 확인하는 것은 좋았으나 `학습`에 이용하기에는 무리가 있습니다.  
