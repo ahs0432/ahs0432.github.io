@@ -53,7 +53,7 @@ lastUpdated: true
 해당 데이터는 월 별로 수집된 `데이터`이므로 일 별, 시간대 별로 예측하기에는 어려움이 존재하였습니다.  
 이에 추가 `데이터셋` 수집이 필요했고 [data.go.kr](https://www.data.go.kr/) 페이지를 활용하여 데이터를 수집할 수 있었습니다.
 
-프로젝트에서 필요한 `데이터`는 서울교통공사에서 제공되는 `역별 일별 시간대별 승하차 인원` 정보입니다.  
+프로젝트에서 사용한 `데이터`는 서울교통공사에 `역별 일별 시간대별 승하차 인원` 데이터를 이용합니다.  
 해당 `데이터`는 [여기](https://www.data.go.kr/data/15048032/fileData.do) 페이지로 이동할 경우 `데이터`를 다운로드 받으실 수 있으니 참고 부탁드립니다.
 
 ## ❄️ 데이터셋 분석
@@ -193,7 +193,7 @@ in_station_sorting = in_station_sorting.groupby(['호선명', '지하철역']).s
 in_station_sorting.loc['2호선', '총 탑승자'].to_frame().style.background_gradient()
 ```
 
-![](/assets/image/Post/Personal/Project/Korea-train-passenger-regression-2023/3.png  =50%x50%)
+![](/assets/image/Post/Personal/Project/Korea-train-passenger-regression-2023/3.png  =30%x30%)
 
 이러한 탑승자의 데이터를 `막대 그래프`로 `시각화`할 경우 아래와 같이 확인됩니다.  
 
