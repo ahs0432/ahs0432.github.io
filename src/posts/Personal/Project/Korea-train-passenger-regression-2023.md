@@ -193,7 +193,7 @@ in_station_sorting = in_station_sorting.groupby(['호선명', '지하철역']).s
 in_station_sorting.loc['2호선', '총 탑승자'].to_frame().style.background_gradient()
 ```
 
-![](/assets/image/Post/Personal/Project/Korea-train-passenger-regression-2023/3.png  =50%x50%)
+![](/assets/image/Post/Personal/Project/Korea-train-passenger-regression-2023/3.png  =30%x30%)
 
 이러한 탑승자의 데이터를 `막대 그래프`로 `시각화`할 경우 아래와 같이 확인됩니다.  
 
