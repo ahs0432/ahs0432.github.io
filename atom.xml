@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-11-08T08:38:06.638Z</updated>
+  <updated>2024-11-08T08:42:49.889Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -26,7 +26,7 @@
     <title type="text">[Project] &amp;quot;시간대 별 지하철 승하차 예측&amp;quot; 프로젝트 회고</title>
     <id>https://blog.false.kr/posts/Personal/Project/Korea-train-passenger-regression-2023.html</id>
     <link href="https://blog.false.kr/posts/Personal/Project/Korea-train-passenger-regression-2023.html"/>
-    <updated>2024-11-08T08:36:34.000Z</updated>
+    <updated>2024-11-08T08:41:41.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container info">
 <p class="hint-container-title">정보</p>
 <p>📢 현재 포스팅은 2023년 1학기에 진행한 <code>개인 프로젝트</code>에 대한 회고입니다.</p>
@@ -59,7 +59,7 @@
 <p>최초 데이터셋은 <a href="https://data.seoul.go.kr/dataList/OA-12252/S/1/datasetView.do" target="_blank" rel="noopener noreferrer">서울교통공사</a>에서 제공되는 페이지에서 2015년부터의 월 별 현황을 다운로드했습니다.</p>
 <p>해당 데이터는 월 별로 수집된 <code>데이터</code>이므로 일 별, 시간대 별로 예측하기에는 어려움이 존재하였습니다.<br>
 이에 추가 <code>데이터셋</code> 수집이 필요했고 <a href="https://www.data.go.kr/" target="_blank" rel="noopener noreferrer">data.go.kr</a> 페이지를 활용하여 데이터를 수집할 수 있었습니다.</p>
-<p>프로젝트에서 필요한 <code>데이터</code>는 서울교통공사에서 제공되는 <code>역별 일별 시간대별 승하차 인원</code> 정보입니다.<br>
+<p>프로젝트에서 사용한 <code>데이터</code>는 서울교통공사에 <code>역별 일별 시간대별 승하차 인원</code> 데이터를 이용합니다.<br>
 해당 <code>데이터</code>는 <a href="https://www.data.go.kr/data/15048032/fileData.do" target="_blank" rel="noopener noreferrer">여기</a> 페이지로 이동할 경우 <code>데이터</code>를 다운로드 받으실 수 있으니 참고 부탁드립니다.</p>
 <h2>❄️ 데이터셋 분석</h2>
 <p><code>데이터셋</code>을 분석하는 과정은 각각의 데이터 별로 수행하였습니다.<br>
