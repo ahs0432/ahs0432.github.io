@@ -16,7 +16,7 @@ tags:
   - 승객
   - 예측
 
-date: 2024-11-05
+date: 2024-11-08
 
 editLink: false
 lastUpdated: true
