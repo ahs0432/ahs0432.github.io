@@ -47,7 +47,7 @@ lastUpdated: true
 ### 🦴 프레임워크
 <img src="https://img.shields.io/badge/scikitlearn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="" loading="lazy" photo-swipe="" style="cursor: zoom-in;">
 
-## 데이터셋 수집
+## 🍨 데이터셋 수집
 최초 데이터셋은 [서울교통공사](https://data.seoul.go.kr/dataList/OA-12252/S/1/datasetView.do)에서 제공되는 페이지에서 2015년부터의 월 별 현황을 다운로드했습니다.
 
 해당 데이터는 월 별로 수집된 `데이터`이므로 일 별, 시간대 별로 예측하기에는 어려움이 존재하였습니다.  
@@ -56,11 +56,11 @@ lastUpdated: true
 프로젝트에서 필요한 `데이터`는 서울교통공사에서 제공되는 `역별 일별 시간대별 승하차 인원` 정보입니다.  
 해당 `데이터`는 [여기](https://www.data.go.kr/data/15048032/fileData.do) 페이지로 이동할 경우 `데이터`를 다운로드 받으실 수 있으니 참고 부탁드립니다.
 
-## 데이터셋 분석
+## ❄️ 데이터셋 분석
 `데이터셋`을 분석하는 과정은 각각의 데이터 별로 수행하였습니다.  
 월별 데이터를 위주로 분석하여 이를 시각화하는 작업을 수행했습니다.
 
-### 데이터 속성 확인
+### ✨ 데이터 속성 확인
 우선 `데이터셋`에서 제공되는 속성을 확인하였고 데이터의 `사용 여부`도 구분하였습니다.
 
 | Column 명 | 설명 | 사용 여부 |
@@ -120,7 +120,7 @@ lastUpdated: true
 
 `작업일자`의 경우 데이터를 삽입, 그러니까 제공하기 시작한 일자이므로 제외했습니다.
 
-#### 승/하차 데이터 분석
+#### 😏 승/하차 데이터 분석
 `Python`을 이용하여 `데이터 분석`을 수행했고 시간대 별 호선 별 승차자를 확인하였습니다.  
 승차 데이터 확인을 위해 `in_station` 변수를 만들고 `속성명`에 승차가 있는 경우 추가했습니다.
 
@@ -193,7 +193,7 @@ in_station_sorting = in_station_sorting.groupby(['호선명', '지하철역']).s
 in_station_sorting.loc['2호선', '총 탑승자'].to_frame().style.background_gradient()
 ```
 
-![](/assets/image/Post/Personal/Project/Korea-train-passenger-regression-2023/3.png  =90%x90%)
+![](/assets/image/Post/Personal/Project/Korea-train-passenger-regression-2023/3.png  =50%x50%)
 
 이러한 탑승자의 데이터를 `막대 그래프`로 `시각화`할 경우 아래와 같이 확인됩니다.  
 
@@ -204,11 +204,11 @@ in_station_sorting.loc['2호선', '총 탑승자'].to_frame().plot(kind='bar')
 
 ![](/assets/image/Post/Personal/Project/Korea-train-passenger-regression-2023/4.png  =90%x90%)
 
-## 기계 학습
+## 🦾 기계 학습
 `월 별 데이터`를 가지고 데이터를 확인하는 것은 좋았으나 `학습`에 이용하기에는 무리가 있습니다.  
 이에 따라 `일 별 데이터`를 이용하여 `데이터를 가공`하고 `기계학습`을 통해 `추론`해보겠습니다.
 
-### 데이터 속성 확인
+### ❄️ 데이터 속성 확인
 `일 별 데이터`에서 불필요한 데이터가 존재하는지 확인을 위해 각 속성을 표로 정리해봤습니다.  
 
 | Column 명 | 설명 | 사용 여부 |
@@ -243,7 +243,7 @@ in_station_sorting.loc['2호선', '총 탑승자'].to_frame().plot(kind='bar')
 데이터 속성 중 `연번`의 경우 단순 순번이므로 불필요, `역명`은 `고유역번호`로 대체됩니다.  
 이에 두 데이터 속성은 삭제하고 나머지 데이터셋을 이용하여 `학습`을 수행하려고 합니다.
 
-### 데이터 전처리
+### 🏭 데이터 전처리
 현재 `기계학습`을 통해서는 가장 탑승자가 많았던 `2호선`을 기준으로 데이터를 분리하였습니다.
 
 ```python
@@ -366,4 +366,139 @@ day_station_data.fillna(0, inplace=True)
 day_station_data['weekday'] = pd.to_datetime(day_station_data['수송일자'].astype('str'), infer_datetime_format=True).dt.weekday
 ```
 
-### 데이터 학습
+### 📖 데이터 학습
+데이터 `학습`을 하여 `예측`을 통해 이후 데이터를 예측해야할 시간입니다.  
+우선 데이터를 `속성`과 `결과`로 나눈 뒤 데이터를 8:2로 분리하였습니다.
+
+```python
+# 이제 데이터는 어느정도 준비됐다고 판단된다 이를 이제 예측할 수 있도록 데이터를 학습시키고 예측해보겠다.
+from sklearn.model_selection import train_test_split
+
+# '고유역번호(외부역코드)', '승하차구분', '공휴일', 'weekday'
+X = day_station_data.loc[:, ['고유역번호(외부역코드)', '승하차구분', '공휴일', 'weekday']]
+# 06시 이전~24시 이후
+y = day_station_data.iloc[:, 3:-2]
+
+# 데이터 분리
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+```
+
+학습 간에는 `알고리즘` 선택이 필요한데 `선형 회귀`부터 굉장히 다양하게 존재합니다.  
+제 경우는 `앙상블` 알고리즘 중 `랜덤포레스트`의 `회귀` 버전을 선택하였습니다.
+
+또한 `하이퍼 파라미터`라 불리는 요소를 임시로 값을 주고 학습을 진행했습니다.
+
+- `n_estimators`: 생성할 트리의 개수 (앙상블 알고리즘이므로 여러 개를 생성하고 나은 것을 선택)
+- `max_depth`: 트리의 최대 깊이
+- `random_state`: 시드
+
+```python
+# 랜덤 포레스트 회귀 관련 라이브러리 import 진행
+from sklearn.ensemble import RandomForestRegressor
+
+clf = RandomForestRegressor(n_estimators=30, max_depth=5, random_state=0)
+clf.fit(X_train, y_train)
+```
+
+이제 학습된 `모델`을 이용하여 미리 나눠둔 `테스트 데이터`를 이용해 `예측`합니다.
+
+```python
+# 예측
+predict = clf.predict(X_test)
+predict
+```
+
+학습된 `모델`의 성능 확인을 위해 `예측`된 데이터를 이용해 점수를 계산했습니다.  
+
+`R2 Score`는 0~1 사이의 값으로 1에 가까울수록 `데이터`를 잘 설명하고 있는 것인데,  
+여기서는 `0.43` 그러니 43% 정도에 대해서만 잘 설명하고 있다는 것을 확인할 수 있습니다.
+
+```python
+from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
+
+r2 = r2_score(y_test, predict)
+mse = mean_squared_error(y_test, predict)
+mae = mean_absolute_error(y_test, predict)
+rmse = np.sqrt(mse)
+
+print(r2, mse, mae, rmse)
+```
+```
+0.43064800805755354 1133001.3136080105 583.4148917419377 1064.4253443093182
+```
+
+`예측 성능`을 높이기 위해 적절한 값을 찾을 수 있도록 `파라미터`를 변경하도록 합니다.  
+제 경우 `n_estimators`를 31~70, `max_depth`를 6~15로 변경하여 학습률을 계산했습니다.
+
+도출된 사항을 확인 시 `n_estimators`는 64, `max_depth`는 15인게 가장 성능이 좋았습니다.  
+다만, 걱정되는 것은 `max_depth`가 높은 경우 `과대적합`에 빠질 수 있다는 것입니다.
+
+```python
+# 해당 작업에 대해 조금 더 정확도를 올려보기 위해 시도
+# n_estimators 31~70까지, max_depth를 6~15까지의 데이터를 관찰,
+# 가장 높은 R2 Score를 갖는 하이퍼 파라미터를 마지막에 출력
+
+good_n_estimators = 0
+good_depth = 0
+good_score = 0
+
+print ("Estimator   Max Depth   R2  MSE MAE RMSE")
+for n_estimators in range(31, 71):
+    for max_depth in range(6, 16):
+        clf = RandomForestRegressor(n_estimators=n_estimators, max_depth=max_depth, random_state=0)
+        clf.fit(X_train, y_train)
+
+        predict = clf.predict(X_test)
+
+        r2 = r2_score(y_test, predict)
+        mse = mean_squared_error(y_test, predict)
+        mae = mean_absolute_error(y_test, predict)
+        rmse = np.sqrt(mse)
+
+        print(n_estimators, "   ", max_depth, " ", r2, "   ", mse, "   ", mae, "   ", rmse)
+
+print(good_n_estimators, good_depth, good_score)
+```
+```
+Estimator   Max Depth   R2  MSE MAE RMSE
+31     6   0.5472373289907819     803385.0433594751     507.7489655354075     896.3174902675252
+31     7   0.6743412245490967     521630.3563353627     396.3530198399759     722.2398191289114
+31     8   0.7583191233120332     363115.05645392154     305.0949887355562     602.5902890471448
+31     9   0.8053625873926953     270449.927521984     261.5662613519538     520.0480050168292
+31     10   0.8354556008577818     201169.2016300668     229.1272788868442     448.5188977401808
+31     11   0.8743741066499149     130451.81817994926     185.96544244168925     361.18114316773136
+31     12   0.8932927987710751     101679.07150709162     158.77751035118936     318.87155957703663
+...
+64 15 0.9099357176290036
+```
+
+이렇게 최종적으로 `모델`을 만들고 이의 `성능`까지 측정해본 것이 프로젝트였습니다.
+
+## 😅 아쉬운 점
+당시에는 대학교를 편입한 첫 학기고 `인공지능`에 대해 처음 공부했습니다.  
+그래서 미숙함과 `인공지능`에 대한 지식이 지금보다도 많이 부족했던 시기였습니다.
+
+다양한 `알고리즘`을 이용하여 비교해보지 못한 것도 너무 아쉬운 부분이라 생각되고,  
+더 많은 `데이터`를 수집하여 진행하지 못한 것도 하나의 아쉬움으로 남고 있습니다.
+
+다음에는 최근에 더 발전된 `회귀` 알고리즘 등을 이용해보고자 하는 생각이 있고,  
+`교차검증` 등을 통해 데이터의 검증을 더욱 많이 해보는 것도 하나의 생각입니다.
+
+## 😏 향후 계획
+이러한 경험을 통해 현재 `클라우드` 서비스에도 반영을 해보고자 하는 사항이 있습니다.  
+우선 비용 예측으로 이부분은 이전에도 `회귀`로 많이 진행했기에 충분히 가능할거라 봅니다.
+
+또 한 가지는 `모니터링` 요소로 수치화된 `CPU`, `Memory`, `Disk` 등 자원의 상관 관계를 찾아  
+이를 `학습`하고 다음 수치를 미리 예측하여 사전에 `장애` 등을 대비하는 것을 생각 중입니다.
+
+해당 `프로젝트`는 진행을 위해 많은 데이터가 필요하고 현재 예제 데이터를 수집 중입니다.  
+시간이 될진 모르겠지만 여유가 된다면 이러한 데이터를 기반으로 프로젝트를 하고 싶습니다.
+
+- - -
+
+제가 인공지능을 처음으로 접하면서 진행했던 프로젝트로 아쉬움이 많이 남습니다.  
+현재 4학년 2학기이지만 많이 부족하고 그때를 돌아보면 더 많이 부족했던 것 같습니다.
+
+앞으로 더욱 발전하기 위해 노력해야겠다는 생각도 들고 다양한 도전이 필요한 것 같네요.
+
+정말 긴 포스팅 끝까지 읽어주셔서 감사드립니다. 😎
