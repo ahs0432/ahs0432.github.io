@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-11-09T07:49:41.659Z</updated>
+  <updated>2024-11-10T04:14:27.454Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -26,7 +26,7 @@
     <title type="text">[Project] &amp;quot;시간대 별 지하철 승하차 예측&amp;quot; 프로젝트 회고</title>
     <id>https://blog.false.kr/posts/Personal/Project/Korea-train-passenger-regression-2023.html</id>
     <link href="https://blog.false.kr/posts/Personal/Project/Korea-train-passenger-regression-2023.html"/>
-    <updated>2024-11-08T22:05:02.000Z</updated>
+    <updated>2024-11-10T04:13:17.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container info">
 <p class="hint-container-title">정보</p>
 <p>📢 현재 포스팅은 2023년 1학기에 진행한 <code>개인 프로젝트</code>에 대한 회고입니다.</p>
