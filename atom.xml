@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-11-10T08:31:16.292Z</updated>
+  <updated>2024-11-10T08:34:26.055Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -186,25 +186,25 @@
     <title type="text">[Artificial Intelligence] 확률적 경사하강법과 미니 배치</title>
     <id>https://blog.false.kr/posts/Computing/AI/SGD-Minibatch.html</id>
     <link href="https://blog.false.kr/posts/Computing/AI/SGD-Minibatch.html"/>
-    <updated>2024-11-09T07:48:22.000Z</updated>
+    <updated>2024-11-10T08:33:11.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container info">
 <p class="hint-container-title">정보</p>
 <p>📢 2024년 2학기 <code>딥러닝</code> 교과 과정 중 미니 배치의 동작 구조에 대해 궁금해졌습니다.<br>
 조사한 내용을 작성한 것으로 틀린 내용이나 추가 내용이 있으면 댓글 부탁드립니다!</p>
 </div>
-<h2>확률적 경사하강법 (Stochastic Gradient Descent)</h2>
+<h2>📉 확률적 경사하강법 (Stochastic Gradient Descent)</h2>
 <p><a href="/posts/Computing/AI/Gradient-descent">이전 포스팅</a>에서 <code>경사하강법</code>에 대해 알아봤고 문제점에 대해서도 알아봤습니다.</p>]]></summary>
     <content type="html"><![CDATA[<div class="hint-container info">
 <p class="hint-container-title">정보</p>
 <p>📢 2024년 2학기 <code>딥러닝</code> 교과 과정 중 미니 배치의 동작 구조에 대해 궁금해졌습니다.<br>
 조사한 내용을 작성한 것으로 틀린 내용이나 추가 내용이 있으면 댓글 부탁드립니다!</p>
 </div>
-<h2>확률적 경사하강법 (Stochastic Gradient Descent)</h2>
+<h2>📉 확률적 경사하강법 (Stochastic Gradient Descent)</h2>
 <p><a href="/posts/Computing/AI/Gradient-descent">이전 포스팅</a>에서 <code>경사하강법</code>에 대해 알아봤고 문제점에 대해서도 알아봤습니다.</p>
 <p>이를 보완한 <code>확률적(Stochastic) 경사하강법</code>은 무엇이고 어떤 개념이 있는지 알아봅니다.</p>
 <p>우선 이를 알기 위해 <code>경사하강법</code>에서 사용하는 <code>가중치 갱신</code>에 대한 모드를 알아봐야 합니다.<br>
 대표적인 모드로는 <code>배치(Batch)</code>, <code>패턴(Pattern)</code>, <code>미니 배치(Mini-Batch)</code>가 존재합니다.</p>
-<h3>배치 모드 (Batch)</h3>
+<h3>📚 배치 모드 (Batch)</h3>
 <p><code>IT 업계</code>에 관심있으신 분들은 <code>Batch</code>라는 단어를 들어봤을 것이라 생각합니다.<br>
 <code>Batch</code>는 영어를 직역하면 <code>일괄</code>이라는 뜻으로 <code>일괄 처리 작업</code>을 일컫고 있습니다.</p>
 <p><code>Batch</code> 작업은 보고서 생성과 같이 <code>정해진 시간에 한 번에 처리되는 일</code>을 의미합니다.<br>
@@ -216,21 +216,21 @@
 <p>여기서 <code>가중치 갱신</code>을 <code>배치 모드</code>에서는 <code>1 Epoch</code>에 한 번만 전체적으로 반영하게 됩니다.</p>
 <p><code>배치 모드</code>는 <code>시각화</code>하여 표현할 경우 <code>가중치</code>를 아래와 같이 갱신하게 됩니다.</p>
 <figure><img src="/assets/image/Post/Computing/AI/SGD-Minibatch/1.png" alt="" width="70%" height="70%" tabindex="0" loading="lazy"><figcaption>배치 모드</figcaption></figure>
-<h4>배치 모드의 특징</h4>
+<h4>🤔 배치 모드의 특징</h4>
 <p><code>배치 모드</code>를 사용했을 때의 특징은 대표적으로 3가지가 있다고 볼 수 있습니다.</p>
 <ol>
 <li><code>전체 데이터</code>를 이용하여 학습하기에 후술할 모드 중 <code>가장 갱신 횟수가 적다는 것</code></li>
 <li><code>전체 데이터</code>에 대한 오차 등을 모두 갖고 있어야 하기에 <code>메모리 사용량이 높다는 것</code></li>
 <li><code>전체 데이터</code>를 기반으로 변함없이 이용하기에 <code>발산</code>보다는 <code>수렴</code>하는 형태</li>
 </ol>
-<h4>배치 모드의 문제점</h4>
+<h4>😅 배치 모드의 문제점</h4>
 <p>기본적으로 <code>경사하강법</code>의 방식이 <code>배치 모드</code>라고 이해해도 문제가 없을 것 같습니다.</p>
 <ol>
 <li><a href="/posts/Computing/AI/Gradient-descent">이전 포스팅</a>에서 서술한 것과 같이 <code>Local Minimum</code>으로 빠질 확률이 높다는 문제</li>
 <li><code>가중치 갱신</code>이 적기에 정확도의 이슈가 발생될 수 있다는 문제 (가중치 학습의 속도 문제)</li>
 <li><code>전체 데이터</code>가 큰 경우에는 <code>메모리 사용량</code>의 부담이 존재</li>
 </ol>
-<h3>패턴 모드 (Pattern)</h3>
+<h3>🔖 패턴 모드 (Pattern)</h3>
 <p><code>패턴 모드</code>는 각 <code>데이터</code>마다 <code>학습</code>을 진행한 이후 <code>가중치</code>를 갱신하는 방식입니다.<br>
 <code>확률적 경사하강법</code>은 <code>패턴 모드</code> 자체 또는 <code>미니 배치</code>를 포함하여 표현하게 됩니다.</p>
 <p>간단하게 말해 <code>전체 데이터</code> 하나하나에 대해 학습 간 <code>가중치</code>를 갱신하는 것입니다.<br>
@@ -241,14 +241,14 @@
 <p><code>데이터</code>가 1,000개고, <code>Epoch</code>가 50번이라면 총 50,000번의 <code>가중치 갱신</code>이 발생됩니다.</p>
 <p><code>패턴 모드</code>는 <code>시각화</code>하여 표현할 경우 <code>가중치</code>를 아래와 같이 갱신하게 됩니다.</p>
 <figure><img src="/assets/image/Post/Computing/AI/SGD-Minibatch/2.png" alt="" width="70%" height="70%" tabindex="0" loading="lazy"><figcaption>패턴 모드</figcaption></figure>
-<h4>패턴 모드의 특징</h4>
+<h4>🤔 패턴 모드의 특징</h4>
 <p><code>패턴 모드</code>의 가장 큰 특징으로는 아래와 같은 3가지 사항이 존재합니다.</p>
 <ol>
 <li>적은 데이터로도 많은 <code>가중치 갱신</code>을 통한 학습 이점을 가져올 수 있습니다.</li>
 <li><code>랜덤 샘플링</code> 효과로 <code>Local Minimum</code>에 빠질 확률을 줄일 수 있습니다.</li>
 <li><code>데이터</code>마다 수행되므로 <code>가중치 갱신</code>의 메모리 부담과 연산량이 작습니다.</li>
 </ol>
-<h4>패턴 모드의 문제점</h4>
+<h4>😅 패턴 모드의 문제점</h4>
 <p>결국 <code>패턴 모드</code>는 <code>전체 데이터</code>에 대해 각각의 <code>가중치 갱신</code> 작업을 수행하게 됩니다.<br>
 이로 인해 발생되는 <code>문제점</code>은 아래와 같고 최근에는 <code>미니 배치</code>를 사용하고 있습니다.</p>
 <ol>
@@ -257,7 +257,7 @@
 <li>1개의 <code>데이터</code>마다 <code>가중치 갱신</code>이 이뤄지므로 <code>병렬</code> 처리에 어려움이 있습니다.</li>
 </ol>
 <p>시간은 오래 소요되나 트렌드인 <code>병렬</code> 처리를 이용하기 어렵다는 점이 문제점으로 보입니다.</p>
-<h3>미니 배치 (Mini-Batch)</h3>
+<h3>🦾 미니 배치 (Mini-Batch)</h3>
 <p><code>미니 배치</code>는 <code>배치 모드</code>와 <code>패턴 모드</code>의 장점을 받아들여 중간점에 있는 방식입니다.<br>
 <code>미니배치 경사하강법</code>이라 칭하기도 하고 <code>확률적 경사하강법</code>에 포함하기도 합니다.</p>
 <p><code>미니 배치</code>는 <code>데이터</code>를 일정 크기의 <code>부분 집합</code>으로 나눠 <code>학습</code> 후 <code>가중치</code>를 갱신합니다.</p>
@@ -270,14 +270,14 @@
 <p>이렇게 <code>가중치 갱신</code>을 수행하는 횟수를 <code>이터레이션(Iteration)</code>이라 칭합니다.</p>
 <p><code>미니 배치</code>는 <code>시각화</code>하여 표현할 경우 <code>가중치</code>를 아래와 같이 갱신하게 됩니다.</p>
 <figure><img src="/assets/image/Post/Computing/AI/SGD-Minibatch/3.png" alt="" width="70%" height="70%" tabindex="0" loading="lazy"><figcaption>미니 배치</figcaption></figure>
-<h4>미니 배치의 특징</h4>
+<h4>🤔 미니 배치의 특징</h4>
 <p><code>미니 배치</code>의 특징으로는 아래와 같은 사항이 있다고 볼 수 있습니다.</p>
 <ol>
 <li><code>패턴 모드</code>를 <code>부분 집합</code> 단위로 수행하여 <code>배치 모드</code>와 중간점을 이룹니다.</li>
 <li><code>패턴 모드</code>의 <code>발산</code>과 <code>시간</code> 부담을 줄이고 <code>집합</code> 별 <code>병렬</code> 처리가 가능합니다.</li>
 <li><code>배치 모드</code>의 <code>정확성</code> 문제와 <code>메모리</code> 부담을 줄일 수 있다는 점입니다.</li>
 </ol>
-<h4>미니 배치의 문제점</h4>
+<h4>😅 미니 배치의 문제점</h4>
 <p><code>미니 배치</code>도 문제점은 다수 존재하며 아래와 같은 문제가 있습니다.</p>
 <ol>
 <li><code>데이터</code>가 <code>배치 크기</code>에 맞지 않는 경우 마지막 <code>배치</code>의 영향력 상승</li>
@@ -285,11 +285,11 @@
 </ol>
 <p>2번의 경우 결국 <code>배치 크기</code>가 너무 작은 경우 <code>패턴 모드</code>의 문제점을 일으키고<br>
 반대로 너무 큰 경우에는 <code>배치 모드</code>의 문제점에 가까워진다는 것을 알 수 있습니다.</p>
-<h3>확률적이라는 표현을 사용하는 이유?</h3>
+<h3>😏 확률적이라는 표현을 사용하는 이유?</h3>
 <p><code>확률적 경사하강법</code>은 결국 <code>패턴 모드</code> 자체 또는 <code>미니 배치</code>까지를 의미합니다.<br>
 <code>확률적</code>이라는 표현은 각 모드에서의 <code>랜덤샘플링</code>이 적용됐다는 것에 있습니다.</p>
 <p><code>랜덤샘플링</code>이 적용됐기에 <code>Local Minimum</code>을 피하는 데에 도움을 줄 수 있습니다.</p>
-<h2>용어 정리</h2>
+<h2>📜 용어 정리</h2>
 <p><code>세대(Epoch)</code>: <code>기계학습</code>이 수행될 때 반복 학습의 <code>횟수</code>를 일컫는 말<br>
 <code>배치 크기(Batch size)</code>: <code>미니 배치</code>에서 1개의 <code>부분 집합</code>에 포함될 <code>데이터</code>의 개수<br>
 <code>이터레이션(Iteration)</code>: <code>배치 크기</code>로 나눠진 <code>부분 집합</code>의 개수 (or <code>가중치 갱신</code> 횟수)</p>
@@ -303,15 +303,15 @@
     <title type="text">[Artificial Intelligence] 경사하강법에 대해 알아보자</title>
     <id>https://blog.false.kr/posts/Computing/AI/Gradient-descent.html</id>
     <link href="https://blog.false.kr/posts/Computing/AI/Gradient-descent.html"/>
-    <updated>2024-11-04T06:47:19.000Z</updated>
-    <summary type="html"><![CDATA[<h2>경사하강법 (Gradient Descent)?</h2>
+    <updated>2024-11-10T08:33:11.000Z</updated>
+    <summary type="html"><![CDATA[<h2>📉 경사하강법 (Gradient Descent)?</h2>
 <p>기계학습 간 최적화 함수의 대표 격인 <code>경사하강법</code>에 대해서 간단하게 소개하고자 합니다.</p>
-<h3>기계학습의 간단한 동작 과정</h3>
+<h3>🦾 기계학습의 간단한 동작 과정</h3>
 <p><code>인공지능</code>은 <code>규칙 기반</code>에서 <code>기계학습</code>을 이용한 <code>데이터 기반</code>까지 지속 발전 중에 있습니다.<br>
 <code>기계학습</code>에서는 기계가 주어진 <code>데이터</code>의 <code>관계</code>를 찾아 <code>규칙</code>을 만드는 것을 목적으로 합니다.</p>]]></summary>
-    <content type="html"><![CDATA[<h2>경사하강법 (Gradient Descent)?</h2>
+    <content type="html"><![CDATA[<h2>📉 경사하강법 (Gradient Descent)?</h2>
 <p>기계학습 간 최적화 함수의 대표 격인 <code>경사하강법</code>에 대해서 간단하게 소개하고자 합니다.</p>
-<h3>기계학습의 간단한 동작 과정</h3>
+<h3>🦾 기계학습의 간단한 동작 과정</h3>
 <p><code>인공지능</code>은 <code>규칙 기반</code>에서 <code>기계학습</code>을 이용한 <code>데이터 기반</code>까지 지속 발전 중에 있습니다.<br>
 <code>기계학습</code>에서는 기계가 주어진 <code>데이터</code>의 <code>관계</code>를 찾아 <code>규칙</code>을 만드는 것을 목적으로 합니다.</p>
 <p><code>데이터</code>의 관계를 찾는 과정에서 <code>손실</code>(실제 데이터와의 <code>오차</code>)이 최소인 값을 찾는 것이 목표로<br>
@@ -325,7 +325,7 @@
 우리가 찾아야할 값은 <code>오차</code>가 가장 최소가 되는 구간 임을 알 수 있습니다.</p>
 <figure><img src="/assets/image/Post/Computing/AI/Gradient-descent/2.png" alt="" width="70%" height="70%" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>이러한 값을 <code>가중치</code>에 반영하여 <code>최적화</code>하는 과정에서 <code>경사하강법</code>을 사용하게 됩니다.</p>
-<h3>경사하강법의 동작 과정</h3>
+<h3>🤔 경사하강법의 동작 과정</h3>
 <p>그래프에서 보면 결국 가장 낮은 값, 즉 최소 <code>오차</code>를 찾아가는 것을 알 수 있습니다.<br>
 이러한 특성을 이용해 <code>경사하강법</code>은 그래프의 <code>기울기</code>에 따른 이동을 수행하게 됩니다.</p>
 <figure><img src="/assets/image/Post/Computing/AI/Gradient-descent/3.png" alt="" width="70%" height="70%" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
@@ -334,7 +334,7 @@
 <p>하나의 매개변수를 기반으로 <code>손실함수 J</code>를 <code>wᵢ</code>의 값으로 <code>편미분</code>한 값을 도출하고<br>
 <code>𝜌(rho)</code> 또는 <code>p</code>로 표현하는 <code>학습률</code>을 곱하여 값을 하강할 경사의 값을 조절한 뒤,<br>
 최종적으로 <code>wᵢ</code> 가중치 값의 <code>오차</code>를 반영하는 형태로 수식이 전개되고 있습니다.</p>
-<h4>학습률 (Learning rate)</h4>
+<h4>📈 학습률 (Learning rate)</h4>
 <p><code>학습률</code>은 <code>오차</code> 값을 기울기에 따라 반영 시 너무 크거나 낮은 값이 이동하는 것을 방지하기 위해<br>
 특정 값을 곱하여 학습 간 <code>최적해</code> 방향으로의 접근 값을 줄이는 행위를 의미하고 있습니다.</p>
 <p>일반적으로 <code>0.001</code>, <code>0.0001</code>과 같은 값이 쓰이며 해당 값을 찾는 것도 중요한 요소입니다.</p>
@@ -343,7 +343,7 @@
 <p>너무 낮을 경우 학습 반영의 시간이 오래걸리고 <code>Local Minimum</code>에 빠질 수 있으며,<br>
 반대로 너무 클 경우 <code>발산</code>을 하여 정확한 값을 찾지 못하는 현상이 발생될 수 있습니다.</p>
 <p>적절한 값을 찾을 경우 속도도 안정적으로 <code>최적해</code>에 도달하는 것을 볼 수 있습니다.</p>
-<h4>경사하강법의 문제점</h4>
+<h4>😅 경사하강법의 문제점</h4>
 <p><code>경사하강법</code>은 기본적인 구조 상으로는 좋을 수 있지만 크나큰 문제가 있습니다.</p>
 <p>위에서 언급된 <code>Global Minimum</code>이 아닌 <code>Local Minimum</code>을 찾을 수 있다는 점 때문입니다.</p>
 <p>둘의 차이는 가장 지대가 낮은 구간을 찾았는지 찾지 못했는지의 차이로 볼 수 있으며,<br>
