@@ -474,6 +474,12 @@ Estimator   Max Depth   R2  MSE MAE RMSE
 
 이렇게 최종적으로 `모델`을 만들고 이의 `성능`까지 측정해본 것이 프로젝트였습니다.
 
+## 📚 관련 코드
+제가 수행해서 만들어둔 `코드`는 `GitHub` 저장소로 게시해두었습니다.  
+혹시나 프로젝트에 도움이 되실 것 같다면 참고하시면 좋을 것 같습니다.
+- [2023-Korean-Train-passenger-regression
+](https://github.com/ahs0432/2023-Korean-Train-passenger-regression/tree/main)
+
 ## 😅 아쉬운 점
 당시에는 대학교를 편입한 첫 학기고 `인공지능`에 대해 처음 공부했습니다.  
 그래서 미숙함과 `인공지능`에 대한 지식이 지금보다도 많이 부족했던 시기였습니다.
