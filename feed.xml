@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Sun, 10 Nov 2024 04:14:27 GMT</pubDate>
-    <lastBuildDate>Sun, 10 Nov 2024 04:14:27 GMT</lastBuildDate>
+    <pubDate>Sun, 10 Nov 2024 04:34:45 GMT</pubDate>
+    <lastBuildDate>Sun, 10 Nov 2024 04:34:45 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Project</category>
@@ -63,7 +63,7 @@
 <p><code>데이터셋</code>을 분석하는 과정은 각각의 데이터 별로 수행하였습니다.<br>
 월별 데이터를 위주로 분석하여 이를 시각화하는 작업을 수행했습니다.</p>
 <h3>✨ 데이터 속성 확인</h3>
-<p>우선 <code>데이터셋</code>에서 제공되는 속성을 확인하였고 데이터의 <code>사용 여부</code>도 구분하였습니다.</p>
+<p><code>데이터셋</code>에서 제공되는 속성을 확인하였고 데이터의 <code>사용 여부</code>도 구분하였습니다.</p>
 <p>| Column 명 | 설명 | 사용 여부 |
 |:</p>
 ]]></content:encoded>
