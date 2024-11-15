@@ -76,7 +76,7 @@ model.compile(loss='categorical_crossentropy', optimizer=SGD(momentum=0.9), metr
 해당 문제점은 `정규화` 등을 이용해 경사를 개선할 수도 있으나 다른 방법도 존재하며,  
 이를 개선하기 위해 고안된 방식이 `네스테로프(Nesterov) 모멘텀`이라 볼 수 있습니다.  
 
-`네스테로프 모멘텀`은 기존의 `모멘텀`을 계산하고 다음 `가중치`까지 예견하는 방식입니다.
+`네스테로프 모멘텀`은 다음 `가중치`를 예견한 뒤 반영하여 현재 `가중치`에 반영하는 방식입니다.
 
 ![alt text](image-3.png)
 
