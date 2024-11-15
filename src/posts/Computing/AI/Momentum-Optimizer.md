@@ -1,5 +1,5 @@
 ---
-title:  "[Artificial Intelligence] 이전 손실을 이용하는 모멘텀"
+title:  "[Artificial Intelligence] 이전 가중치를 이용하는 모멘텀"
 
 categories:
   - AI
@@ -79,7 +79,7 @@ model.compile(loss='categorical_crossentropy', optimizer=SGD(momentum=0.9), metr
 `네스테로프 모멘텀`은 다음 `가중치`를 예측한 뒤 현재 `가중치`에 반영하는 방식입니다.  
 `가중치`가 반영되는 모양을 시각화하여 나타내게 된다면 아래와 같이 나타낼 수 있습니다.
 
-![](/assets/image/Post/Computing/AI/Momentum-Optimizer/4.png "네스테로프 모멘텀의 동작 구조" =50%x50%)
+![](/assets/image/Post/Computing/AI/Momentum-Optimizer/4.png "네스테로프 모멘텀의 동작 구조" =70%x70%)
 
 그림을 보면 `예측 가중치`가 존재하는데 이전 갱신된 `가중치`를 이용해 예측한 것으로,  
 예측 값을 통해 `현재 가중치` 값을 갱신하고 이동하는 방식으로 구성된다 볼 수 있습니다.
