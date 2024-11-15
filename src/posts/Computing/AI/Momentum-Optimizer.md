@@ -12,8 +12,9 @@ tags:
   - Optimizer
   - 확률적 경사하강법
   - SGD
-  - 아담
-  - ADAM
+  - 네스테로프 모멘텀
+  - Nesterov
+  - Nesterov Momentum
   - 손실
   - Loss
   - 손실함수
