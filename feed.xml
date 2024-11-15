@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Fri, 15 Nov 2024 11:07:23 GMT</pubDate>
-    <lastBuildDate>Fri, 15 Nov 2024 11:07:23 GMT</lastBuildDate>
+    <pubDate>Fri, 15 Nov 2024 11:14:44 GMT</pubDate>
+    <lastBuildDate>Fri, 15 Nov 2024 11:14:44 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>AI</category>
@@ -38,7 +38,7 @@
 물리학에서는 운동량, 물체가 특정 이동하려고 하는 것을 의미하고 이는 <code>관성</code>이라 보면 됩니다.</p>
 <h3>🦾 모멘텀의 고안 이유</h3>
 <p><code>모멘텀</code>은 <a href="https://blog.false.kr/posts/Computing/AI/SGD-Minibatch.html" target="_blank" rel="noopener noreferrer">기존 포스팅</a>에서 설명드린 <code>확률적 경사하강법(SGD)</code>의 단점을 보완하기 위한 요소입니다.</p>
-<p>기존의 <code>SGD</code>를 이해하신 경우 가중치 갱신 간 <code>발산</code> 등의 <code>노이즈</code>로 인해 속도가 느려질 수 있습니다.<br>
+<p>기존의 <code>SGD</code>의 경우 <code>가중치 갱신</code> 과정에서 <code>발산</code> 등의 <code>노이즈</code>로 인해 속도가 느려질 수 있습니다.<br>
 속도 문제는 <code>데이터</code>의 <code>차원</code>과 <code>양</code>이 증가하면서 <code>시간</code>적인 부분과 <code>정확성</code>에 대한 문제가 생깁니다.</p>
 <p>이러한 한계를 극복하기 위해 고안된 것이 <code>모멘텀</code>으로 위에서 설명한 <code>관성</code>의 원리를 이용하게 됩니다.</p>
 <h3>🤔 모멘텀의 동작 원리</h3>

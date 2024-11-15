@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-11-15T11:07:23.197Z</updated>
+  <updated>2024-11-15T11:14:44.684Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -26,7 +26,7 @@
     <title type="text">[Artificial Intelligence] 이전 손실을 이용하는 모멘텀</title>
     <id>https://blog.false.kr/posts/Computing/AI/Momentum-Optimizer.html</id>
     <link href="https://blog.false.kr/posts/Computing/AI/Momentum-Optimizer.html"/>
-    <updated>2024-11-15T11:05:41.000Z</updated>
+    <updated>2024-11-15T11:12:13.000Z</updated>
     <summary type="html"><![CDATA[<h2>⚽ 모멘텀(Momentum)은 무엇인가?</h2>
 <p><code>모멘텀(Momentum)</code>은 물리학에서 사용되는 용어와 비슷한 개념이라고 보면 될 것 같습니다.<br>
 물리학에서는 운동량, 물체가 특정 이동하려고 하는 것을 의미하고 이는 <code>관성</code>이라 보면 됩니다.</p>
@@ -37,7 +37,7 @@
 물리학에서는 운동량, 물체가 특정 이동하려고 하는 것을 의미하고 이는 <code>관성</code>이라 보면 됩니다.</p>
 <h3>🦾 모멘텀의 고안 이유</h3>
 <p><code>모멘텀</code>은 <a href="https://blog.false.kr/posts/Computing/AI/SGD-Minibatch.html" target="_blank" rel="noopener noreferrer">기존 포스팅</a>에서 설명드린 <code>확률적 경사하강법(SGD)</code>의 단점을 보완하기 위한 요소입니다.</p>
-<p>기존의 <code>SGD</code>를 이해하신 경우 가중치 갱신 간 <code>발산</code> 등의 <code>노이즈</code>로 인해 속도가 느려질 수 있습니다.<br>
+<p>기존의 <code>SGD</code>의 경우 <code>가중치 갱신</code> 과정에서 <code>발산</code> 등의 <code>노이즈</code>로 인해 속도가 느려질 수 있습니다.<br>
 속도 문제는 <code>데이터</code>의 <code>차원</code>과 <code>양</code>이 증가하면서 <code>시간</code>적인 부분과 <code>정확성</code>에 대한 문제가 생깁니다.</p>
 <p>이러한 한계를 극복하기 위해 고안된 것이 <code>모멘텀</code>으로 위에서 설명한 <code>관성</code>의 원리를 이용하게 됩니다.</p>
 <h3>🤔 모멘텀의 동작 원리</h3>
