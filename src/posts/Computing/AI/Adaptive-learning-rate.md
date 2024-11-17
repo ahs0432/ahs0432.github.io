@@ -95,7 +95,7 @@ lastUpdated: true
 
 변경된 `수식`인 5번에 대한 내용만 수식으로 따로 정리해보면 아래와 같습니다.
 
-![](/assets/image/Post/Computing/AI/Adaptive-learning-rate/4.png "RMSProp 수식 해석" =50%x50%)
+![](/assets/image/Post/Computing/AI/Adaptive-learning-rate/4.png "RMSProp 수식 해석" =70%x70%)
 
 위와 같이 동작하게 된다면 기존의 `기울기 벡터`는 학습 과정에서 점점 작아집니다.  
 또한 값이 커져서 발생되는 문제도 `기울기`를 더할 때 값을 축소하기에 약화됩니다.
