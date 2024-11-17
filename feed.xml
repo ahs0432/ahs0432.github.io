@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Sun, 17 Nov 2024 04:32:25 GMT</pubDate>
-    <lastBuildDate>Sun, 17 Nov 2024 04:32:25 GMT</lastBuildDate>
+    <pubDate>Sun, 17 Nov 2024 04:33:52 GMT</pubDate>
+    <lastBuildDate>Sun, 17 Nov 2024 04:33:52 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>AI</category>
@@ -79,12 +79,12 @@
 <code>a</code> 값이 작을수록 최신 <code>그레이디언트</code>에 비중을 두어 <code>가중치</code> 갱신을 수행합니다.</p>
 <p>일반적으로 <code>0.9</code>, <code>0.99</code>, <code>0.999</code> 값을 사용하는 것으로 알려져 있습니다.</p>
 <p>변경된 <code>수식</code>인 5번에 대한 내용만 수식으로 따로 정리해보면 아래와 같습니다.</p>
-<figure><img src="/assets/image/Post/Computing/AI/Adaptive-learning-rate/4.png" alt="" width="50%" height="50%" tabindex="0" loading="lazy"><figcaption>RMSProp 수식 해석</figcaption></figure>
+<figure><img src="/assets/image/Post/Computing/AI/Adaptive-learning-rate/4.png" alt="" width="70%" height="70%" tabindex="0" loading="lazy"><figcaption>RMSProp 수식 해석</figcaption></figure>
 <p>위와 같이 동작하게 된다면 기존의 <code>기울기 벡터</code>는 학습 과정에서 점점 작아집니다.<br>
 또한 값이 커져서 발생되는 문제도 <code>기울기</code>를 더할 때 값을 축소하기에 약화됩니다.</p>
 <h4>😅 문제점</h4>
 <p><code>AdaGrad</code>에 대한 한계를 어느정도 극복하여 만들어진 <code>RMSProp</code>도 문제점은 존재합니다.<br>
-문제는 아래처럼 총 4가지 정도로 정리되오니 참고하시어 이용해주시면 될 것 같습니다.</p>
+문제는 아래처럼 총 3가지 정도로 정리되오니 참고하시어 이용해주시면 될 것 같습니다.</p>
 <ol>
 <li><code>a</code>와 같은 <code>하이퍼파라미터</code> 설정이 늘어나고 민감도 상승</li>
 <li>모멘텀을 사용하지 않기에 <code>방향성</code>을 찾아가는 속도의 한계</li>
