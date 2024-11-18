@@ -52,7 +52,7 @@ lastUpdated: true
 ### 🔢 수식 유도
 `KL-Divergence`의 경우 수식을 통해 유도할 수 있는데 먼저 수식을 알아보겠습니다.
 
-![](/assets/image/Post/Computing/AI/KL-Divergence/1.png "KL-Divergence 수식 유도" =50%x50%)
+![](/assets/image/Post/Computing/AI/KL-Divergence/1.png "KL-Divergence 수식 유도" =80%x80%)
 
 수식은 `교차 엔트로피`의 기본 수식으로부터 유도되고 과정은 다음과 같다고 볼 수 있습니다.
 
@@ -65,7 +65,7 @@ lastUpdated: true
 ### 😲 수식 표현
 `KL-Divergence`는 수식 표현 간 `KL(P||Q)`라 표현하고 아래처럼 수식 표현이 가능합니다.
 
-![](/assets/image/Post/Computing/AI/KL-Divergence/2.png "KL-Divergence 수식" =50%x50%)
+![](/assets/image/Post/Computing/AI/KL-Divergence/2.png "KL-Divergence 수식" =60%x60%)
 
 ### 🤔 사용 용도
 일반적으로 `교차 엔트로피`의 값을 작게 만들어 `H(P)`(실제 값)과 근접하게 만드는 것은  
