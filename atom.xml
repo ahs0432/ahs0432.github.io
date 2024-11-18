@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-11-18T14:10:04.193Z</updated>
+  <updated>2024-11-18T14:12:00.147Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -23,10 +23,10 @@
   <category term="Windows"/>
   <category term="Ubuntu"/>
   <entry>
-    <title type="text">[Artificial Intelligence] KL-Divergence</title>
+    <title type="text">[Artificial Intelligence] 확률분포의 차이를 계산하는 KL-Divergence</title>
     <id>https://blog.false.kr/posts/Computing/AI/KL-Divergence.html</id>
     <link href="https://blog.false.kr/posts/Computing/AI/KL-Divergence.html"/>
-    <updated>2024-11-18T14:08:49.000Z</updated>
+    <updated>2024-11-18T14:10:37.000Z</updated>
     <summary type="html"><![CDATA[<h2>📈 KL(Kullback-Leibler) Divergence</h2>
 <p><a href="/posts/Computing/AI/Cross-entropy">이전 포스팅</a>을 통해 <code>불확실성</code>을 측정하기 위한 <code>엔트로피</code>에 대한 개념을 알아봤습니다.</p>
 <p><code>KL-Divergence</code>는 <code>교차 엔트로피</code>를 이용하여 <code>확률분포</code>의 차이를 계산하는 함수로<br>

@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Mon, 18 Nov 2024 14:10:04 GMT</pubDate>
-    <lastBuildDate>Mon, 18 Nov 2024 14:10:04 GMT</lastBuildDate>
+    <pubDate>Mon, 18 Nov 2024 14:12:00 GMT</pubDate>
+    <lastBuildDate>Mon, 18 Nov 2024 14:12:00 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>AI</category>
@@ -26,10 +26,10 @@
     <category>Windows</category>
     <category>Ubuntu</category>
     <item>
-      <title>[Artificial Intelligence] KL-Divergence</title>
+      <title>[Artificial Intelligence] 확률분포의 차이를 계산하는 KL-Divergence</title>
       <link>https://blog.false.kr/posts/Computing/AI/KL-Divergence.html</link>
       <guid>https://blog.false.kr/posts/Computing/AI/KL-Divergence.html</guid>
-      <source url="https://blog.false.kr/feed.xml">[Artificial Intelligence] KL-Divergence</source>
+      <source url="https://blog.false.kr/feed.xml">[Artificial Intelligence] 확률분포의 차이를 계산하는 KL-Divergence</source>
       <description>📈 KL(Kullback-Leibler) Divergence 이전 포스팅을 통해 불확실성을 측정하기 위한 엔트로피에 대한 개념을 알아봤습니다. KL-Divergence는 교차 엔트로피를 이용하여 확률분포의 차이를 계산하는 함수로 근사하는 다른 분포를 샘플링 시 발생할 수 있는 정보 엔트로피의 차이를 계산합니다. 여...</description>
       <category>AI</category>
       <pubDate>Mon, 18 Nov 2024 00:00:00 GMT</pubDate>
