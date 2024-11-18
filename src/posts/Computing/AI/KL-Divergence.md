@@ -1,5 +1,5 @@
 ---
-title:  "[Artificial Intelligence] KL-Divergence"
+title:  "[Artificial Intelligence] 확률분포의 차이를 계산하는 KL-Divergence"
 
 categories:
   - AI
