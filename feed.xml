@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Mon, 18 Nov 2024 14:12:00 GMT</pubDate>
-    <lastBuildDate>Mon, 18 Nov 2024 14:12:00 GMT</lastBuildDate>
+    <pubDate>Mon, 18 Nov 2024 14:13:32 GMT</pubDate>
+    <lastBuildDate>Mon, 18 Nov 2024 14:13:32 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>AI</category>
@@ -41,7 +41,7 @@
 <p><code>Divergence</code>는 <code>발산</code>을 의미하기 때문에 <code>분포</code>에 대한 <code>발산</code> 정도로도 볼 수 있습니다.</p>
 <h3>🔢 수식 유도</h3>
 <p><code>KL-Divergence</code>의 경우 수식을 통해 유도할 수 있는데 먼저 수식을 알아보겠습니다.</p>
-<figure><img src="/assets/image/Post/Computing/AI/KL-Divergence/1.png" alt="" width="50%" height="50%" tabindex="0" loading="lazy"><figcaption>KL-Divergence 수식 유도</figcaption></figure>
+<figure><img src="/assets/image/Post/Computing/AI/KL-Divergence/1.png" alt="" width="80%" height="80%" tabindex="0" loading="lazy"><figcaption>KL-Divergence 수식 유도</figcaption></figure>
 <p>수식은 <code>교차 엔트로피</code>의 기본 수식으로부터 유도되고 과정은 다음과 같다고 볼 수 있습니다.</p>
 <ol>
 <li><code>교차 엔트로피</code> 수식에 +- 값으로 <code>엔트로피</code> 관련 수식을 작성합니다.</li>
@@ -52,7 +52,7 @@
 </ol>
 <h3>😲 수식 표현</h3>
 <p><code>KL-Divergence</code>는 수식 표현 간 <code>KL(P||Q)</code>라 표현하고 아래처럼 수식 표현이 가능합니다.</p>
-<figure><img src="/assets/image/Post/Computing/AI/KL-Divergence/2.png" alt="" width="50%" height="50%" tabindex="0" loading="lazy"><figcaption>KL-Divergence 수식</figcaption></figure>
+<figure><img src="/assets/image/Post/Computing/AI/KL-Divergence/2.png" alt="" width="60%" height="60%" tabindex="0" loading="lazy"><figcaption>KL-Divergence 수식</figcaption></figure>
 <h3>🤔 사용 용도</h3>
 <p>일반적으로 <code>교차 엔트로피</code>의 값을 작게 만들어 <code>H(P)</code>(실제 값)과 근접하게 만드는 것은<br>
 다른 의미로는 <code>H(P)</code> 값은 고정된 값이므로 <code>KL-Divergence</code>의 값을 줄이는 것과 같습니다.</p>
@@ -69,7 +69,7 @@
 <hr>
 <p>끝까지 읽어주셔서 감사드립니다. 😎</p>
 ]]></content:encoded>
-      <enclosure url="https://blog.false.kr/assets/image/Post/Computing/AI/KL-Divergence/1.png &quot;KL-Divergence 수식 유도&quot; =50%x50%" type="image/"/>
+      <enclosure url="https://blog.false.kr/assets/image/Post/Computing/AI/KL-Divergence/1.png &quot;KL-Divergence 수식 유도&quot; =80%x80%" type="image/"/>
     </item>
     <item>
       <title>[Artificial Intelligence] 모멘텀과 적응적 학습률을 더한 Adam</title>
