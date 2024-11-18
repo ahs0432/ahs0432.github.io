@@ -6,6 +6,20 @@
   "description": "찬스의 개발과 일상에 대한 내용을 담은 개인 블로그",
   "items": [
     {
+      "title": "[Artificial Intelligence] KL-Divergence",
+      "url": "https://blog.false.kr/posts/Computing/AI/KL-Divergence.html",
+      "id": "https://blog.false.kr/posts/Computing/AI/KL-Divergence.html",
+      "summary": "📈 KL(Kullback-Leibler) Divergence 이전 포스팅을 통해 불확실성을 측정하기 위한 엔트로피에 대한 개념을 알아봤습니다. KL-Divergence는 교차 엔트로피를 이용하여 확률분포의 차이를 계산하는 함수로 근사하는 다른 분포를 샘플링 시 발생할 수 있는 정보 엔트로피의 차이를 계산합니다. 여...",
+      "content_html": "<h2>📈 KL(Kullback-Leibler) Divergence</h2>\n<p><a href=\"/posts/Computing/AI/Cross-entropy\">이전 포스팅</a>을 통해 <code>불확실성</code>을 측정하기 위한 <code>엔트로피</code>에 대한 개념을 알아봤습니다.</p>\n<p><code>KL-Divergence</code>는 <code>교차 엔트로피</code>를 이용하여 <code>확률분포</code>의 차이를 계산하는 함수로<br>\n근사하는 다른 <code>분포</code>를 샘플링 시 발생할 수 있는 <code>정보 엔트로피</code>의 차이를 계산합니다.</p>\n<p>여기서 계산된 것을 <code>상대 엔트로피</code>, <code>정보 획득량</code>, <code>인포메이션 다이버전스</code>라 합니다.</p>\n<p><code>Divergence</code>는 <code>발산</code>을 의미하기 때문에 <code>분포</code>에 대한 <code>발산</code> 정도로도 볼 수 있습니다.</p>\n<h3>🔢 수식 유도</h3>\n<p><code>KL-Divergence</code>의 경우 수식을 통해 유도할 수 있는데 먼저 수식을 알아보겠습니다.</p>\n<figure><img src=\"/assets/image/Post/Computing/AI/KL-Divergence/1.png\" alt=\"\" width=\"50%\" height=\"50%\" tabindex=\"0\" loading=\"lazy\"><figcaption>KL-Divergence 수식 유도</figcaption></figure>\n<p>수식은 <code>교차 엔트로피</code>의 기본 수식으로부터 유도되고 과정은 다음과 같다고 볼 수 있습니다.</p>\n<ol>\n<li><code>교차 엔트로피</code> 수식에 +- 값으로 <code>엔트로피</code> 관련 수식을 작성합니다.</li>\n<li><code>엔트로피</code> 계산 간 사용되는 수식인 - 값이 존재하는 수식을 <code>H(P)</code>로 대체합니다.</li>\n<li><code>교차 엔트로피</code> 수식과 남은 수식을 +, - 순서로 정렬하고 이를 요약합니다.</li>\n<li>양 변에 <code>-H(P)</code>를 추가하여 우변에 존재하는 <code>H(P)</code> 값을 제거합니다.</li>\n<li><code>H(P,Q)-H(P)</code>에 대한 수식이 유도됐고 해당 값이 <code>KL-Divergence</code> 입니다.</li>\n</ol>\n<h3>😲 수식 표현</h3>\n<p><code>KL-Divergence</code>는 수식 표현 간 <code>KL(P||Q)</code>라 표현하고 아래처럼 수식 표현이 가능합니다.</p>\n<figure><img src=\"/assets/image/Post/Computing/AI/KL-Divergence/2.png\" alt=\"\" width=\"50%\" height=\"50%\" tabindex=\"0\" loading=\"lazy\"><figcaption>KL-Divergence 수식</figcaption></figure>\n<h3>🤔 사용 용도</h3>\n<p>일반적으로 <code>교차 엔트로피</code>의 값을 작게 만들어 <code>H(P)</code>(실제 값)과 근접하게 만드는 것은<br>\n다른 의미로는 <code>H(P)</code> 값은 고정된 값이므로 <code>KL-Divergence</code>의 값을 줄이는 것과 같습니다.</p>\n<h3>😏 특성</h3>\n<p><code>KL-Divergence</code>는 2가지의 특성이 대표적으로 특성은 아래와 같습니다.</p>\n<ol>\n<li><code>KL(P||Q)</code>의 값은 항상 0이상의 값을 갖습니다.</li>\n<li><code>KL(P||Q)</code>와 <code>KL(Q||P)</code>의 값을 같지 않고 거리의 개념이 아닙니다.</li>\n</ol>\n<p>1번 특성의 경우 <code>H(P, Q)</code>의 값은 항상 <code>H(P)</code>보다 크기 때문에 성립됩니다.</p>\n<p>2번 특성의 경우 <code>H(P, Q) != H(Q, P)</code>, <code>H(P) != H(Q)</code>라는 특성과 연관됩니다.<br>\n해당 값이 다르기 때문에 <code>KL(P, Q) != KL(Q, P)</code>라는 특성이 성립되게 됩니다.</p>\n<p>해당 부분은 <code>유클리디안 거리</code> 등과 달리 거리의 개념이 아님을 반증하고 있습니다.</p>\n<hr>\n<p>끝까지 읽어주셔서 감사드립니다. 😎</p>\n",
+      "image": "https://blog.false.kr/assets/image/Post/Computing/AI/KL-Divergence/1.png \"KL-Divergence 수식 유도\" =50%x50%",
+      "date_published": "2024-11-18T00:00:00.000Z",
+      "date_modified": "2024-11-18T14:08:49.000Z",
+      "authors": [],
+      "tags": [
+        "AI"
+      ]
+    },
+    {
       "title": "[Artificial Intelligence] 모멘텀과 적응적 학습률을 더한 Adam",
       "url": "https://blog.false.kr/posts/Computing/AI/Adaptive-momentum.html",
       "id": "https://blog.false.kr/posts/Computing/AI/Adaptive-momentum.html",
