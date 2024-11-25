@@ -1,5 +1,5 @@
 ---
-title:  "[Artificial Intelligence] 특징을 추출하는 합성곱 신경망"
+title:  "[Artificial Intelligence] 특징을 추출하는 합성곱 신경망의 기초"
 
 categories:
   - AI
