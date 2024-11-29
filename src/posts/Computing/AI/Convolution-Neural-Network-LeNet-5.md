@@ -78,7 +78,7 @@ lastUpdated: true
 각 `층`을 지나면서 이미지에 대한 `데이터 크기`와 `채널`의 변경점을 표현하고 있지만,  
 이를 조금 더 보완하여 각 층마다 어떠한 `파라미터`를 갖고 있는지 알아보겠습니다.
 
-![](/assets/image/Post/Computing/AI/Convolution-Neural-Network-LeNet-5/3.png "LeNet-5 해석" =90%x90%)
+![](/assets/image/Post/Computing/AI/Convolution-Neural-Network-LeNet-5/3.png "LeNet-5 해석" =100%x100%)
 
 각 `합성곱 층`과 `풀링 층`에서 `파라미터`와 마지막에 `Flat`해진 것이 확인되고 있습니다.  
 이렇게 `Flat`해진 데이터를 `완전연결층`을 통해 점차 줄이고 10개의 `출력`으로 축소됩니다.
