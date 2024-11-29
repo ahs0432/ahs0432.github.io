@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2024-11-29T12:26:29.605Z</updated>
+  <updated>2024-11-29T12:31:58.908Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -26,7 +26,7 @@
     <title type="text">[Artificial Intelligence] LeNet-5을 통해 알아보는 합성곱 신경망</title>
     <id>https://blog.false.kr/posts/Computing/AI/Convolution-Neural-Network-LeNet-5.html</id>
     <link href="https://blog.false.kr/posts/Computing/AI/Convolution-Neural-Network-LeNet-5.html"/>
-    <updated>2024-11-29T12:23:49.000Z</updated>
+    <updated>2024-11-29T12:30:34.000Z</updated>
     <summary type="html"><![CDATA[<h2>📚 합성곱 신경망의 구조</h2>
 <p><a href="/posts/Computing/AI/Convolution-Neural-Network-Intro">이전 포스팅</a>에서는 <code>합성곱 신경망</code>을 구성하기 위한 기초 사항에 대해서 알아보았습니다.</p>
 <p><code>합성곱 신경망</code>도 마찬가지로 <code>깊은 신경망</code>으로 구성하고 있어 구조 파악이 필요합니다.<br>
@@ -53,7 +53,7 @@
 <code>Full connection</code>인 <code>완전연결층</code>, 결과 출력의 <code>Gaussian connections</code>가 있습니다.</p>
 <p>각 <code>층</code>을 지나면서 이미지에 대한 <code>데이터 크기</code>와 <code>채널</code>의 변경점을 표현하고 있지만,<br>
 이를 조금 더 보완하여 각 층마다 어떠한 <code>파라미터</code>를 갖고 있는지 알아보겠습니다.</p>
-<figure><img src="/assets/image/Post/Computing/AI/Convolution-Neural-Network-LeNet-5/3.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption>LeNet-5 해석</figcaption></figure>
+<figure><img src="/assets/image/Post/Computing/AI/Convolution-Neural-Network-LeNet-5/3.png" alt="" width="100%" height="100%" tabindex="0" loading="lazy"><figcaption>LeNet-5 해석</figcaption></figure>
 <p>각 <code>합성곱 층</code>과 <code>풀링 층</code>에서 <code>파라미터</code>와 마지막에 <code>Flat</code>해진 것이 확인되고 있습니다.<br>
 이렇게 <code>Flat</code>해진 데이터를 <code>완전연결층</code>을 통해 점차 줄이고 10개의 <code>출력</code>으로 축소됩니다.</p>
 <p><code>Flat</code>의 과정을 <code>Flatten</code>이라고 표현하며 <code>완전연결층</code>에서의 <code>가중치</code>를 줄이기 위해서<br>
