@@ -270,7 +270,7 @@ Kernel
 그렇게 `Kernel`만이 `I/O Instruction`을 수행할 수 있도록 환경을 구성한다.
 
 ### 😅 Linux의 I/O Instruction 요청기
-사용자는 `I/O Instruction`을 못한다는데 그렇다면 `I/O`는 어떻게 일어날까?  
+사용자의 `I/O Instruction`이 제한된다고 한다면 `I/O`는 어떻게 일어날까?  
 바로 사용자가 `I/O`를 하는 것이 아니라 `Kernel`에게 별도 요청을 보내게 된다.
 
 `Kernel`에 요청은 미리 정해진 `Function`(`함수`)를 이용하여 전달할 수 있다.  
@@ -281,6 +281,54 @@ Kernel
 1. `Instruction`(`명령`): 사용자가 `I/O` 관련 명령을 수행해야 한다.
 2. `Function`(`함수`): 요청 위탁을 위해 `System calls`을 발생시킨다.
 3. `Process`(`처리`): `Memory`, `File` 등의 `I/O` 요청을 수행한다.
+
+#### Mode bit
+이러한 `System calls`의 구분을 위해 `CPU`는 `Mode bit`를 갖고 있다.  
+1 bit는 0과 1을 표현할 수 있고 각 숫자는 다음과 같은 의미를 갖게 된다.
+
+- 0 = `User`
+  - 사용자에 할당된 `Address space`에만 접근 가능
+  - `I/O Instruction`, `특수 레지스터 접근` 등의 제약 존재
+    - `Add`, `Sub` 등의 명령에만 접근 가능
+- 1 = `Kernel`
+  - 모든 `Address space`에 접근할 수 있는 권한 보유
+  - 모든 `Instruction`을 수행할 수 있도록 허용
+
+`CPU`는 `Instruction`을 위해서는 `Memory`에 접근이 필요하게 되는데,  
+위에서 언급한 `Mode bit` 상태가 무엇인지에 따라 검사 여부를 결정한다.  
+(`User`인 경우에는 검사가 필요하지만 `Kernel`인 경우는 불필요하다.)
+
+검사 과정에서 `MMU`(`Memory Management Unit`)이라는 요소가 사용되는데,  
+이는 하드웨어에 내장된 장치로 `CPU` &rlarr; `Memory` 사이 `Bus`를 검사하게 된다.
+
+`Instruction` 수행 과정은 아래와 같이 5가지인데 한 번 살펴보도록 하자.
+
+1. `PC`(`Program Counter`)에서 `Memory`에 데이터 요청 (`PC to Memory`)
+2. `Instruction` 가져오기 (`Instruction Fetch`)
+3. 해독하기 (`Decode`)
+4. 실행하기 (`Execute`)
+5. `PC`의 Counting 증가 (`Increment PC`)
+
+이 과정에서 두 번의 검사를 수행하는데 먼저 1번 `Memory`에 데이터 요청이다.  
+데이터 요청에선 사용자의 접근 가능 `Address space`인지를 판단하게 된다.
+
+다음은 3에서 4로 넘어가는 구간에서 `op-code`를 검사하는 과정이 존재한다.  
+사용자 모드에서 허용되지 않는 `op-code`를 시도하는지를 판단하게 된다.
+
+만약 이를 위배하게 되면 `TRAP`을 발생하여 `Instruction`을 멈추게 된다.
+
+#### CPU의 Memory 요청 예시
+그렇다면 `CPU`는 과연 어떻게 `Memory`에 요청하고 명령을 실행하게 될까?  
+일단 이를 알아보기 전에 `CPU`와 `Memory`가 어떤 요소를 갖고 있는지 봐야한다.
+
+- `CPU`
+  - `Control Unit`
+    - `PC`(`Program Counter`)
+    - `IR`(`Instruction Register`) 
+  - `ALU`(`Arithmetic Logic Unit`, 산술논리장치)
+- `Memory`
+  - `MAR`(`Memory Address Register`)
+  - `MBR`(`Memory Buffer, Register`)
 
 
 
