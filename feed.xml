@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Fri, 17 Jan 2025 15:11:59 GMT</pubDate>
-    <lastBuildDate>Fri, 17 Jan 2025 15:11:59 GMT</lastBuildDate>
+    <pubDate>Fri, 17 Jan 2025 15:16:58 GMT</pubDate>
+    <lastBuildDate>Fri, 17 Jan 2025 15:16:58 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Linux</category>
@@ -144,7 +144,7 @@
 (보통 <code>Linux</code>에서 <code>Command</code>라는 것은 <code>/bin/</code> 경로 하위에 위치하게 된다.)</p>
 <p>그리고 이것은 하나의 <code>Job</code>(<code>작업</code>)이라고도 이야기할 수 있다.<br>
 (<code>Utility</code> = <code>Command</code> = <code>Job</code>이라는 관계로 볼 수 있다.)</p>
-<h3>🖥️ Shell / 쉘쉘</h3>
+<h3>🖥️ Shell / 쉘</h3>
 <p><code>Shell</code>은 <code>Utility</code>지만 <code>Job Control</code>(<code>작업 제어</code>)라는 특징을 갖는다.<br>
 이전에 <code>Utility</code>는 하나의 <code>Job</code>이라고 부를 수 있다고 이야기 했었다.</p>
 <p><code>Shell</code>은 <code>Utility</code>를 제어하는 역할을 수행한다고 볼 수 있는 것이다.<br>

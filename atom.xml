@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2025-01-17T15:11:59.318Z</updated>
+  <updated>2025-01-17T15:16:58.409Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -27,7 +27,7 @@
     <title type="text">[Kernel] Linux Kernel 기초 [1]</title>
     <id>https://blog.false.kr/posts/Computing/OS/Linux/Kernel/Kernel-Introducing.html</id>
     <link href="https://blog.false.kr/posts/Computing/OS/Linux/Kernel/Kernel-Introducing.html"/>
-    <updated>2025-01-17T15:10:33.000Z</updated>
+    <updated>2025-01-17T15:14:50.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container info">
 <p class="hint-container-title">정보</p>
 <p>📢 개인적인 정리를 위해 가벼운 어투로 내용을 정리하였습니다.</p>
@@ -147,7 +147,7 @@
 (보통 <code>Linux</code>에서 <code>Command</code>라는 것은 <code>/bin/</code> 경로 하위에 위치하게 된다.)</p>
 <p>그리고 이것은 하나의 <code>Job</code>(<code>작업</code>)이라고도 이야기할 수 있다.<br>
 (<code>Utility</code> = <code>Command</code> = <code>Job</code>이라는 관계로 볼 수 있다.)</p>
-<h3>🖥️ Shell / 쉘쉘</h3>
+<h3>🖥️ Shell / 쉘</h3>
 <p><code>Shell</code>은 <code>Utility</code>지만 <code>Job Control</code>(<code>작업 제어</code>)라는 특징을 갖는다.<br>
 이전에 <code>Utility</code>는 하나의 <code>Job</code>이라고 부를 수 있다고 이야기 했었다.</p>
 <p><code>Shell</code>은 <code>Utility</code>를 제어하는 역할을 수행한다고 볼 수 있는 것이다.<br>
