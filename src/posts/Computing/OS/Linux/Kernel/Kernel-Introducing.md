@@ -6,7 +6,7 @@ categories:
 tags:
   - Linux
 
-date: 2025-01-12
+date: 2025-01-18
 
 order: 101
 editLink: false
@@ -323,18 +323,133 @@ Kernel
 
 - `CPU`
   - `Control Unit`
-    - `PC`(`Program Counter`)
-    - `IR`(`Instruction Register`) 
+    - `PC`(`Program Counter`) / `특수 레지스터`
+    - `IR`(`Instruction Register`) / `특수 레지스터`
   - `ALU`(`Arithmetic Logic Unit`, 산술논리장치)
 - `Memory`
   - `MAR`(`Memory Address Register`)
   - `MBR`(`Memory Buffer, Register`)
 
+위처럼 `CPU`와 `Memory`가 구성된 상태일 때 데이터를 어떻게 처리하게 될까?
 
+1. `PC`가 `Instruction`에 필요한 `Address`를 `Memory`의 `MAR`에게 전달한다.
+2. 이때 읽어들인 `Address`에 할당된 데이터를 `MBR`이 `IR`에게 전달한다.
+3. `CPU`는 `op-code`+`operands` 형태를 만들어 `ALU`에 전달한다.
+4. `operands`에서 필요한 `Address`를 `Memory`의 `MAR`에 요청한다. (1~2 과정)
+
+이때 `op-code`+`operands`는 아래와 같은 구조를 가지고 있게 된다.
+
+|op-code|operands|operands|
+|:--:|:--:|:--:|
+|add|i|j|
+
+#### Kernel mode로의 전환 (chmodk)
+이제 `CPU`가 `Memory`에 상주된 데이터를 받아오는 방법과 구조를 파악하였다.  
+이전 이야기한 것처럼 사용자는 `I/O` 요청을 할 수 없는데 어떻게 진행하게 될까?
+
+바로 `chmodk`(`Change Mode Kernel`)이란 일련의 과정을 이용해서 가능하게된다.
+
+`C Lang`을 이용하여 간단한 `print` 구문을 작성하여 메시지를 출력했다고 하자.  
+이 과정에 당연하게도 `I/O`가 발생되는데, **그럼 사용자가 요청한게 아닌가?** 할거다.
+
+하지만 실제 `Compile`이 완료된 `Binary` 파일을 확인할 경우에 `I/O` 요청은 없다.  
+
+`Compile` 하기 전에는 간단하게 `I/O`를 요청하겠다는 구문으로만 작성해보겠지만,  
+실제 `Compiler`는 해당 요청을 `chmodk`가 가능하도록 내용을 치환하여 제공한다.  
+
+- 컴파일 이전
+  - `I/O Instruction` 내용 기재
+- 컴파일 이후
+  - `Prepare all parameters` (사전 정의된 파라미터)
+    - `Open, Read, Write ...`
+  - `Execure chmodk` (`chmodk` 명령 호출)
+
+그렇다면 `chmodk`는 실질적으로 수행되는 과정이 어떻게 되는지 알아보도록 하자.
+
+`chmodk`를 사용자가 호출했다. 생각해보자 해당 `Instruction`도 위험하지 않을까?  
+그렇기 때문에 사용자에겐 `chmodk`도 마찬가지로 `privileged instruction` 이다.
+
+만약 사용자가 해당 `Instruction`을 실행할 경우엔 사용자를 `TRAP` 상태로 변경한다.  
+`TRAP`이란 `User mode`에서 실행할 수 없도록 `CPU` 권한을 회수하는 것을 의미한다.
+
+:::info
+`Interupt`와 `TRAP`의 차이  
+- `Interupt`는 `HW`에 의해 생성된 변경되는 흐름이라고 볼 수 있다.
+- `TRAP`은 `SW`에 의해 호출된 `Interupt`라 볼 수 있고 `Interupt`보다 작은 개념이다.
+  - `TRAP`은 `CPU mode` 및 상태를 변경할 수 있지만 `Interupt`는 상태를 유지한다.
+:::
+
+`TRAP` 상태가 된다면 `Kernel`에서 처리하게 되는 `TRAP Handler`에 진입하게 된다.  
+이때 `Prepare all parameters`에 정의된 처리하고자 하는 사항이 무엇인지 확인한다.
+
+해당 요청사항에 대해 사용자가 권한(`Permission`)을 보유하고 있는지 확인한 뒤,  
+전달받은 `Parameter`와 `Memory` 요청을 수행한 뒤 다시 `TRAP`으로 복귀하게 된다.  
+
+복귀된 `TRAP`은 `프로그램`으로 돌아와 `User mode`로 `CPU mode bit`를 변경한다.  
+
+#### 최종 정리
+위에서 설명된 과정과 같이 모든 프로그램은 `User mode`와 `Kernel mode`를 오간다. 
+
+처음 `User mode`에서 `Instruction`을 수행하여 `Kernel mode`가 되어 수행하게 되고  
+사용자의 권한을 검증한 뒤 수행이 완료된다면 `TRAP`으로 돌아와 `User mode`가 된다.
+
+이 과정에서 `Function` 실행 간 필요한 `Local variable`이 존재하기 나름일 것이다.  
+이 변수를 모두 `Memory`에 미리 상주시켜 놓는 것은 많은 자원 낭비가 발생될 것이다.
+
+그렇기 때문에 `User`, `Kernel` 둘 다 모두 `Stack` 형태로 저장소를 보유하고 있다.
+
+### 🛹 Linux Manual 읽기
+`Linux`에서 명령어의 설명을 보고 싶을 때에는 `man` 명령어를 이용하면 된다.  
+그런데 여기서 표기되는 정보에 따라 어떤 형태인지 구분하여 확인할 수 있다.
+
+```bash
+$ man cat
+
+CAT(1)                           User Commands                          CAT(1)
+
+NAME
+       cat - concatenate files and print on the standard output
+..
+
+
+$ man 2 chown
+
+chown(2)                      System Calls Manual                     chown(2)
+
+NAME
+       chown, fchown, lchown, fchownat - change ownership of a file
+
+..
+
+
+$ man 3 sleep
+
+sleep(3)                   Library Functions Manual                   sleep(3)
+
+NAME
+       sleep - sleep for a specified number of seconds
+
+..
+```
+
+이러한 구분을 `Sections`라고 일컫고 일반적으로 8가지로 구분되어 제공된다.
+
+1. General commands
+2. System calls
+3. Library functions
+4. Special files (Device)
+5. Files Format
+6. Game & Screensavers
+7. Miscellaneous
+8. System administration commands and daemons
 
 - - -
 
-아직 이게 1강인게 놀랍다. 소개에 대한 부분만 이정도의 분량이 나오게 된다.  
-얼마나 깊고 심오한 세상일까 다시 한번 놀라면서 더 열심히 하자는 생각이 든다.  
+아직 이게 1강인게 놀랍습니다. 소개에 대한 부분만 이정도의 분량이 나오게 되네요.  
+얼마나 깊고 심오한 세상일까 다시 한번 놀라면서 더 열심히 하자는 생각이 듭니다.
 
-2025년 열심히 달려보자.
+하루 1시간 정도씩 썼지만 1강을 정리하는데에만 약 일주일이 소요됐네요.  
+굉장히 긴 내용이다 보니 직접 강의를 들어보시는 것을 추천드립니다.
+
+긴 포스팅을 읽어주셔서 감사합니다! :D
+이번 한 해도 파이팅 입니다.
