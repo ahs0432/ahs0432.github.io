@@ -149,7 +149,7 @@ lastUpdated: true
 그리고 이것은 하나의 `Job`(`작업`)이라고도 이야기할 수 있다.  
 (`Utility` = `Command` = `Job`이라는 관계로 볼 수 있다.)
 
-### 🖥️ Shell / 쉘쉘
+### 🖥️ Shell / 쉘
 `Shell`은 `Utility`지만 `Job Control`(`작업 제어`)라는 특징을 갖는다.  
 이전에 `Utility`는 하나의 `Job`이라고 부를 수 있다고 이야기 했었다.  
 
