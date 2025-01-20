@@ -5,6 +5,21 @@ categories:
   - Linux
 tags:
   - Linux
+  - Kernel
+  - Introduce
+  - 커널
+  - 리눅스
+  - OS
+  - 운영체제
+  - Operating System
+  - 시스템
+  - 시스템 프로그래밍
+  - 프로그램
+  - System
+  - System call
+  - System calls
+  - HW
+  - 하드웨어
 
 date: 2025-01-18
 
