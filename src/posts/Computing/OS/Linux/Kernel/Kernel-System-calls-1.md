@@ -1,5 +1,5 @@
 ---
-title:  "[Kernel] Linux Kernel 기초 [1]"
+title:  "[Kernel] Linux System calls - 1 [2]"
 
 categories:
   - Linux
