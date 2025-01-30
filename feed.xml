@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Thu, 30 Jan 2025 07:04:10 GMT</pubDate>
-    <lastBuildDate>Thu, 30 Jan 2025 07:04:10 GMT</lastBuildDate>
+    <pubDate>Thu, 30 Jan 2025 07:08:06 GMT</pubDate>
+    <lastBuildDate>Thu, 30 Jan 2025 07:08:06 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Linux</category>
@@ -41,7 +41,7 @@
 <h2>🤔 지난 회차까지의 System calls 간단 정리</h2>
 <p>지난 회차까지의 <code>System calls</code>은 <strong>Multi user system</strong>의 특징으로 인해<br>
 다른 사용자의 <strong>I/O</strong>에 함부로 접근하는 일을 <strong>방지</strong>(<strong>Prevent</strong>)하기 위한 설계다.</p>
-<p>이런 설계로 사용자는 I/O를 위해서 <code>Kernel</code>의 **<code>Function</code>**을 호출한다.<br>
+<p>이런 설계로 사용자는 I/O를 위해서 <code>Kernel</code>의 <code>Function</code>을 호출한다.<br>
 이전에 조금 더 딥하게 정리해두었으니 확인하고 싶다면 <a href="/posts/Computing/OS/Linux/Kernel/Kernel-Introducing.html" target="_blank">여기</a>를 참고해보자.</p>
 <h2>📻 System calls</h2>
 <p><code>System calls</code>이라는게 어떤 것인지는 알겠는데 그렇다면 과연 어떻게 발생될까?<br>
@@ -89,7 +89,7 @@
 <span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">	...</span></span>
 <span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>🦾 <code>Wrapper Routine</code></h3>
-<p><code>TRAP</code>으로 넘어갈 내용을 준비하고 실질적으로 <code>TRAP</code>을 일으키는 공간**이다.</p>
+<p><code>TRAP</code>으로 넘어갈 내용을 준비하고 실질적으로 <code>TRAP</code>을 일으키는 공간이다.</p>
 <p><code>Wrapper Routine</code>에서는 <code>$0x80</code>과 같이 별다른 의미가 없는 문자를 이용하여<br>
 <code>Machine Instruction</code>(컴퓨터가 알아듣는 언어)을 주어 <code>TRAP</code>을 일으킨다.</p>
 <ul>
@@ -193,7 +193,7 @@
 <code>Memory</code>의 경우 사용된 크기와 사용되는 영역이 어느 정도인지의 정보이다.</p>
 <p>또한 하드웨어 뿐만 아닌 사용자 프로그램의 실행체인 <strong>프로세스 관리</strong>를 위해<br>
 <strong><code>PCB</code></strong>(<strong><code>Process Control Block</code></strong>)라는 <strong>관리 정보를 담는 데이터 구조체</strong>를 갖는다.</p>
-<p>이러한 **고유한 정보들을 담아놓은 구조체를 <code>Metadata</code>(<code>메타데이터</code>)**라 부른다.</p>
+<p>이러한 <strong>고유한 정보들을 담아놓은 구조체를 <code>Metadata</code>(<code>메타데이터</code>)라</strong> 부른다.</p>
 <h4>Metadata의 구성 요소</h4>
 <p><code>Metadata</code>에는 어떠한 내용이 담겨있을까? 바로 아래와 같은 내용들이다.</p>
 <ul>
