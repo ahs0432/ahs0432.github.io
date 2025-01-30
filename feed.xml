@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Thu, 30 Jan 2025 07:00:46 GMT</pubDate>
-    <lastBuildDate>Thu, 30 Jan 2025 07:00:46 GMT</lastBuildDate>
+    <pubDate>Thu, 30 Jan 2025 07:04:10 GMT</pubDate>
+    <lastBuildDate>Thu, 30 Jan 2025 07:04:10 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Linux</category>
@@ -27,10 +27,10 @@
     <category>Windows</category>
     <category>Ubuntu</category>
     <item>
-      <title>[Kernel] Linux Kernel 기초 [1]</title>
+      <title>[Kernel] Linux System calls - 1 [2]</title>
       <link>https://blog.false.kr/posts/Computing/OS/Linux/Kernel/Kernel-System-calls-1.html</link>
       <guid>https://blog.false.kr/posts/Computing/OS/Linux/Kernel/Kernel-System-calls-1.html</guid>
-      <source url="https://blog.false.kr/feed.xml">[Kernel] Linux Kernel 기초 [1]</source>
+      <source url="https://blog.false.kr/feed.xml">[Kernel] Linux System calls - 1 [2]</source>
       <description>정보 📢 개인적인 정리를 위해 가벼운 어투로 내용을 정리하였습니다. 🤔 지난 회차까지의 System calls 간단 정리 지난 회차까지의 System calls은 Multi user system의 특징으로 인해 다른 사용자의 I/O에 함부로 접근하는 일을 방지(Prevent)하기 위한 설계다. 이런 설계로 사용자...</description>
       <category>Linux</category>
       <pubDate>Thu, 30 Jan 2025 00:00:00 GMT</pubDate>

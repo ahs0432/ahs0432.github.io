@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2025-01-30T07:00:46.158Z</updated>
+  <updated>2025-01-30T07:04:10.316Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -24,10 +24,10 @@
   <category term="Windows"/>
   <category term="Ubuntu"/>
   <entry>
-    <title type="text">[Kernel] Linux Kernel 기초 [1]</title>
+    <title type="text">[Kernel] Linux System calls - 1 [2]</title>
     <id>https://blog.false.kr/posts/Computing/OS/Linux/Kernel/Kernel-System-calls-1.html</id>
     <link href="https://blog.false.kr/posts/Computing/OS/Linux/Kernel/Kernel-System-calls-1.html"/>
-    <updated>2025-01-30T06:59:14.000Z</updated>
+    <updated>2025-01-30T07:02:49.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container info">
 <p class="hint-container-title">정보</p>
 <p>📢 개인적인 정리를 위해 가벼운 어투로 내용을 정리하였습니다.</p>
