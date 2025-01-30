@@ -40,7 +40,7 @@ lastUpdated: true
 지난 회차까지의 `System calls`은 **Multi user system**의 특징으로 인해  
 다른 사용자의 **I/O**에 함부로 접근하는 일을 **방지**(**Prevent**)하기 위한 설계다.
 
-이런 설계로 사용자는 I/O를 위해서 `Kernel`의 **`Function`**을 호출한다.  
+이런 설계로 사용자는 I/O를 위해서 `Kernel`의 `Function`을 호출한다.  
 이전에 조금 더 딥하게 정리해두었으니 확인하고 싶다면 [여기](/posts/Computing/OS/Linux/Kernel/Kernel-Introducing.html)를 참고해보자.
 
 ## 📻 System calls
@@ -95,7 +95,7 @@ sys_write()
 ```
 
 ### 🦾 `Wrapper Routine`
-`TRAP`으로 넘어갈 내용을 준비하고 실질적으로 `TRAP`을 일으키는 공간**이다.
+`TRAP`으로 넘어갈 내용을 준비하고 실질적으로 `TRAP`을 일으키는 공간이다.
 
 `Wrapper Routine`에서는 `$0x80`과 같이 별다른 의미가 없는 문자를 이용하여  
 `Machine Instruction`(컴퓨터가 알아듣는 언어)을 주어 `TRAP`을 일으킨다.
@@ -206,7 +206,7 @@ sys_write()
 또한 하드웨어 뿐만 아닌 사용자 프로그램의 실행체인 **프로세스 관리**를 위해  
 **`PCB`**(**`Process Control Block`**)라는 **관리 정보를 담는 데이터 구조체**를 갖는다.
 
-이러한 **고유한 정보들을 담아놓은 구조체를 `Metadata`(`메타데이터`)**라 부른다.
+이러한 **고유한 정보들을 담아놓은 구조체를 `Metadata`(`메타데이터`)라** 부른다.
 
 #### Metadata의 구성 요소
 `Metadata`에는 어떠한 내용이 담겨있을까? 바로 아래와 같은 내용들이다.
