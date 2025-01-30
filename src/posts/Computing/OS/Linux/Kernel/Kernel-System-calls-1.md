@@ -246,7 +246,7 @@ sys_write()
 
 이러한 과정을 `Data Structure`에 대입하여 확인해보면 아래와 같다.
 
-![Waiting Queue]((/assets/image/Post/Computing/OS/Linux/Kernel/Kernel-System-calls-1/2.png))
+![Waiting Queue](/assets/image/Post/Computing/OS/Linux/Kernel/Kernel-System-calls-1/2.png)
 
 `프로세스`가 자신의 `PCB`에 사용하고자 하는 하드웨어 자원의 링크를 걸고  
 `Waiting Queue`에 들어가고 다른 프로세스가 대기 중이면 다음으로 들어간다.
@@ -275,7 +275,7 @@ sys_write()
 
 `Child process`를 생성하기 위한 과정은 그림에서 나온 것과 같이 이뤄지게 된다.
 
-![Child Process]((/assets/image/Post/Computing/OS/Linux/Kernel/Kernel-System-calls-1/3.png))
+![Child Process](/assets/image/Post/Computing/OS/Linux/Kernel/Kernel-System-calls-1/3.png)
 
 1. `PCB` 공간을 할당하고 `Parent process`의 `PCB`를 복사한다.  
 (이 과정에서 `Parent`의 환경을 상속하고 자원을 공유하여 사용한다.)
