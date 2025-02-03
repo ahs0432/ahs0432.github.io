@@ -224,7 +224,7 @@ sys_write()
 - Parent, Child process / 부모 또는 자식 프로세스
 - Execution time, ... / 실행 시간
 
-::info
+:::info
 `State vector save area` (상태 벡터 저장 공간)  
 
 만약 먼저 프로세스가 `CPU`를 점유하다가 `Disk` 공간 확인이 필요한 경우  
@@ -235,7 +235,7 @@ sys_write()
 
 `State vector save area`는 저장 공간을 의미하고 `Register`를 저장한다.  
 `Register`는 `State of Flipflop(0과 1)`이 32개 모여있는 집합체이다.
-::
+:::
 
 #### 프로세스 대기
 앞선 내용 중 `Waiting Event`와 `State vector save`라는 요소를 확인했다.  
