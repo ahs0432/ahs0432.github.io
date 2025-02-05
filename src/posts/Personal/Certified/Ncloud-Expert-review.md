@@ -17,6 +17,7 @@ date: 2022-11-23
 
 editLink: false
 lastUpdated: true
+order: 201
 ---
 
 ## NAVER CLOUD PLATFORM?

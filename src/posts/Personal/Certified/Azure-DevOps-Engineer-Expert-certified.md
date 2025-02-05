@@ -33,6 +33,7 @@ date: 2024-08-26
 
 editLink: false
 lastUpdated: true
+order: 905
 ---
 
 ## 취득 배경
@@ -168,7 +169,7 @@ lastUpdated: true
 
 나중에 기회가 된다면 공부했던 내용을 다시 정제해서 포스팅하면 좋을 것 같다는 생각이다.
 
-![](/assets/image/Post/Personal/Certified/Azure-Solutions-Architect-Expert-certified/3.png "자격 발급" =90%x90%)
+![](/assets/image/Post/Personal/Certified/Azure-DevOps-Engineer-Expert-certified/3.png "자격 발급" =90%x90%)
 
 이로써 7~8월 기간동안만 `Azure` 관련 자격을 총 5개 취득했고 열심히 했다는 생각도 든다.  
 주말의 자유가 찾아왔던 방학 기간동안 주말에 거의 쉬지 않고 공부한거 같은 생각이 들고 있다.
