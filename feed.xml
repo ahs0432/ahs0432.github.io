@@ -6,8 +6,8 @@
     <link>https://blog.false.kr/</link>
     <description>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</description>
     <language>ko-KR</language>
-    <pubDate>Mon, 03 Feb 2025 05:50:41 GMT</pubDate>
-    <lastBuildDate>Mon, 03 Feb 2025 05:50:41 GMT</lastBuildDate>
+    <pubDate>Wed, 05 Feb 2025 13:18:00 GMT</pubDate>
+    <lastBuildDate>Wed, 05 Feb 2025 13:18:00 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Linux</category>
@@ -3317,7 +3317,7 @@ Return할 때의 값은 <code>PID</code> 값으로 0인 경우 <code>Child proce
 <p>솔직히 <code>CI/CD</code>의 배포 프로세스와 배치 과정이 중요시 되는 부분이 있었다.<br>
 예전에 <code>CI/CD</code>에 개인적인 관심으로 공부했던게 굉장히 도움이 많이됐던거 같다.</p>
 <p>나중에 기회가 된다면 공부했던 내용을 다시 정제해서 포스팅하면 좋을 것 같다는 생각이다.</p>
-<figure><img src="/assets/image/Post/Personal/Certified/Azure-Solutions-Architect-Expert-certified/3.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption>자격 발급</figcaption></figure>
+<figure><img src="/assets/image/Post/Personal/Certified/Azure-DevOps-Engineer-Expert-certified/3.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption>자격 발급</figcaption></figure>
 <p>이로써 7~8월 기간동안만 <code>Azure</code> 관련 자격을 총 5개 취득했고 열심히 했다는 생각도 든다.<br>
 주말의 자유가 찾아왔던 방학 기간동안 주말에 거의 쉬지 않고 공부한거 같은 생각이 들고 있다.</p>
 <p>이렇게 대학원 준비를 제대로 못한 나에 대한 한을 이렇게라도 불태울 수 있었다.</p>

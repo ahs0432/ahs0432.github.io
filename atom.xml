@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2025-02-03T05:50:41.329Z</updated>
+  <updated>2025-02-05T13:18:00.107Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -3239,7 +3239,7 @@ Return할 때의 값은 <code>PID</code> 값으로 0인 경우 <code>Child proce
     <title type="text">[Azure] Microsoft DevOps Engineer Expert 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Azure-DevOps-Engineer-Expert-certified.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Azure-DevOps-Engineer-Expert-certified.html"/>
-    <updated>2024-08-26T14:49:49.000Z</updated>
+    <updated>2025-02-05T13:15:43.000Z</updated>
     <summary type="html"><![CDATA[<h2>취득 배경</h2>
 <p>취득 배경은 <a href="/posts/Personal/Certified/Azure-Fundamentals-certified.html" target="_blank">[Personal] Microsoft Azure Fundamentals 취득 후기</a>와 동일하다.</p>
 <p>2024년 7월 재직 중인 회사에서 <code>Microsoft Azure</code> 서비스를 위한 준비를 위해<br>
@@ -3400,7 +3400,7 @@ Return할 때의 값은 <code>PID</code> 값으로 0인 경우 <code>Child proce
 <p>솔직히 <code>CI/CD</code>의 배포 프로세스와 배치 과정이 중요시 되는 부분이 있었다.<br>
 예전에 <code>CI/CD</code>에 개인적인 관심으로 공부했던게 굉장히 도움이 많이됐던거 같다.</p>
 <p>나중에 기회가 된다면 공부했던 내용을 다시 정제해서 포스팅하면 좋을 것 같다는 생각이다.</p>
-<figure><img src="/assets/image/Post/Personal/Certified/Azure-Solutions-Architect-Expert-certified/3.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption>자격 발급</figcaption></figure>
+<figure><img src="/assets/image/Post/Personal/Certified/Azure-DevOps-Engineer-Expert-certified/3.png" alt="" width="90%" height="90%" tabindex="0" loading="lazy"><figcaption>자격 발급</figcaption></figure>
 <p>이로써 7~8월 기간동안만 <code>Azure</code> 관련 자격을 총 5개 취득했고 열심히 했다는 생각도 든다.<br>
 주말의 자유가 찾아왔던 방학 기간동안 주말에 거의 쉬지 않고 공부한거 같은 생각이 들고 있다.</p>
 <p>이렇게 대학원 준비를 제대로 못한 나에 대한 한을 이렇게라도 불태울 수 있었다.</p>
@@ -3415,7 +3415,7 @@ Return할 때의 값은 <code>PID</code> 값으로 0인 경우 <code>Child proce
     <title type="text">[Azure] Microsoft Azure Developer Associate 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Azure-Developer-Associate-certified.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Azure-Developer-Associate-certified.html"/>
-    <updated>2024-08-26T14:46:11.000Z</updated>
+    <updated>2025-02-05T13:15:43.000Z</updated>
     <summary type="html"><![CDATA[<h2>취득 배경</h2>
 <p>취득 배경은 <a href="/posts/Personal/Certified/Azure-Fundamentals-certified.html" target="_blank">[Personal] Microsoft Azure Fundamentals 취득 후기</a>와 동일하다.</p>
 <p>2024년 7월 재직 중인 회사에서 <code>Microsoft Azure</code> 서비스를 위한 준비를 위해<br>
@@ -3595,7 +3595,7 @@ Return할 때의 값은 <code>PID</code> 값으로 0인 경우 <code>Child proce
     <title type="text">[Azure] Microsoft Azure Solutions Architect Expert 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Azure-Solutions-Architect-Expert-certified.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Azure-Solutions-Architect-Expert-certified.html"/>
-    <updated>2024-08-18T13:17:33.000Z</updated>
+    <updated>2025-02-05T13:15:43.000Z</updated>
     <summary type="html"><![CDATA[<h2>취득 배경</h2>
 <p>취득 배경은 <a href="/posts/Personal/Certified/Azure-Fundamentals-certified.html" target="_blank">[Personal] Microsoft Azure Fundamentals 취득 후기</a>와 동일하다.</p>
 <p>2024년 7월 재직 중인 회사에서 <code>Microsoft Azure</code> 서비스를 위한 준비를 위해<br>
@@ -3770,7 +3770,7 @@ Return할 때의 값은 <code>PID</code> 값으로 0인 경우 <code>Child proce
     <title type="text">[Azure] Microsoft Azure Administrator Associate 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Azure-Administrator-Associate-certified.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Azure-Administrator-Associate-certified.html"/>
-    <updated>2024-08-18T13:17:33.000Z</updated>
+    <updated>2025-02-05T13:15:43.000Z</updated>
     <summary type="html"><![CDATA[<h2>취득 배경</h2>
 <p>취득 배경은 <a href="/posts/Personal/Certified/Azure-Fundamentals-certified.html" target="_blank">[Personal] Microsoft Azure Fundamentals 취득 후기</a>와 동일하다.</p>
 <p>2024년 7월 재직 중인 회사에서 <code>Microsoft Azure</code> 서비스를 위한 준비를 위해<br>
@@ -3916,7 +3916,7 @@ Return할 때의 값은 <code>PID</code> 값으로 0인 경우 <code>Child proce
     <title type="text">[Azure] Microsoft Azure Fundamentals 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Azure-Fundamentals-certified.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Azure-Fundamentals-certified.html"/>
-    <updated>2024-08-18T13:17:33.000Z</updated>
+    <updated>2025-02-05T13:15:43.000Z</updated>
     <summary type="html"><![CDATA[<h2>취득 배경</h2>
 <p>2024년 7월 재직 중인 회사에서 <code>Microsoft Azure</code> 서비스를 위한 준비를 위해<br>
 사내 인원에 자격증 취득을 권장하는 Promotion을 진행하게 되어 취득을 준비하게 됐다.</p>
@@ -4277,7 +4277,7 @@ Return할 때의 값은 <code>PID</code> 값으로 0인 경우 <code>Child proce
     <title type="text">[Ncloud] NAVER CLOUD PLATFORM Certified A.I 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Ncloud-AI-Cert-Review.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Ncloud-AI-Cert-Review.html"/>
-    <updated>2024-08-18T13:17:33.000Z</updated>
+    <updated>2025-02-05T13:15:43.000Z</updated>
     <summary type="html"><![CDATA[<h2>네이버 클라우드의 AI...?</h2>
 <p>네이버 클라우드는 2024년 기준 <code>HyperClova X</code>를 바탕으로 하는 AI 사업에 박차를 가하고 있다.</p>
 <p><code>Papago</code> 번역, <code>Clova</code>의 여러가지 기능, 그리고 네이버의 기술적인 <code>AI API</code>를 제공하고 있었지만,<br>
@@ -4461,7 +4461,7 @@ API 사용 방법 및 파라미터까지 전체적으로 한 번씩을 훑으면
     <title type="text">[Certified] 정보처리기사 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Engineer-Information-Processing-review.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Engineer-Information-Processing-review.html"/>
-    <updated>2024-08-18T13:17:33.000Z</updated>
+    <updated>2025-02-05T13:15:43.000Z</updated>
     <summary type="html"><![CDATA[<h2>🤔 정보처리기사</h2>
 <p>정보처리기사는 한국산업인력공단에서 수행하는 국가공인자격증의 명칭이다.</p>
 <p>2020년 이전까지 거의 50%에 육박하는 합격률을 보여주고 있었지만 2020년 개정되어<br>
@@ -4683,7 +4683,7 @@ GoLang에서 이를 사용하기 위해 SWIG를 이용하여 코드 연결을 �
     <title type="text">[Ncloud] NAVER CLOUD PLATFORM Certified Expert 취득 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Ncloud-Expert-review.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Ncloud-Expert-review.html"/>
-    <updated>2024-08-18T13:17:33.000Z</updated>
+    <updated>2025-02-05T13:15:43.000Z</updated>
     <summary type="html"><![CDATA[<h2>NAVER CLOUD PLATFORM?</h2>
 <p>나는 다양한 클라우드 플랫폼에 대해 매니지드 서비스를 제공하는 업체에서 근무 중이다.<br>
 그렇다보니 가장 유명한 AWS를 포함하여 다양한 플랫폼을 다루게 되는데 그 중 하나이다.</p>
