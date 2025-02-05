@@ -3,7 +3,7 @@
   <id>https://blog.false.kr/</id>
   <title>찬스의 개발 블로그 : Chance Devlog</title>
   <subtitle>찬스의 개발과 일상에 대한 내용을 담은 개인 블로그</subtitle>
-  <updated>2025-02-05T15:44:45.982Z</updated>
+  <updated>2025-02-05T15:51:15.471Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.false.kr/atom.xml"/>
   <link rel="alternate" href="https://blog.false.kr/"/>
@@ -27,7 +27,7 @@
     <title type="text">[Azure] Microsoft 자격 갱신 후기</title>
     <id>https://blog.false.kr/posts/Personal/Certified/Azure-certified-renewal-assessment.html</id>
     <link href="https://blog.false.kr/posts/Personal/Certified/Azure-certified-renewal-assessment.html"/>
-    <updated>2025-02-05T15:43:24.000Z</updated>
+    <updated>2025-02-05T15:49:00.000Z</updated>
     <summary type="html"><![CDATA[<h2>🔥 Microsoft 자격 갱신</h2>
 <p><code>Microsoft</code>는 <code>AWS</code> 플랫폼과 자격을 유지하는 정책에 차이가 존재한다.</p>
 <p><code>AWS</code>는 자격 유지 기간을 3년으로 두고 만료될 경우 신규 취득이 필요하다.<br>
@@ -57,7 +57,7 @@
 <p>이번에 처음으로 갱신하게 됐는데, 내년에도 갱신을 할 수 있는 걸까?<br>
 이건 아직 모르기 때문에 계속 연장이 가능한지 살펴봐야 할듯 하다.</p>
 <hr>
-<p>오늘은 간단한 자격 갱신 내용을 가져와보았습니다.
+<p>오늘은 간단한 자격 갱신 내용을 가져와보았습니다.<br>
 항상 내용을 읽어주셔서 감사합니다! 😀</p>
 ]]></content>
     <category term="Certified"/>
