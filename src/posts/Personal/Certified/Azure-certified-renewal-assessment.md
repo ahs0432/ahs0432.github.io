@@ -72,6 +72,22 @@ order: 911
 이번에 처음으로 갱신하게 됐는데, 내년에도 갱신을 할 수 있는 걸까?  
 이건 아직 모르기 때문에 계속 연장이 가능한지 살펴봐야 할듯 하다.
 
+## 🏁 추가 내용
+`AZ-305`와 `AZ-204` 자격을 최근에 갱신하고 캡처한 이미지를 추가 첨부한다.  
+자격을 갱신하기 전에는 얼마나 남았는지, 언제까지 갱신이 필요한지 나온다.
+
+![](/assets/image/Post/Personal/Certified/Azure-certified-renewal-assessment/4.png "연장 전 갱신 페이지" =90%x90%)
+
+만약 갱신에 성공하게 된다면 갱신에 대해 아래와 같이 축하하는 페이지가 나온다.  
+(작성자인 내가 이상한건지 싶은데 폭죽이 터지고 있는 모습을 보면 기분이 좋다.)
+
+![](/assets/image/Post/Personal/Certified/Azure-certified-renewal-assessment/5.png "연장 후 축하 페이지" =90%x90%)
+
+그리고 각 평가 섹션 별로 내가 어느정도의 점수를 받았는지 확인이 가능하다.  
+포스팅을 올리는 입장에서 나름 좋은 점수가 나온거 같아 나쁘지 않게 생각된다.
+
+![](/assets/image/Post/Personal/Certified/Azure-certified-renewal-assessment/6.png "연장 후 결과 페이지" =90%x90%)
+
 - - -
 
 오늘은 간단한 자격 갱신 내용을 가져와보았습니다.  
