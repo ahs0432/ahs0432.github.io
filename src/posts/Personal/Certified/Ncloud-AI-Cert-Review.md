@@ -21,6 +21,7 @@ date: 2024-02-12
 
 editLink: false
 lastUpdated: true
+order: 202
 ---
 
 ## 네이버 클라우드의 AI...?
