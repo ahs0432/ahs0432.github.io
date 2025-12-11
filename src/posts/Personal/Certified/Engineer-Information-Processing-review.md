@@ -16,6 +16,7 @@ date: 2023-07-11
 
 editLink: false
 lastUpdated: true
+order: 101
 ---
 
 ## 🤔 정보처리기사

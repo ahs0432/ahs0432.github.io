@@ -22,6 +22,7 @@ date: 2024-08-18
 
 editLink: false
 lastUpdated: true
+order: 903
 ---
 
 ## 취득 배경
