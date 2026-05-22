@@ -56,6 +56,7 @@ lastUpdated: true
 #### Specialty
 - NAVER Cloud Platform Certified: Trainer (NCT)
   - Earned: 2023-08
+  - Ended: 2026-03
 
 ![NAVER Cloud Platform Trainer](/assets/aboutme/NCT.png)
 
